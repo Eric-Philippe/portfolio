@@ -34,7 +34,7 @@ jobs:
           name: updated-json
           path: ./dist
       - name: Replace projects.json in the build directory
-        run: cp -f $GITHUB_WORKSPACE/projects.json ./dist/projects.json
+        run: cp -f $GITHUB_WORKSPACE/projects.json ./
       - name: Install Dependencies
         run: npm install
       - name: Build Project
