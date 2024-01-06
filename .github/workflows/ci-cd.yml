@@ -15,6 +15,11 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run Python script to update projects.json
         run: python scripts/mdToJson.py
+      - name: Upload updated JSON as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: updated-json
+          path: ./projects.json
   # Build Job
   build:
     needs: update-json
@@ -26,6 +31,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
+      - name: Download updated JSON artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: updated-json
+          path: ./dist
       - name: Install Dependencies
         run: npm install
       - name: Build Project
