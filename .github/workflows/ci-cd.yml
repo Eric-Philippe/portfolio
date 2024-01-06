@@ -15,11 +15,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run Python script to update projects.json
         run: python scripts/mdToJson.py
-      - name: Upload updated JSON as artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: updated-json
-          path: ./projects.json
+      - name: Replace projects.json in the repository
+        run: mv projects.json $GITHUB_WORKSPACE/projects.json
   # Build Job
   build:
     needs: update-json
@@ -31,11 +28,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
-      - name: Download updated JSON artifact
+      - name: Download updated JSON
         uses: actions/download-artifact@v3
         with:
           name: updated-json
           path: ./dist
+      - name: Replace projects.json in the build directory
+        run: mv $GITHUB_WORKSPACE/projects.json ./dist/projects.json
       - name: Install Dependencies
         run: npm install
       - name: Build Project
