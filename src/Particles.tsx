@@ -15,9 +15,8 @@ export const ParticlesDesign = () => {
     });
   }, []);
 
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
-  };
+  // @ts-ignore
+  const particlesLoaded = async (container?: Container): Promise<void> => {};
 
   const options: ISourceOptions = useMemo(
     () => ({

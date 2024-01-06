@@ -1,14 +1,39 @@
 name: DevOps-GitHibActions
 on: push
 jobs:
+  # Build Project Articles
+  build-articles:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+      - name: Build Projects Articles
+        run: python3 scripts/mdToJson.py
+      - name: Upload artifact to enable deployment
+        uses: actions/upload-artifact@v3
+        with:
+          name: articles-files
+          path: projects.json
+
   # Build Job
   build:
+    needs: build-articles
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: articles-files
+          path: ./
       - name: Install Node
         uses: actions/setup-node@v3
+      - name: Install Python
         with:
           node-version: 18.x
       - name: Install Dependencies

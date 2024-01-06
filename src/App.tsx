@@ -6,8 +6,6 @@ import projects from "./utils/Projects";
 import { ParticlesDesign } from "./Particles";
 
 export default function App() {
-  console.log(projects);
-
   const drawCircle = (
     circleRadius: number,
     circleX: number,
