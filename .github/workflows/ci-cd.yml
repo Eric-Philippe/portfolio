@@ -24,7 +24,7 @@ jobs:
   deploy:
     # Add a dependency to the build job
     needs: build
-    # Specify runner + deployment step
+    # Specify runner + deployment step :)
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
