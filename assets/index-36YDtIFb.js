@@ -47,7 +47,7 @@ Error generating stack: `+s.message+`
 
 <p>| Technologies |
 | ------------ |
-| ReactEUH     |
+| React        |
 | Vite         |
 | TailwindCSS  |
 | TypeScript   |</p>
