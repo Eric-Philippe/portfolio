@@ -16,7 +16,7 @@ jobs:
       - name: Run Python script to update projects.json
         run: python scripts/mdToJson.py
       - name: Replace projects.json in the repository
-        run: mv projects.json $GITHUB_WORKSPACE/projects.json
+        run: cp -f projects.json $GITHUB_WORKSPACE/projects.json
   # Build Job
   build:
     needs: update-json
@@ -34,7 +34,7 @@ jobs:
           name: updated-json
           path: ./dist
       - name: Replace projects.json in the build directory
-        run: mv $GITHUB_WORKSPACE/projects.json ./dist/projects.json
+        run: cp -f $GITHUB_WORKSPACE/projects.json ./dist/projects.json
       - name: Install Dependencies
         run: npm install
       - name: Build Project
