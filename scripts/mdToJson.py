@@ -28,6 +28,8 @@ def convert_all_md_to_json(input_folder, json_file_path):
     with open(json_file_path, 'w', encoding='utf-8') as json_file:
         json.dump(all_data, json_file, ensure_ascii=False, indent=2)
 
+        print('Converted {} Markdown Portfolio Projects files to JSON'.format(len(all_data)))
+
 # Exemple d'utilisation
 input_folder = '_projects'  # Dossier contenant les fichiers Markdown
 json_file_path = 'projects.json'  # Nom du fichier de sortie
