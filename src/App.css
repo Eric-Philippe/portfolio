@@ -44,7 +44,7 @@ body {
 }
 
 .animated-separator {
-  transform-origin: left center; /* Point d'origine pour l'animation */
+  transform-origin: left center;
   transform: scaleX(0);
   transition: transform 1s ease-out;
 }

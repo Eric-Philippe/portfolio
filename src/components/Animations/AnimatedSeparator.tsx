@@ -32,7 +32,8 @@ const AnimatedSeparator: React.FC<AnimatedSeparatorProps> = ({ color1 }) => {
   return (
     <div
       ref={separatorRef}
-      className={`h-1 w-full bg-[${color1}] rounded overflow-hidden mb-2 mt-2 animated-separator`}
+      className={`h-1 w-ful rounded overflow-hidden mb-2 mt-2 animated-separator`}
+      style={{ background: `linear-gradient(to right, ${color1}, #fff)` }}
     ></div>
   );
 };
