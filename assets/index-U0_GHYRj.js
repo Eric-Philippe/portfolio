@@ -50,7 +50,8 @@ Error generating stack: `+s.message+`
 | React        |
 | Vite         |
 | TailwindCSS  |
-| TypeScript   |</p>
+| TypeScript   |
+| CI/CD        |</p>
 
 <p><a href="https://localhost">Lien Github</a></p>
 
