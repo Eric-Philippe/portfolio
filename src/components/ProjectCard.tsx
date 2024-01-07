@@ -9,6 +9,7 @@ interface ProjectProps {
   techs: string[];
   shortDesc: string;
   github: string;
+  previewLink: string;
 }
 
 export default function ProjectCard({ project }: { project: ProjectProps }) {
@@ -20,10 +21,7 @@ export default function ProjectCard({ project }: { project: ProjectProps }) {
       data-projection-id="18"
       style={{ opacity: 1, transform: "none" }}
     >
-      <a
-        className="group relative focus:outline-none block border border-black py-4 lg:py-10 px-6 lg:px-14 bg-white overflow-hidden transform transition hover:scale-[1.01] h-full will-change-transform rounded-3xl"
-        href={project.github}
-      >
+      <div className="group relative focus:outline-none block border border-black py-4 lg:py-10 px-6 lg:px-14 bg-white overflow-hidden transform transition hover:scale-[1.01] h-full will-change-transform rounded-3xl">
         <div className="relative max-w-screen-sm mr-4 lg:mr-8 w-full z-10">
           <h3 className="font-[900] tracking-tight text-3xl">
             {project.title.length > 10 && window.innerWidth < 1024 ? (
@@ -32,24 +30,26 @@ export default function ProjectCard({ project }: { project: ProjectProps }) {
               project.title
             )}
           </h3>
-          <button
-            className="absolute top-1 right-[-10px] px-3 py-1 rounded-md text-sm font-semibold transition-all duration-300 ease-in-out hover:bg-gh-marketingLight hover:text-gh-marketingDark"
+          <div
+            className="relative"
             onMouseEnter={() => setIsButtonHovered(true)}
+            onMouseLeave={() => setIsButtonHovered(false)}
           >
-            <FaPlus />
-          </button>
+            <button className="absolute top-[-50px] right-[-20px] px-3 py-1 rounded-md text-sm font-semibold transition-all duration-300 ease-in-out hover:bg-gh-marketingLight hover:text-gh-marketingDark">
+              <FaPlus />
+            </button>
+          </div>
           <img
-            src={`https://raw.githubusercontent.com/Eric-Philippe/GlitchAndBooks/main/img/stat-first.png`}
-            alt="Random Unsplash img"
+            src={project.previewLink}
+            alt="Project preview"
             className={`absolute top-1 right-1 transition-all duration-500 ease-in-out transform origin-top-right ${
               isButtonHovered ? "opacity-100 scale-150" : "opacity-0 scale-100"
             }`}
             style={{
-              maxWidth: "69%",
+              maxWidth: "67%",
               objectFit: "cover",
               borderRadius: "10px",
             }}
-            onMouseLeave={() => setIsButtonHovered(false)}
           />
           <div className="text-gh-textLight mt-3">{project.date}</div>
           <div className="mt-4">
@@ -125,7 +125,7 @@ export default function ProjectCard({ project }: { project: ProjectProps }) {
           </svg>
           <div className="absolute inset-0 bg-white transition duration-300 group-hover:translate-x-[120%] will-change-transform"></div>
         </div>
-      </a>
+      </div>
     </div>
   );
 }

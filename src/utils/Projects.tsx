@@ -19,6 +19,7 @@ class Project {
   public techs: string[] = [];
   public date: string = "";
   public github: string = "";
+  public previewLink: string = "";
 
   constructor(data: ProjectData) {
     this._filename = data.filename;
@@ -66,9 +67,18 @@ class Project {
     const date = this.html_content.match(/<h4>(.*)<\/h4>/);
     if (date) this.date = date[1];
 
-    // The github looks like this : [Lien Github](...)
-    const github = this.html_content.match(/\[Lien Github\]\((.*)\)/);
+    // The github looks like this : <p><a href=\"https://github.com/Eric-Philippe/portfolio\">Lien Github</a>
+    const github = this.html_content.match(
+      /<p><a href=\"(.*)\">Lien Github<\/a>/
+    );
+
     if (github) this.github = github[1];
+
+    // the preview link looks like this : <img src=\"https://raw.githubusercontent.com/Eric-Philippe/portfolio/main/res/image.png\" alt=\"preview\" />
+    const regex = /https?:\/\/[^\s]+\.png/g;
+    const matches = this.html_content.match(regex);
+
+    if (matches) this.previewLink = matches[0];
   }
 
   public get filename(): string {
