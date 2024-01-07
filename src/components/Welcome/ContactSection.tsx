@@ -245,7 +245,7 @@ export default function ContactSection() {
       </section>
 
       <footer
-        className={`flex flex-col mt-10 items-center justify-center mbZ-6`}
+        className={`flex flex-col mt-10 items-center justify-center mb-6`}
       >
         <div className="flex items-center space-x-3">
           <a href={LINKEDIN} target="_blank" rel="noreferrer">
