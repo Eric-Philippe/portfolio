@@ -17,6 +17,8 @@
 [x] - Intégrer image aperçu
 [x] - Télécharger CV (Bandeau avec qualification)
 [x] - Fichier LICENSE
+[ ] - Favicon
+[ ] - Tests
 [ ] - Trouver un truc discret à mettre en haut à gauche
 [ ] - Nettoyer et commenter le code
 [ ] - README.md

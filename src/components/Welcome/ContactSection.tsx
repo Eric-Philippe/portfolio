@@ -22,10 +22,10 @@ export default function ContactSection() {
   } = useForm();
   const onSubmit = (data: { name: string; email: string; message: string }) => {
     emailjs.send(SERVICE_ID, TEMPLATE_ID, data, PUBLIC_KEY).then(
-      (result) => {
+      () => {
         setEmailSent(true);
       },
-      (error) => {
+      () => {
         setEmailSent(false);
       }
     );
