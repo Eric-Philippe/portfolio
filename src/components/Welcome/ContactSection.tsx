@@ -66,7 +66,7 @@ export default function ContactSection() {
               <h1
                 className={`${
                   isSmallScreen ? "text-3xl" : "text-5xl"
-                } font-bold mb-5 bg-clip-text text-transparent hover:bg-[#e0a4ff] transition-colors duration-200 bg-[#3f3f46] text-left hover:text-[#e0a4ff]`}
+                } font-bold mb-5 bg-clip-text text-transparent hover:bg-[#feea9e] transition-colors duration-200 bg-[#3f3f46] text-left hover:text-[#e0a4ff]`}
                 style={{
                   fontFamily: "Sohne,sans-serif",
                 }}
@@ -78,7 +78,7 @@ export default function ContactSection() {
               <h1
                 className={`${
                   isSmallScreen ? "text-3xl" : "text-5xl"
-                } font-bold mb-5 bg-clip-text text-transparent hover:bg-[#e0a4ff] transition-colors duration-200 bg-[#3f3f46] text-left hover:text-[#e0a4ff]`}
+                } font-bold mb-5 bg-clip-text text-transparent hover:bg-[#98edff] transition-colors duration-200 bg-[#3f3f46] text-left hover:text-[#e0a4ff]`}
                 style={{
                   fontFamily: "Sohne,sans-serif",
                 }}
