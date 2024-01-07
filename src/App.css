@@ -46,7 +46,7 @@ body {
 .animated-separator {
   transform-origin: left center;
   transform: scaleX(0);
-  transition: transform 1s ease-out;
+  transition: transform 1.5s ease-out;
 }
 
 .animated-separator.animate {
