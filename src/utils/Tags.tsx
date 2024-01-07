@@ -1,3 +1,11 @@
+import {
+  FaCode,
+  FaDesktop,
+  FaLaptopCode,
+  FaPuzzlePiece,
+  FaRobot,
+} from "react-icons/fa";
+
 export type Tags = {
   name: string;
   color: string;
@@ -74,5 +82,58 @@ export const getTagsFromString = (tags: string): Tags => {
       return CHALLENGE;
     default:
       return FULLSTACK;
+  }
+};
+
+export const getIconFromTag = (tag: Tags): React.ReactNode => {
+  switch (tag.name) {
+    case "Fullstack":
+      return (
+        <FaLaptopCode
+          style={{
+            marginRight: "0.5rem",
+          }}
+        />
+      );
+    case "Frontend":
+      return (
+        <FaDesktop
+          style={{
+            marginRight: "0.5rem",
+          }}
+        />
+      );
+    case "Backend":
+      return (
+        <FaCode
+          style={{
+            marginRight: "0.5rem",
+          }}
+        />
+      );
+    case "Bot":
+      return (
+        <FaRobot
+          style={{
+            marginRight: "0.5rem",
+          }}
+        />
+      );
+    case "Challenge":
+      return (
+        <FaPuzzlePiece
+          style={{
+            marginRight: "0.5rem",
+          }}
+        />
+      );
+    default:
+      return (
+        <FaLaptopCode
+          style={{
+            marginRight: "0.5rem",
+          }}
+        />
+      );
   }
 };

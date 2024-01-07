@@ -1,10 +1,10 @@
-[ ] - Remplacer les icônes des catégories projets
+[x] - Remplacer les icônes des catégories projets
 [ ] - Section Contact
-[ ] - Intégrer lien git sur cartes projets
-[ ] - Intégrer image aperçu
+[x] - Intégrer lien git sur cartes projets
+[x] - Intégrer image aperçu
 [ ] - Mentions Légales
 [ ] - Page pour un projet
-[ ] - Télécharger CV (Bandeau avec qualification)
+[x] - Télécharger CV (Bandeau avec qualification)
 [ ] - Page Photographie
 [ ] - Trouver un truc discret à mettre en haut à droite
 [ ] - Fichier LEGAL.md
