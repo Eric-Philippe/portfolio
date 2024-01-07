@@ -3,14 +3,27 @@ import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { useInView } from "react-intersection-observer";
 import "../../App.css";
-import { ContactParticles } from "../Animations/ContactParticles";
-import { FaCubes } from "react-icons/fa";
+import { FaCubes, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { GITHUB, INSTAGRAM, LINKEDIN } from "../../links";
 
 const SERVICE_ID = "service_hgawynv";
 const TEMPLATE_ID = "template_clt36qe";
 const PUBLIC_KEY = "eoPJ5KwYUNr5YwcQL";
 
+const SENTENCES = [
+  "Let's get started",
+  "Let's get in touch",
+  "Let's collaborate",
+  "Let's get going",
+  "Let's get in contact",
+  "Let's work together",
+  "Let's do this",
+];
+
 export default function ContactSection() {
+  const [selectedSentence, setSelectedSentence] = useState(
+    SENTENCES[Math.floor(Math.random() * SENTENCES.length)]
+  );
   const [isHovered, setIsHovered] = useState(false);
   const [emailSent, setEmailSent] = useState<boolean | null>(null);
   const isSmallScreen = window.innerWidth < 1024;
@@ -40,8 +53,7 @@ export default function ContactSection() {
   }, [inView]);
 
   return (
-    <div>
-      <ContactParticles />
+    <>
       <section
         ref={ref}
         className="flex flex-col md:flex-row items-center justify-center p-10"
@@ -121,7 +133,7 @@ export default function ContactSection() {
                 fontFamily: "Feijoa,serif",
               }}
             >
-              let's get started
+              {selectedSentence}
             </h1>
 
             <p
@@ -220,12 +232,55 @@ export default function ContactSection() {
             <button
               type="submit"
               className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              onClick={() => {
+                setSelectedSentence(
+                  SENTENCES[Math.floor(Math.random() * SENTENCES.length)]
+                );
+              }}
             >
               Envoyer
             </button>
           </div>
         </form>
       </section>
-    </div>
+
+      <footer
+        className={`flex flex-col mt-10 items-center justify-center mbZ-6`}
+      >
+        <div className="flex items-center space-x-3">
+          <a href={LINKEDIN} target="_blank" rel="noreferrer">
+            <FaLinkedin
+              style={{
+                color: "#0077b5",
+              }}
+              size={40}
+              className="transition-colors duration-200"
+            />
+          </a>
+          <a href={GITHUB} target="_blank" rel="noreferrer">
+            <FaGithub
+              size={40}
+              className="transition-colors duration-200"
+              style={{
+                color: "white",
+              }}
+            />
+          </a>
+          <a href={INSTAGRAM} target="_blank" rel="noreferrer">
+            <FaInstagram
+              size={40}
+              className="transition-colors duration-200"
+              style={{
+                color: "#e1306c",
+              }}
+            />
+          </a>
+        </div>
+        <div className="text-gray-500 text-sm mt-3">ericphlpp@proton.me</div>
+        <div className="text-gray-500 text-sm mt-3">
+          © Éric PHILIPPE - {new Date().getFullYear()}
+        </div>
+      </footer>
+    </>
   );
 }

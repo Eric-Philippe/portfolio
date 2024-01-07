@@ -5,7 +5,7 @@
 [x] - Compétences Section
 [x] - A propos Section
 [x] - Section Contact
-[ ] - Footer
+[x] - Footer
 [ ] - Mentions Légales
 [ ] - Page pour un projet
 [ ] - Page Photographie
