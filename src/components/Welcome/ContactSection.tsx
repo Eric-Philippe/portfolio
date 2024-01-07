@@ -1,12 +1,18 @@
 import { useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { useInView } from "react-intersection-observer";
 import "../../App.css";
 import { ContactParticles } from "../Animations/ContactParticles";
 import { FaCubes } from "react-icons/fa";
 
+const SERVICE_ID = "service_hgawynv";
+const TEMPLATE_ID = "template_clt36qe";
+const PUBLIC_KEY = "eoPJ5KwYUNr5YwcQL";
+
 export default function ContactSection() {
   const [isHovered, setIsHovered] = useState(false);
+  const [emailSent, setEmailSent] = useState<boolean | null>(null);
   const isSmallScreen = window.innerWidth < 1024;
 
   const {
@@ -14,7 +20,16 @@ export default function ContactSection() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data: any) => console.log(data);
+  const onSubmit = (data: { name: string; email: string; message: string }) => {
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, data, PUBLIC_KEY).then(
+      (result) => {
+        setEmailSent(true);
+      },
+      (error) => {
+        setEmailSent(false);
+      }
+    );
+  };
 
   const { ref, inView } = useInView({
     triggerOnce: false,
@@ -89,7 +104,7 @@ export default function ContactSection() {
           </div>
         </div>
         <form
-          onSubmit={handleSubmit(onSubmit)}
+          onSubmit={handleSubmit(onSubmit as any)}
           className={`${
             isSmallScreen ? "" : "w-1/2 max-w-50"
           } p-5 rounded shadow-lg bg-[#0d0d0e]`}
@@ -115,6 +130,17 @@ export default function ContactSection() {
             >
               Vous avez un projet ? Une idée ? Un besoin ? Contactez-moi !
             </p>
+
+            {emailSent === true && (
+              <div className="text-green-500 text-sm text-center">
+                Votre message a bien été envoyé !
+              </div>
+            )}
+            {emailSent === false && (
+              <div className="text-red-500 text-sm text-center">
+                Une erreur est survenue, veuillez réessayer.
+              </div>
+            )}
           </div>
 
           <div className="mb-4 relative">
