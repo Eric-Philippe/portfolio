@@ -2,6 +2,21 @@ body {
   font-family: AllianceNo1, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
     Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  transition: background-color 1s ease;
+}
+
+@font-face {
+  font-family: "Sohne";
+  src: url("./assets/sohne.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Feijoa";
+  src: url("./assets/feijoa.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .gradient-border-badge {
@@ -51,4 +66,9 @@ body {
 
 .animated-separator.animate {
   transform: scaleX(1);
+}
+
+.contact-container {
+  margin-right: 30px;
+  margin-left: 30px;
 }

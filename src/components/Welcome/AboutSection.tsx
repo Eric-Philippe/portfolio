@@ -23,7 +23,10 @@ export default function AboutSection() {
             <div className="project-container">
               <div className="grid grid-cols-12">
                 <div className="col-span-12 lg:col-span-10 lg:col-start-2 mb-8">
-                  <h2 className="text-5xl font-extrabold text-white mb-8">
+                  <h2
+                    className="text-5xl font-extrabold text-white mb-8"
+                    id="about"
+                  >
                     Parcours
                   </h2>
                   <div

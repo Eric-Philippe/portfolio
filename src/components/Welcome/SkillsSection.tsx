@@ -12,7 +12,10 @@ export default function SkillsSection() {
       <div className="project-container">
         <div className="grid grid-cols-12">
           <div className="col-span-12 lg:col-span-10 lg:col-start-2 mb-8">
-            <h2 className="text-5xl font-extrabold text-[#313131] mb-8 mt-8">
+            <h2
+              className="text-5xl font-extrabold text-[#313131] mb-8 mt-8"
+              id="competences"
+            >
               Mes compétences
             </h2>
             <h4 className="text-2xl font-semibold text-[#313131] mb-4">
