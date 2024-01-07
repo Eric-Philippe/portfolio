@@ -1,8 +1,10 @@
 import { useState } from "react";
 import AnimatedProgressBar from "../Animations/AnimatedProgressBar";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { DL_CV, GITHUB, INSTAGRAM, LINKEDIN } from "../../links";
 
 export default function AboutSection() {
+  const isSmallScreen = window.innerWidth < 1024;
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -24,33 +26,65 @@ export default function AboutSection() {
                   <h2 className="text-5xl font-extrabold text-white mb-8">
                     Parcours
                   </h2>
-                  <div className="flex flex-col md:flex-row justify-between items-center">
+                  <div
+                    className={
+                      isSmallScreen
+                        ? "grid grid-cols-1 md:grid-cols-3 gap-8"
+                        : "grid grid-cols-1 md:grid-cols-3 gap-8"
+                    }
+                    style={{
+                      gridTemplateColumns: isSmallScreen
+                        ? "1fr"
+                        : "0.5fr 3fr 2fr",
+                    }}
+                  >
+                    {/** @PHOTO */}
                     <div className="relative mb-8 md:mb-0 group">
-                      <img
-                        src="https://media.discordapp.net/attachments/947414087401369610/948969142260744212/1646322201523.jpg?ex=65a94762&is=6596d262&hm=9ba70c272208a66bbf7093069d80e30ea610c37bf8a91a2c48ee1f057f9c73a8&=&format=webp&width=495&height=661"
-                        alt="Profile"
-                        className="rounded-full h-24 w-24 object-cover"
-                      />
-                      <p className="text-gray-500 mt-2">Éric PHILIPPE</p>
-                      <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 ease-linear absolute bottom-0 left-1/2 transform -translate-x-1/2 flex justify-between space-x-4">
-                        <FaGithub
-                          size={30}
-                          className="text-white transition-transform duration-1000 transform translate-y-0 translate-x-10 group-hover:-translate-x-10 group-hover:translate-y-5"
+                      <div className="relative">
+                        <img
+                          src="https://media.discordapp.net/attachments/947414087401369610/948969142260744212/1646322201523.jpg?ex=65a94762&is=6596d262&hm=9ba70c272208a66bbf7093069d80e30ea610c37bf8a91a2c48ee1f057f9c73a8&=&format=webp&width=495&height=661"
+                          alt="Profile"
+                          className={`rounded-full h-24 w-24 object-cover ${
+                            isSmallScreen ? "mx-auto" : ""
+                          }`}
                         />
-                        <FaLinkedin
-                          size={30}
-                          className="transition-transform duration-500 transform translate-y-0 group-hover:translate-y-10"
-                          style={{ color: "#0a66c2" }}
-                        />
-                        <FaInstagram
-                          size={30}
-                          className="transition-transform duration-1000 transform translate-y-0 translate-x-0 group-hover:translate-x-10 group-hover:translate-y-5"
-                          style={{ color: "#e1306c" }}
-                        />
+                        <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 ease-linear absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-between space-x-4">
+                          <a href={GITHUB}>
+                            <FaGithub
+                              size={30}
+                              className="text-white transition-transform duration-1000 transform translate-y-0 translate-x-0 group-hover:-translate-x-7 group-hover:translate-y-5"
+                            />
+                          </a>
+                          <a href={LINKEDIN}>
+                            <FaLinkedin
+                              size={30}
+                              className="transition-transform duration-500 transform translate-y-0 group-hover:translate-y-24"
+                              style={{ color: "#0a66c2" }}
+                            />
+                          </a>
+                          <a href={INSTAGRAM}>
+                            <FaInstagram
+                              size={30}
+                              className="transition-transform duration-1700 transform translate-y-0 translate-x-0 group-hover:translate-x-5 group-hover:translate-y-5"
+                              style={{ color: "#e1306c" }}
+                            />
+                          </a>
+                        </div>
                       </div>
+                      <p
+                        className={`text-gray-500 mt-2 ${
+                          isSmallScreen ? "text-center" : ""
+                        }`}
+                      >
+                        Éric PHILIPPE
+                      </p>{" "}
                     </div>
 
-                    <div className="mb-8 md:mb-0">
+                    {/** @PARCOURS */}
+                    <div
+                      className="relative"
+                      style={{ marginLeft: "2em", marginRight: "2em" }}
+                    >
                       <p className="text-white text-xl mb-2 font-light">
                         Étudiant en informatique
                       </p>
@@ -74,7 +108,7 @@ export default function AboutSection() {
                       />
 
                       <p className="text-gray-500">
-                        2020 - 2024 : Bachelor Universitaire de Technologie
+                        2021 - 2024 : Bachelor Universitaire de Technologie
                         Informatique
                       </p>
 
@@ -109,6 +143,8 @@ export default function AboutSection() {
                         percentage={75}
                       />
                     </div>
+
+                    {/** @CV */}
                     <div className="relative">
                       <p className="text-white text-xl mb-2 font-light">
                         Curriculum Vitae
@@ -118,7 +154,7 @@ export default function AboutSection() {
                         className="transition-filter duration-500 ease-in-out"
                         style={{
                           borderRadius: "9px",
-                          width: "20em",
+                          width: "25em",
                           opacity: isHovered ? 0.8 : 1,
                           filter: isHovered ? "blur(5px)" : "blur(1px)",
                         }}
@@ -127,13 +163,27 @@ export default function AboutSection() {
                       />
                       <button
                         className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 py-2 rounded bg-black bg-opacity-50 hover:bg-opacity-70 transition-colors duration-200 text-white"
-                        onClick={() => console.log("Button clicked")}
+                        onClick={() => {
+                          var lienTelechargement = document.createElement("a");
+
+                          lienTelechargement.href = DL_CV;
+
+                          lienTelechargement.download = "Eric_Philippe_CV.pdf";
+
+                          document.body.appendChild(lienTelechargement);
+
+                          lienTelechargement.click();
+
+                          document.body.removeChild(lienTelechargement);
+                        }}
                         onMouseEnter={() => setIsHovered(true)}
                       >
                         Consulter CV
                       </button>
                     </div>
                   </div>
+
+                  {/** */}
                 </div>
               </div>
             </div>

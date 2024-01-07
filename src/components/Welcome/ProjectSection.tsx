@@ -34,9 +34,11 @@ export default function ProjectSection() {
             <div className="project-container">
               <div className="grid grid-cols-12">
                 <div className="col-span-12 lg:col-span-10 lg:col-start-2 mb-8">
-                  <h2 className="text-5xl font-extrabold text-white mb-8">
-                    Réalisations
-                  </h2>
+                  <div className="relative">
+                    <h2 className="text-5xl font-extrabold text-white mb-8 z-10 relative">
+                      Réalisations
+                    </h2>
+                  </div>
 
                   {/** @CATEGORIES */}
                   <div className="flex flex-wrap">
