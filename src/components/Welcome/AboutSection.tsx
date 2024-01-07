@@ -114,7 +114,7 @@ export default function AboutSection() {
                         Curriculum Vitae
                       </p>
                       <img
-                        src="public/CV.png"
+                        src="CV.png"
                         className="transition-filter duration-500 ease-in-out"
                         style={{
                           borderRadius: "9px",
