@@ -7,6 +7,7 @@ import { FaCubes } from "react-icons/fa";
 
 export default function ContactSection() {
   const [isHovered, setIsHovered] = useState(false);
+  const isSmallScreen = window.innerWidth < 1024;
 
   const {
     register,
@@ -28,9 +29,13 @@ export default function ContactSection() {
       <ContactParticles />
       <section
         ref={ref}
-        className="flex flex-row items-center justify-center p-10"
+        className="flex flex-col md:flex-row items-center justify-center p-10"
       >
-        <div className="w-1/2 flex flex-col items-center justify-center ml-32">
+        <div
+          className={`flex flex-col items-center justify-center ${
+            !isSmallScreen ? "w-1/2 ml-32" : ""
+          }`}
+        >
           <div className="w-full flex flex-col items-start">
             <a
               href="#realisations"
@@ -38,7 +43,9 @@ export default function ContactSection() {
               onMouseLeave={() => setIsHovered(false)}
             >
               <h1
-                className="text-5xl font-bold mb-5 bg-clip-text text-transparent hover:bg-[#e0a4ff] transition-colors duration-200 bg-[#3f3f46] text-left hover:text-[#e0a4ff]"
+                className={`${
+                  isSmallScreen ? "text-3xl" : "text-5xl"
+                } font-bold mb-5 bg-clip-text text-transparent hover:bg-[#e0a4ff] transition-colors duration-200 bg-[#3f3f46] text-left hover:text-[#e0a4ff]`}
                 style={{
                   fontFamily: "Sohne,sans-serif",
                 }}
@@ -57,7 +64,9 @@ export default function ContactSection() {
             </a>
             <a href="#competences">
               <h1
-                className="text-5xl font-bold mb-5 bg-clip-text text-transparent hover:bg-[#feea9e] transition-colors duration-200 bg-[#3f3f46] text-left"
+                className={`${
+                  isSmallScreen ? "text-3xl" : "text-5xl"
+                } font-bold mb-5 bg-clip-text text-transparent hover:bg-[#e0a4ff] transition-colors duration-200 bg-[#3f3f46] text-left hover:text-[#e0a4ff]`}
                 style={{
                   fontFamily: "Sohne,sans-serif",
                 }}
@@ -67,7 +76,9 @@ export default function ContactSection() {
             </a>
             <a href="#about">
               <h1
-                className="text-5xl font-bold mb-5 bg-clip-text text-transparent hover:bg-[#98edff] transition-colors duration-200 bg-[#3f3f46] text-left"
+                className={`${
+                  isSmallScreen ? "text-3xl" : "text-5xl"
+                } font-bold mb-5 bg-clip-text text-transparent hover:bg-[#e0a4ff] transition-colors duration-200 bg-[#3f3f46] text-left hover:text-[#e0a4ff]`}
                 style={{
                   fontFamily: "Sohne,sans-serif",
                 }}
@@ -79,15 +90,18 @@ export default function ContactSection() {
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-1/2 p-5 rounded shadow-lg bg-[#0d0d0e]"
+          className={`${
+            isSmallScreen ? "" : "w-1/2 max-w-50"
+          } p-5 rounded shadow-lg bg-[#0d0d0e]`}
           style={{
             borderRadius: "1rem",
-            maxWidth: "50%",
           }}
         >
           <div className="mb-4 relative">
             <h1
-              className="text-6xl font-bold  h-24 bg-clip-text text-transparent bg-gradient-to-r from-[#ccf0ff] via-[#ffd7ff] to-[#f1b3cf] text-center"
+              className={`${
+                isSmallScreen ? "text-4xl" : "text-6xl"
+              } font-bold  h-24 bg-clip-text text-transparent bg-gradient-to-r from-[#ccf0ff] via-[#ffd7ff] to-[#f1b3cf] text-center`}
               style={{
                 fontFamily: "Feijoa,serif",
               }}
