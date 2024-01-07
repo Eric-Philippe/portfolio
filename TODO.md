@@ -7,6 +7,6 @@
 [x] - Télécharger CV (Bandeau avec qualification)
 [ ] - Page Photographie
 [ ] - Trouver un truc discret à mettre en haut à droite
-[ ] - Fichier LEGAL.md
+[x] - Fichier LICENSE
 [ ] - Nettoyer et commenter le code
 [ ] - README.md
