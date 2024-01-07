@@ -31,3 +31,24 @@ body {
   margin-right: 30px;
   margin-left: 30px;
 }
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+.animated-separator {
+  transform-origin: left center; /* Point d'origine pour l'animation */
+  transform: scaleX(0);
+  transition: transform 1s ease-out;
+}
+
+.animated-separator.animate {
+  transform: scaleX(1);
+}

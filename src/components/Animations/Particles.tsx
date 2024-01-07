@@ -20,7 +20,6 @@ export const ParticlesDesign = () => {
 
   const options: ISourceOptions = useMemo(
     () => ({
-      background: {},
       fpsLimit: 120,
       interactivity: {
         events: {
@@ -76,6 +75,7 @@ export const ParticlesDesign = () => {
           value: { min: 3, max: 10 },
         },
       },
+      fullScreen: false,
       detectRetina: true,
     }),
     []
