@@ -59,7 +59,7 @@ export default function ContactSection() {
         className="flex flex-col md:flex-row items-center justify-center p-10"
       >
         <div
-          className={`flex flex-col items-center justify-center ${
+          className={`flex flex-col items-center justify-center mb-3 ${
             !isSmallScreen ? "w-1/2 ml-32" : ""
           }`}
         >
@@ -128,9 +128,10 @@ export default function ContactSection() {
             <h1
               className={`${
                 isSmallScreen ? "text-4xl" : "text-6xl"
-              } font-bold  h-24 bg-clip-text text-transparent bg-gradient-to-r from-[#ccf0ff] via-[#ffd7ff] to-[#f1b3cf] text-center`}
+              } font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#ccf0ff] via-[#ffd7ff] to-[#f1b3cf] text-center`}
               style={{
                 fontFamily: "Feijoa,serif",
+                height: isSmallScreen ? "8vh" : "14vh",
               }}
             >
               {selectedSentence}

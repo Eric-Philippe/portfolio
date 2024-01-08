@@ -27,7 +27,7 @@ export default function ProjectSection() {
                   </div>
 
                   <div className="flex flex-wrap flex-col">
-                    <div className="setup-item mb-4">
+                    <div className="setup-item">
                       <div className="flex flex-wrap">
                         <h4 className="text-2xl font-bold text-white z-10 relative">
                           Appareil photo principal
@@ -72,22 +72,7 @@ export default function ProjectSection() {
                       </p>
                     </div>
 
-                    <div className="setup-item mb-8">
-                      <div className="flex flex-wrap">
-                        <h4 className="text-lg font-bold text-white z-10 relative">
-                          Trépied
-                        </h4>
-                        <span className="text-lg font-light text-white z-10 relative">
-                          : Joby GorillaPod 3K Stand
-                        </span>
-                      </div>
-
-                      <p className="text-sm font-light text-white z-10 relative">
-                        Max: 3kg, 24cm, 0.247kg
-                      </p>
-                    </div>
-
-                    <AnimatedSeparator color1="#FFFFFF" />
+                    <AnimatedSeparator color1="#10c283" />
 
                     <div className="setup-item mb-4">
                       <div className="flex flex-wrap">
@@ -134,7 +119,7 @@ export default function ProjectSection() {
                       </p>
                     </div>
 
-                    <AnimatedSeparator color1="#FFFFFF" />
+                    <AnimatedSeparator color1="#10b3c2" />
 
                     <div className="setup-item mb-4">
                       <div className="flex flex-wrap">
@@ -154,15 +139,30 @@ export default function ProjectSection() {
                     <div className="setup-item mb-4">
                       <div className="flex flex-wrap">
                         <h4 className="text-lg font-bold text-white z-10 relative">
-                          Objectif principal
+                          Caméra d'action
                         </h4>
                         <span className="text-lg font-light text-white z-10 relative">
-                          : Sony DT 18-55mm f/3.5-5.6 SAM
+                          : G-Eye 2 Discover
                         </span>
                       </div>
 
                       <p className="text-sm font-light text-white z-10 relative">
-                        210g, 18-55mm, f/3.5-5.6, SAM
+                        60g, 5MP, 1080p, 30m
+                      </p>
+                    </div>
+
+                    <div className="setup-item">
+                      <div className="flex flex-wrap">
+                        <h4 className="text-lg font-bold text-white z-10 relative">
+                          Trépied
+                        </h4>
+                        <span className="text-lg font-light text-white z-10 relative">
+                          : Joby GorillaPod 3K Stand
+                        </span>
+                      </div>
+
+                      <p className="text-sm font-light text-white z-10 relative">
+                        Max: 3kg, 24cm, 0.247kg
                       </p>
                     </div>
                   </div>

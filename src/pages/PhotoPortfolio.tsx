@@ -9,6 +9,7 @@ export default function PhotoPortfolio({ setIsDev }: RouterProps) {
     <>
       <Head setIsDev={setIsDev} />
       <div
+        className="project-container"
         style={{
           display: "grid",
           gridTemplateColumns: "2fr 1fr",

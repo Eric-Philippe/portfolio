@@ -23,9 +23,9 @@ export default function Head({ setIsDev }: RouterProps) {
   };
 
   useEffect(() => {
-    drawCircle(400, 0, 0, "#9867f0");
-    drawCircle(200, 600, 0, "#ed4e50");
-    drawCircle(400, 800, 0, "#ed4e50");
+    drawCircle(400, 0, 0, "#10b3c2");
+    drawCircle(200, 600, 0, "#10c283");
+    drawCircle(400, 800, 0, "#10c283");
 
     const canvas = document.getElementById("canvas-bubble");
 
@@ -40,7 +40,7 @@ export default function Head({ setIsDev }: RouterProps) {
   return (
     <>
       <div className="relative">
-        <ParticlesDesign />
+        <ParticlesDesign color1="#10c283" color2="#10b3c2" />
         <div className="head-content">
           <div className="absolute top-0 left-0 right-0 h-72 z-[-1] opacity-20 pointer-events-none">
             <div
@@ -60,7 +60,7 @@ export default function Head({ setIsDev }: RouterProps) {
               ></canvas>
             </div>
           </div>
-          <div className="h-1 bg-gradient-to-r from-[#9867f0] to-[#ed4e50]"></div>
+          <div className="h-1 bg-gradient-to-r from-[#10c283] to-[#10b3c2]"></div>
           <header className="p-4 header-content">
             <div className="flex items-center justify-between">
               <a
@@ -100,8 +100,8 @@ export default function Head({ setIsDev }: RouterProps) {
 
         <div className="py-8 lg:py-16 flex items-center px-6">
           <div className="text-center mx-auto inline-block">
-            <div className="py-2 z-1 px-6 gradient-border-badge relative bg-transparent inline-flex items-center justify-center">
-              <span className="z-10 text-sm lg:text-base bg-clip-text text-transparent bg-gradient-to-r from-[#9867f0] to-[#ed4e50] font-semibold relative -top-px">
+            <div className="py-2 z-1 px-6 gradient-border-badge-photo relative bg-transparent inline-flex items-center justify-center">
+              <span className="z-10 text-sm lg:text-base bg-clip-text text-transparent bg-gradient-to-r from-[#10c283] to-[#10b3c2] font-semibold relative -top-px">
                 PhotoPortfolio
               </span>
             </div>
@@ -109,7 +109,7 @@ export default function Head({ setIsDev }: RouterProps) {
               <a
                 style={{
                   background:
-                    "linear-gradient(to right, #8a0101, #000000, #000000)",
+                    "linear-gradient(to right, #10b3c2, #000000, #000000, #000000)",
                   WebkitBackgroundClip: "text",
                   color: "transparent",
                   textDecoration: "none",
@@ -121,7 +121,7 @@ export default function Head({ setIsDev }: RouterProps) {
               <a
                 style={{
                   background:
-                    "linear-gradient(to right, #000000, #000000, #8a0101)",
+                    "linear-gradient(to right, #000000, #000000, #10c283)",
                   WebkitBackgroundClip: "text",
                   color: "transparent",
                   textDecoration: "none",

@@ -45,11 +45,9 @@ export default function AboutSection() {
                     <div className="relative mb-8 md:mb-0 group">
                       <div className="relative">
                         <img
-                          src="https://media.discordapp.net/attachments/947414087401369610/948969142260744212/1646322201523.jpg?ex=65a94762&is=6596d262&hm=9ba70c272208a66bbf7093069d80e30ea610c37bf8a91a2c48ee1f057f9c73a8&=&format=webp&width=495&height=661"
+                          src="https://media.discordapp.net/attachments/947414087401369610/948969142260744212/1646322201523.jpg?ex=65a94762&is=6596d262&hm=9ba70c272208a66bbf7093069d80e30ea610c37bf8a91a2c48ee1f057f9c73a8&=&format=webp&width=495&height=495"
                           alt="Profile"
-                          className={`rounded-full h-24 w-24 object-cover ${
-                            isSmallScreen ? "mx-auto" : ""
-                          }`}
+                          className="rounded-full object-cover w-24 h-24 mx-auto"
                         />
                         <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 ease-linear absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-between space-x-4">
                           <a href={GITHUB}>

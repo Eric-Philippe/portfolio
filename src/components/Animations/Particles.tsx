@@ -4,7 +4,12 @@ import { type Container, type ISourceOptions } from "@tsparticles/engine";
 
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 
-export const ParticlesDesign = () => {
+interface ParticlesProps {
+  color1: string;
+  color2: string;
+}
+
+export const ParticlesDesign = ({ color1, color2 }: ParticlesProps) => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -40,7 +45,7 @@ export const ParticlesDesign = () => {
       },
       particles: {
         color: {
-          value: ["#cc4b4b", "#9867f0"],
+          value: [color1, color2],
         },
         links: {
           color: "#c2c2c2",

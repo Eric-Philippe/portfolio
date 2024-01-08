@@ -4,19 +4,28 @@ import { OrbitControls } from "@react-three/drei";
 import { Canon800d_Model } from "./Canon_800d_Model";
 
 export default function Canon800d_Canvas() {
-  const [rotation, setRotation] = useState(0);
-  const [modelHeight, setModelHeight] = useState(240);
+  const BASE = 240;
+  const FIRST_STEP = 400;
+  const ROTATION_STOP = 1000;
+  const SECOND_STEP = 1100;
+  const ROTATION_SPEED = 0.006;
+
+  const [rotation, setRotation] = useState(
+    scrollY < SECOND_STEP ? scrollY * ROTATION_SPEED : 0
+  );
+  const [modelHeight, setModelHeight] = useState(BASE);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
-      setRotation(scrollY * 0.004);
-      if (scrollY < 400) {
-        if (scrollY >= 800) {
-          setModelHeight(240 - 800 * 0.5);
-        } else setModelHeight(240 - scrollY * 0.5);
-      }
+      if (scrollY <= ROTATION_STOP) setRotation(scrollY * ROTATION_SPEED);
+      else setRotation(ROTATION_STOP * ROTATION_SPEED);
+
+      if (scrollY > SECOND_STEP)
+        setModelHeight(BASE - FIRST_STEP * 0.5 - (scrollY - SECOND_STEP) * 0.4);
+
+      if (scrollY < FIRST_STEP) setModelHeight(BASE - scrollY * 0.5);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -32,9 +41,8 @@ export default function Canon800d_Canvas() {
       style={{
         position: "fixed",
         top: modelHeight,
-        left: 400,
-        width: "100vw",
-        height: "100vh",
+        width: "40%",
+        right: "0.5%",
       }}
     >
       <ambientLight intensity={1.25} />

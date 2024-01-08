@@ -43,7 +43,7 @@ export default function Head({ setIsDev }: Props) {
   return (
     <>
       <div className="relative">
-        <ParticlesDesign />
+        <ParticlesDesign color1="#cc4b4b" color2="#9867f0" />
         <div className="head-content">
           <div className="absolute top-0 left-0 right-0 h-72 z-[-1] opacity-20 pointer-events-none">
             <div
