@@ -56,6 +56,13 @@ body {
 .project-container {
   margin-right: 30px;
   margin-left: 30px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 #tsparticles {

@@ -15,8 +15,6 @@ const SENTENCES = [
   "Let's get in touch",
   "Let's collaborate",
   "Let's get going",
-  "Let's get in contact",
-  "Let's work together",
   "Let's do this",
 ];
 
@@ -127,7 +125,7 @@ export default function ContactSection() {
           <div className="mb-4 relative">
             <h1
               className={`${
-                isSmallScreen ? "text-4xl" : "text-6xl"
+                isSmallScreen ? "text-3xl" : "text-6xl"
               } font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#ccf0ff] via-[#ffd7ff] to-[#f1b3cf] text-center`}
               style={{
                 fontFamily: "Feijoa,serif",

@@ -1,6 +1,6 @@
 import AnimatedSeparator from "../Animations/AnimatedSeparator";
 
-export default function ProjectSection() {
+export default function SetupSection() {
   return (
     <>
       <section className="scroll-mt-8 lg:scroll-mt-0 mb-5">
@@ -27,14 +27,14 @@ export default function ProjectSection() {
                   </div>
 
                   <div className="flex flex-wrap flex-col">
-                    <div className="setup-item">
+                    <div className="setup-item mb-4">
                       <div className="flex flex-wrap">
                         <h4 className="text-2xl font-bold text-white z-10 relative">
-                          Appareil photo principal
+                          Appareil photo principal:{" "}
+                          <span className="text-2xl font-light text-white z-10 relative">
+                            Canon EOS 800D
+                          </span>
                         </h4>
-                        <span className="text-2xl font-light text-white z-10 relative">
-                          : Canon EOS 800D
-                        </span>
                       </div>
 
                       <p className="text-sm font-light text-white z-10 relative">
@@ -45,11 +45,11 @@ export default function ProjectSection() {
                     <div className="setup-item mb-4">
                       <div className="flex flex-wrap">
                         <h4 className="text-lg font-bold text-white z-10 relative">
-                          Objectif principal
+                          Objectif principal:{" "}
+                          <span className="text-lg font-light text-white z-10 relative">
+                            Canon EF-S 18-55mm f/3.5-5.6 IS STM
+                          </span>
                         </h4>
-                        <span className="text-lg font-light text-white z-10 relative">
-                          : Canon EF-S 18-55mm f/3.5-5.6 IS STM
-                        </span>
                       </div>
 
                       <p className="text-sm font-light text-white z-10 relative">
@@ -60,11 +60,11 @@ export default function ProjectSection() {
                     <div className="setup-item mb-4">
                       <div className="flex flex-wrap">
                         <h4 className="text-lg font-bold text-white z-10 relative">
-                          Objectif Grand Angle
+                          Objectif Grand Angle:{" "}
+                          <span className="text-lg font-light text-white z-10 relative">
+                            Canon EF-S 10-18mm f/4.5-5.6 IS STM
+                          </span>
                         </h4>
-                        <span className="text-lg font-light text-white z-10 relative">
-                          : Canon EF-S 10-18mm f/4.5-5.6 IS STM
-                        </span>
                       </div>
 
                       <p className="text-sm font-light text-white z-10 relative">
@@ -77,11 +77,11 @@ export default function ProjectSection() {
                     <div className="setup-item mb-4">
                       <div className="flex flex-wrap">
                         <h4 className="text-2xl font-bold text-white z-10 relative">
-                          Appareil photo Secondaire
+                          Appareil photo Secondaire:{" "}
+                          <span className="text-2xl font-light text-white z-10 relative">
+                            Sony Alpha 380
+                          </span>
                         </h4>
-                        <span className="text-2xl font-light text-white z-10 relative">
-                          : Sony Alpha 380
-                        </span>
                       </div>
 
                       <p className="text-sm font-light text-white z-10 relative">
@@ -92,11 +92,11 @@ export default function ProjectSection() {
                     <div className="setup-item mb-4">
                       <div className="flex flex-wrap">
                         <h4 className="text-lg font-bold text-white z-10 relative">
-                          Objectif principal
+                          Objectif principal:{" "}
+                          <span className="text-lg font-light text-white z-10 relative">
+                            Sony DT 18-55mm f/3.5-5.6 SAM
+                          </span>
                         </h4>
-                        <span className="text-lg font-light text-white z-10 relative">
-                          : Sony DT 18-55mm f/3.5-5.6 SAM
-                        </span>
                       </div>
 
                       <p className="text-sm font-light text-white z-10 relative">
@@ -107,11 +107,11 @@ export default function ProjectSection() {
                     <div className="setup-item mb-8">
                       <div className="flex flex-wrap">
                         <h4 className="text-lg font-bold text-white z-10 relative">
-                          Objectif Macro
+                          Objectif Macro:{" "}
+                          <span className="text-lg font-light text-white z-10 relative">
+                            Tamron SP AF 70-300mm f/4-5.6 Di VC USD
+                          </span>
                         </h4>
-                        <span className="text-lg font-light text-white z-10 relative">
-                          : Tamron SP AF 70-300mm f/4-5.6 Di VC USD
-                        </span>
                       </div>
 
                       <p className="text-sm font-light text-white z-10 relative">
@@ -124,11 +124,11 @@ export default function ProjectSection() {
                     <div className="setup-item mb-4">
                       <div className="flex flex-wrap">
                         <h4 className="text-2xl font-bold text-white z-10 relative">
-                          PhotoPhone
+                          PhotoPhone:{" "}
+                          <span className="text-2xl font-light text-white z-10 relative">
+                            Samsung Galaxy ZFold 4
+                          </span>
                         </h4>
-                        <span className="text-2xl font-light text-white z-10 relative">
-                          : Samsung Galaxy ZFold 4
-                        </span>
                       </div>
 
                       <p className="text-sm font-light text-white z-10 relative">
@@ -139,11 +139,11 @@ export default function ProjectSection() {
                     <div className="setup-item mb-4">
                       <div className="flex flex-wrap">
                         <h4 className="text-lg font-bold text-white z-10 relative">
-                          Caméra d'action
+                          Caméra d'action:{" "}
+                          <span className="text-lg font-light text-white z-10 relative">
+                            G-Eye 2 Discover
+                          </span>
                         </h4>
-                        <span className="text-lg font-light text-white z-10 relative">
-                          : G-Eye 2 Discover
-                        </span>
                       </div>
 
                       <p className="text-sm font-light text-white z-10 relative">
@@ -154,11 +154,11 @@ export default function ProjectSection() {
                     <div className="setup-item">
                       <div className="flex flex-wrap">
                         <h4 className="text-lg font-bold text-white z-10 relative">
-                          Trépied
+                          Trépied:{" "}
+                          <span className="text-lg font-light text-white z-10 relative">
+                            Joby GorillaPod 3K Stand
+                          </span>
                         </h4>
-                        <span className="text-lg font-light text-white z-10 relative">
-                          : Joby GorillaPod 3K Stand
-                        </span>
                       </div>
 
                       <p className="text-sm font-light text-white z-10 relative">
