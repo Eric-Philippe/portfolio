@@ -3,7 +3,11 @@ import { ParticlesDesign } from "../Animations/Particles";
 import { FaCamera, FaDesktop } from "react-icons/fa";
 import { drawCircle } from "../../utils/utils";
 
-export default function Head() {
+interface Props {
+  setIsDev: (isDev: boolean) => void;
+}
+
+export default function Head({ setIsDev }: Props) {
   const getMyAge = () => {
     const birthYear = 2003;
     const birthMonth = 5; // May
@@ -72,9 +76,10 @@ export default function Head() {
               <nav className="space-x-4 text-sm text-gray-800 flex">
                 <a
                   className="hover:underline flex items-center space-x-1.5"
-                  href="/portfolio/dev"
+                  onClick={() => setIsDev(true)}
                   style={{
                     zIndex: 10,
+                    cursor: "pointer",
                   }}
                 >
                   <FaDesktop className="mt-0.5 w-4" />
@@ -82,9 +87,10 @@ export default function Head() {
                 </a>
                 <a
                   className="hover:underline flex items-center space-x-1.5"
-                  href="/portfolio/photo"
+                  onClick={() => setIsDev(false)}
                   style={{
                     zIndex: 10,
+                    cursor: "pointer",
                   }}
                 >
                   <FaCamera className="mt-0.5 w-4" />

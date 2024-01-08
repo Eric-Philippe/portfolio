@@ -5,12 +5,13 @@ import Head from "../components/DevPortfolio/Head";
 import ProjectSection from "../components/DevPortfolio/ProjectSection";
 import SkillsSection from "../components/DevPortfolio/SkillsSection";
 import ContactSection from "../components/DevPortfolio/ContactSection";
+import RouterProps from "../models/Router";
 
-export default function DevPortfolio() {
+export default function DevPortfolio({ setIsDev }: RouterProps) {
   return (
     <ParallaxProvider>
       <>
-        <Head />
+        <Head setIsDev={setIsDev} />
         <ProjectSection />
         <SkillsSection />
         <AboutSection />
