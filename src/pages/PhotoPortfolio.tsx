@@ -5,24 +5,37 @@ import Canon800d_Canvas from "../components/PhotoPortfolio/Canon_800d_Canvas";
 import RouterProps from "../models/Router";
 
 export default function PhotoPortfolio({ setIsDev }: RouterProps) {
+  const isSmallScreen = window.innerWidth < 1024;
   return (
     <>
       <Head setIsDev={setIsDev} />
-      <div
-        className="project-container mb-6"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "2fr 1fr",
-          overflow: "auto",
-        }}
-      >
-        <div style={{ overflowY: "hidden" }}>
+      {(!isSmallScreen && (
+        <div
+          className="project-container mb-6"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "2fr 1fr",
+            overflow: "auto",
+          }}
+        >
+          <div style={{ overflowY: "hidden" }}>
+            <SetupSection />
+          </div>
+          <div>
+            <Canon800d_Canvas />
+          </div>
+        </div>
+      )) || (
+        <>
+          <img
+            className="rounded-full object-cover w-32 h-32 mx-auto mb-6"
+            src="canon_800d.gif"
+            width="100%"
+          />
+
           <SetupSection />
-        </div>
-        <div>
-          <Canon800d_Canvas />
-        </div>
-      </div>
+        </>
+      )}
 
       {/* <div
         style={{
