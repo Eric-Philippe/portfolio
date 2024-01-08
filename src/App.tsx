@@ -1,21 +1,22 @@
-import { ParallaxProvider } from "react-scroll-parallax";
 import "./App.css";
-import AboutSection from "./components/Welcome/AboutSection";
-import Head from "./components/Welcome/Head";
-import ProjectSection from "./components/Welcome/ProjectSection";
-import SkillsSection from "./components/Welcome/SkillsSection";
-import ContactSection from "./components/Welcome/ContactSection";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import DevPortfolio from "./pages/DevPortfolio";
+import PhotoPortfolio from "./pages/PhotoPortfolio";
+
+const Redirect = function () {
+  window.location.href = "/portfolio/dev";
+
+  return null;
+};
 
 export default function App() {
   return (
-    <ParallaxProvider>
-      <>
-        <Head />
-        <ProjectSection />
-        <SkillsSection />
-        <AboutSection />
-        <ContactSection />
-      </>
-    </ParallaxProvider>
+    <Router>
+      <Routes>
+        <Route path="/portfolio" Component={Redirect} />
+        <Route path="/portfolio/photo" Component={PhotoPortfolio} />
+        <Route path="/portfolio/dev" Component={DevPortfolio} />
+      </Routes>
+    </Router>
   );
 }
