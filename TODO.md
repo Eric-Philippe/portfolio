@@ -31,3 +31,4 @@
 [ ] - Se renseigner sur comment importer des photos de manière optimisée (const MyImageComponent = React.lazy(() => import('./MyImageComponent'));
 )
 [x] - Centraliser les pallettes de couleurs dans un fichier
+[ ] - Recoder mon propre parser de MD
