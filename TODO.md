@@ -8,7 +8,11 @@
 [x] - Footer
 [ ] - Mentions Légales
 [ ] - Page pour un projet
-[ ] - Page Photographie
+[x] - Page Photographie
+[x] - Modèle 3D Appareil Photo
+[x] - Setup Section
+[ ] - Ajouter des albums (3 photos en aperçu un peu spread)
+[ ] - Page de consultation des photos
 
 # Tweaks
 
@@ -17,8 +21,13 @@
 [x] - Intégrer image aperçu
 [x] - Télécharger CV (Bandeau avec qualification)
 [x] - Fichier LICENSE
-[ ] - Favicon
+[x] - Favicon
 [ ] - Tests
 [ ] - Trouver un truc discret à mettre en haut à gauche
-[ ] - Nettoyer et commenter le code
+[x] - Nettoyer et commenter le code - Premier passage
+[ ] - Nettoyer code - second passage
 [ ] - README.md
+[ ] - Ajouter logiciel d'édition de photo
+[ ] - Se renseigner sur comment importer des photos de manière optimisée (const MyImageComponent = React.lazy(() => import('./MyImageComponent'));
+)
+[x] - Centraliser les pallettes de couleurs dans un fichier

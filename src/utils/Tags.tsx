@@ -6,6 +6,14 @@ import {
   FaRobot,
 } from "react-icons/fa";
 
+/**
+ * @typedef {object} Tags
+ * @property {string} name - The name of the tag
+ * @property {string} color - The color of the tag
+ * @property {string} fadedColor - The faded color of the tag
+ * @property {string} secColor - The secondary color of the tag
+ * @property {string} secGradientColor - The secondary gradient color of the tag
+ */
 export type Tags = {
   name: string;
   color: string;
@@ -57,17 +65,10 @@ export const CHALLENGE: Tags = {
 export const ALL_TAGS: Tags[] = [FULLSTACK, FRONTEND, BACKEND, BOT, CHALLENGE];
 
 /**
- * {name: "Fullstack", value: "FULLSTACK"},
+ * @description - Gets the tags from a string
+ * @param tags - The string to get the tags from
+ * @returns {Tags} - The tags
  */
-export const ALL_TAGS_NAMES: { name: string; value: string }[] = ALL_TAGS.map(
-  (tag) => {
-    return {
-      name: tag.name,
-      value: tag.name.toUpperCase(),
-    };
-  }
-);
-
 export const getTagsFromString = (tags: string): Tags => {
   switch (tags) {
     case "FULLSTACK":
@@ -85,6 +86,11 @@ export const getTagsFromString = (tags: string): Tags => {
   }
 };
 
+/**
+ * @description - Gets the icon from a tag
+ * @param tag - The tag to get the icon from
+ * @returns {React.ReactNode} - The icon
+ */
 export const getIconFromTag = (tag: Tags): React.ReactNode => {
   switch (tag.name) {
     case "Fullstack":

@@ -1,7 +1,8 @@
 import Head from "../components/PhotoPortfolio/Head";
-import ContactSection from "../components/DevPortfolio/ContactSection";
-import SetupSection from "../components/PhotoPortfolio/SetupSection";
 import Canon800d_Canvas from "../components/PhotoPortfolio/Canon_800d_Canvas";
+import SetupSection from "../components/PhotoPortfolio/SetupSection";
+import ContactSection from "../components/DevPortfolio/ContactSection";
+
 import RouterProps from "../models/Router";
 
 export default function PhotoPortfolio({ setIsDev }: RouterProps) {
@@ -9,6 +10,7 @@ export default function PhotoPortfolio({ setIsDev }: RouterProps) {
   return (
     <>
       <Head setIsDev={setIsDev} />
+      {/** For the photo portfolio there are two different layouts */}
       {(!isSmallScreen && (
         <div
           className="project-container mb-6"

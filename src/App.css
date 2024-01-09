@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: AllianceNo1, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
     Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial,
@@ -7,14 +11,14 @@ body {
 
 @font-face {
   font-family: "Sohne";
-  src: url("./assets/sohne.woff2") format("woff2");
+  src: url("./assets/fonts/sohne.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Feijoa";
-  src: url("./assets/feijoa.woff2") format("woff2");
+  src: url("./assets/fonts/feijoa.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }

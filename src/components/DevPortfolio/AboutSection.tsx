@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AnimatedProgressBar from "../Animations/AnimatedProgressBar";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { DL_CV, GITHUB, INSTAGRAM, LINKEDIN } from "../../links";
+import LINKS from "../../utils/Links";
 
 export default function AboutSection() {
   const isSmallScreen = window.innerWidth < 1024;
@@ -12,14 +12,6 @@ export default function AboutSection() {
       <section className="scroll-mt-8 lg:scroll-mt-0 mb-5">
         <div className="px-0 lg:px-4 overflow-hidden">
           <div className="lg:rounded-2xl py-12 lg:py-24 relative z-0 bg-gh-marketingDark">
-            <div className="absolute inset-0 h-full w-full hidden lg:block pointer-events-none z-[-1] ">
-              <div className="container h-full">
-                <div className="grid grid-cols-12 h-full overflow-hidden">
-                  <div className="col-span-1 relative"></div>
-                </div>
-              </div>
-            </div>
-
             <div className="project-container">
               <div className="grid grid-cols-12">
                 <div className="col-span-12 lg:col-span-10 lg:col-start-2 mb-8">
@@ -50,20 +42,20 @@ export default function AboutSection() {
                           className="rounded-full object-cover w-24 h-24 mx-auto"
                         />
                         <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 ease-linear absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-between space-x-4">
-                          <a href={GITHUB}>
+                          <a href={LINKS.GITHUB}>
                             <FaGithub
                               size={30}
                               className="text-white transition-transform duration-1000 transform translate-y-0 translate-x-0 group-hover:-translate-x-7 group-hover:translate-y-5"
                             />
                           </a>
-                          <a href={LINKEDIN}>
+                          <a href={LINKS.LINKEDIN}>
                             <FaLinkedin
                               size={30}
                               className="transition-transform duration-500 transform translate-y-0 group-hover:translate-y-24"
                               style={{ color: "#0a66c2" }}
                             />
                           </a>
-                          <a href={INSTAGRAM}>
+                          <a href={LINKS.INSTAGRAM}>
                             <FaInstagram
                               size={30}
                               className="transition-transform duration-1700 transform translate-y-0 translate-x-0 group-hover:translate-x-5 group-hover:translate-y-5"
@@ -127,7 +119,7 @@ export default function AboutSection() {
                       />
 
                       <p className="text-gray-500">
-                        2021 - 2023 : Alternance - ADP GSI - Développeur Java
+                        2021 - 2024 : Alternance - ADP GSI - Développeur Java
                         Informatique
                       </p>
                       <p
@@ -167,7 +159,7 @@ export default function AboutSection() {
                         onClick={() => {
                           var lienTelechargement = document.createElement("a");
 
-                          lienTelechargement.href = DL_CV;
+                          lienTelechargement.href = LINKS.DL_CV;
 
                           lienTelechargement.download = "Eric_Philippe_CV.pdf";
 

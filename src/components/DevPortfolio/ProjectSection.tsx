@@ -1,7 +1,9 @@
 import { useState } from "react";
-import projects from "../../utils/Projects";
+
+import ProjectCard from "./ProjectCard";
+
 import { ALL_TAGS, Tags, getIconFromTag } from "../../utils/Tags";
-import ProjectCard from "../ProjectCard";
+import projects from "../../utils/Projects";
 
 export default function ProjectSection() {
   const [categoriesVisible, setCategoriesVisible] = useState(false);

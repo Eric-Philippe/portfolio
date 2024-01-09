@@ -1,8 +1,8 @@
 import ProjectData from "../models/ProjectData";
+import { FULLSTACK, Tags, getTagsFromString } from "./Tags";
 
 // @ts-ignore
 import projectData from "../../projects.json";
-import { FULLSTACK, Tags, getTagsFromString } from "./Tags";
 
 /**
  * Project class
@@ -11,22 +11,38 @@ import { FULLSTACK, Tags, getTagsFromString } from "./Tags";
  * @param {ProjectData} data - The data of the project fetched from the JSON file
  */
 class Project {
+  /**  The original filename where the project has been extracted */
   private _filename: string;
+  /** The HTML content of the project */
   private html_content: string;
+  /** The title of the project */
   public title: string = "";
+  /** The short description of the project */
   public shortDesc: string = "";
+  /** The tags of the project */
   public tags: Tags = FULLSTACK;
+  /** The technologies used in the project */
   public techs: string[] = [];
+  /** The date of the project */
   public date: string = "";
+  /** The github link of the project */
   public github: string = "";
+  /** The preview img link of the project */
   public previewLink: string = "";
 
+  /**
+   * Build a new Project
+   * @param data - The data of the project fetched from the JSON file
+   */
   constructor(data: ProjectData) {
     this._filename = data.filename;
     this.html_content = data.html_content;
     this.getAttributes();
   }
 
+  /**
+   * Get the attributes of the project from the HTML content
+   */
   private getAttributes() {
     // The title is between <h1> tags
     const title = this.html_content.match(/<h1>(.*)<\/h1>/);
@@ -81,10 +97,18 @@ class Project {
     if (matches) this.previewLink = matches[0];
   }
 
+  /**
+   * Get the filename of the project
+   * @returns {string} - The filename of the project
+   */
   public get filename(): string {
     return this._filename;
   }
 
+  /**
+   * Get the HTML content of the project
+   * @returns {string} - The HTML content of the project
+   */
   public get html() {
     const parsedHTML = new DOMParser().parseFromString(
       this.html_content,
@@ -97,6 +121,9 @@ class Project {
   }
 }
 
+/**
+ * The list of projects fetched from the JSON file, generated from the .md files
+ */
 const projects: Project[] = projectData.map((project: ProjectData) => {
   return new Project(project);
 });

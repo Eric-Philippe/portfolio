@@ -1,3 +1,11 @@
+/**
+ * Draw a circle on the canvas
+ * @param circleRadius Radius of the circle
+ * @param circleX X position of the circle
+ * @param circleY Y position of the circle
+ * @param color Color of the circle
+ * @returns void
+ */
 export const drawCircle = (
   circleRadius: number,
   circleX: number,
@@ -30,4 +38,21 @@ export const drawCircle = (
     ctx.fillStyle = gradient;
     ctx.fill();
   }
+};
+
+export const getMyAge = () => {
+  const birthYear = 2003;
+  const birthMonth = 5; // May
+
+  const today = new Date();
+  const currentYear = today.getFullYear();
+  const currentMonth = today.getMonth() + 1;
+
+  let age = currentYear - birthYear;
+
+  if (currentMonth < birthMonth) {
+    age--;
+  }
+
+  return age;
 };

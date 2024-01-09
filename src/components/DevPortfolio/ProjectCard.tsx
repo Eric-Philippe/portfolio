@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Tags } from "../utils/Tags";
+import { Tags } from "../../utils/Tags";
 import { FaPlus } from "react-icons/fa";
 
 interface ProjectProps {
