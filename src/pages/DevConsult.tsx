@@ -3,8 +3,8 @@ import { RouterFocusProps } from "../models/Router";
 
 export default function DevConsult({
   project,
-  setFocus,
-}: {
+}: //setFocus,
+{
   project: ProjectData;
   setFocus: RouterFocusProps["setFocus"];
 }) {

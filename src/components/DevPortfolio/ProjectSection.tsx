@@ -107,7 +107,7 @@ export default function ProjectSection({ setFocus }: RouterFocusProps) {
                       )
                       .map((project, index) => (
                         <ProjectCard
-                          key={project.filename}
+                          key={Math.random()}
                           project={project}
                           setFocus={setFocus}
                           index={index}

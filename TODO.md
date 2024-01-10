@@ -11,8 +11,10 @@
 [x] - Page Photographie
 [x] - Modèle 3D Appareil Photo
 [x] - Setup Section
+[ ] - Ajouter l'ajout d'albums par les .md
 [ ] - Ajouter des albums (3 photos en aperçu un peu spread)
 [ ] - Page de consultation des photos
+[ ] - Dockerize the app
 
 # Tweaks
 
