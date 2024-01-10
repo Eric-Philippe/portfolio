@@ -1,11 +1,5 @@
 import os
-import sys
 import json
-
-script_dir = os.path.dirname(os.path.realpath(__file__))
-
-parser_path = os.path.join(script_dir, 'parser')
-sys.path.append(parser_path)
 
 from parser.Converter import Converter
 from parser.Parser import Parser
