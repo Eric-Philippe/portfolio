@@ -1,5 +1,10 @@
 export default interface ProjectData {
-  filename: string;
-  html_content: string;
-  metadata: {};
+  title: string;
+  shortDesc: string;
+  techs: string[];
+  gitLink: string;
+  date: string;
+  tag: string;
+  previewImg: string;
+  content: string;
 }

@@ -4,8 +4,9 @@ import ProjectCard from "./ProjectCard";
 
 import { ALL_TAGS, Tags, getIconFromTag } from "../../utils/Tags";
 import projects from "../../utils/Projects";
+import { RouterFocusProps } from "../../models/Router";
 
-export default function ProjectSection() {
+export default function ProjectSection({ setFocus }: RouterFocusProps) {
   const [categoriesVisible, setCategoriesVisible] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string | Tags>(
     "all"
@@ -104,8 +105,13 @@ export default function ProjectSection() {
                           ? true
                           : project.tags === selectedCategory
                       )
-                      .map((project) => (
-                        <ProjectCard key={project.filename} project={project} />
+                      .map((project, index) => (
+                        <ProjectCard
+                          key={project.filename}
+                          project={project}
+                          setFocus={setFocus}
+                          index={index}
+                        />
                       ))}
                   </div>
                 </div>

@@ -3,6 +3,10 @@ import { useState } from "react";
 import DevPortfolio from "./pages/DevPortfolio";
 import PhotoPortfolio from "./pages/PhotoPortfolio";
 
+// Different way to import pages, using React.lazy, better for performance, but removes the ability to use the ParallaxProvider
+// const DevPortfolio = lazy(() => import("./pages/DevPortfolio"));
+// const PhotoPortfolio = lazy(() => import("./pages/PhotoPortfolio"));
+
 import "./App.css";
 
 /**

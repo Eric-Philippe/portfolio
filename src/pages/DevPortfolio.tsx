@@ -7,15 +7,22 @@ import AboutSection from "../components/DevPortfolio/AboutSection";
 import ContactSection from "../components/DevPortfolio/ContactSection";
 
 import RouterProps from "../models/Router";
+import { useState } from "react";
+import projects from "../utils/Projects";
 
 export default function DevPortfolio({ setIsDev }: RouterProps) {
-  return (
-    <ParallaxProvider>
-      <Head setIsDev={setIsDev} />
-      <ProjectSection />
-      <SkillsSection />
-      <AboutSection />
-      <ContactSection />
-    </ParallaxProvider>
-  );
+  const [focus, setFocus] = useState<number | null>(null);
+
+  if (focus === null)
+    return (
+      <ParallaxProvider>
+        <Head setIsDev={setIsDev} />
+        <ProjectSection setFocus={setFocus} />
+        <SkillsSection />
+        <AboutSection />
+        <ContactSection />
+      </ParallaxProvider>
+    );
+
+  return <>{projects[focus].title}</>;
 }

@@ -1,37 +1,64 @@
 import os
+import sys
 import json
-import markdown2
 
-def convert_all_md_to_json(input_folder, json_file_path):
-    # Initialiser une liste pour stocker les données de chaque fichier Markdown
-    all_data = []
+script_dir = os.path.dirname(os.path.realpath(__file__))
 
-    # Parcourir tous les fichiers dans le dossier _projects avec l'extension .md
+parser_path = os.path.join(script_dir, 'parser')
+sys.path.append(parser_path)
+
+from parser.Converter import Converter
+from parser.Parser import Parser
+
+from Project import Project, project_fiels
+
+
+blankPj = Project()
+DevParser  = Parser(project_fiels, "DevProjectsParser")
+
+# converter = Converter(DevParser, "_projects/1.Portfolio.md", Project.convertToListAttributes())
+# print(converter.convert())
+
+def write_json_file(data: dict, json_file_path: str):
+    """
+    Function: write_json_file
+    ----------------------------
+    Writes the data into a json file
+    ----------------------------
+    data: dict
+        The data to write
+    json_file_path: str
+        The path of the json file to create
+    ----------------------------
+    """
+    with open(json_file_path, 'w') as f:
+        json.dump(data, f, indent=4)
+
+def convert_all_dev_md_to_dict(input_folder: str):
+    """
+    Function: convert_all_dev_md_to_json
+    ----------------------------
+    Converts all the markdown files in the input_folder into a json file
+    ----------------------------
+    input_folder: str
+        The folder containing the markdown files
+    json_file_path: str
+        The path of the json file to create
+    ----------------------------
+    """
+    projects: list[Project] = []
+    
     for filename in sorted(os.listdir(input_folder)):
         if filename.endswith(".md") and not filename.startswith("_"):
             md_file_path = os.path.join(input_folder, filename)
+            converter = Converter(DevParser, md_file_path, Project.convertToListAttributes())
+            projects.append(Project().fill_fields(converter.convert()))
+            
+    print(f'Converted {len(projects)} Markdown Portfolio Projects files to JSON')
+    return [project.__dict__ for project in projects]
+    
+dev_data = convert_all_dev_md_to_dict("_projects")
 
-            with open(md_file_path, 'r', encoding='utf-8') as md_file:
-                # Convertir le contenu du fichier Markdown en HTML
-                html_content = markdown2.markdown(md_file.read(), extras=['metadata'])
+final_dict = {"projects": dev_data}
 
-            # Créer un dictionnaire avec le contenu HTML et les métadonnées
-            data = {'filename': filename, 'html_content': html_content, 'metadata': html_content.metadata}
-
-            # Ajouter les données à la liste
-            all_data.append(data)
-
-    # Trier la liste par nom de fichier croissant
-    all_data = sorted(all_data, key=lambda x: x['filename'])
-
-    # Écrire la liste de données triée au format JSON dans le fichier de sortie
-    with open(json_file_path, 'w', encoding='utf-8') as json_file:
-        json.dump(all_data, json_file, ensure_ascii=False, indent=2)
-
-        print('Converted {} Markdown Portfolio Projects files to JSON'.format(len(all_data)))
-
-# Exemple d'utilisation
-input_folder = '_projects'  # Dossier contenant les fichiers Markdown
-json_file_path = 'projects.json'  # Nom du fichier de sortie
-
-convert_all_md_to_json(input_folder, json_file_path)
+write_json_file(final_dict, "data.json")

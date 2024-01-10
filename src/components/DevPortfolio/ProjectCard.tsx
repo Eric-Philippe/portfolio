@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Tags } from "../../utils/Tags";
 import { FaPlus } from "react-icons/fa";
+import { RouterFocusProps } from "../../models/Router";
 
 interface ProjectProps {
   title: string;
@@ -12,7 +13,15 @@ interface ProjectProps {
   previewLink: string;
 }
 
-export default function ProjectCard({ project }: { project: ProjectProps }) {
+export default function ProjectCard({
+  project,
+  setFocus,
+  index,
+}: {
+  project: ProjectProps;
+  setFocus: RouterFocusProps["setFocus"];
+  index: number;
+}) {
   const [isButtonHovered, setIsButtonHovered] = useState(false);
 
   return (
@@ -21,7 +30,12 @@ export default function ProjectCard({ project }: { project: ProjectProps }) {
       data-projection-id="18"
       style={{ opacity: 1, transform: "none" }}
     >
-      <div className="group relative focus:outline-none block border border-black py-4 lg:py-10 px-6 lg:px-14 bg-white overflow-hidden transform transition hover:scale-[1.01] h-full will-change-transform rounded-3xl">
+      <div
+        className="group relative focus:outline-none block border border-black py-4 lg:py-10 px-6 lg:px-14 bg-white overflow-hidden transform transition hover:scale-[1.01] h-full will-change-transform rounded-3xl"
+        onClick={() => {
+          setFocus(index);
+        }}
+      >
         <div className="relative max-w-screen-sm mr-4 lg:mr-8 w-full z-10">
           <h3 className="font-[900] tracking-tight text-3xl">
             {project.title.length > 10 && window.innerWidth < 1024 ? (
