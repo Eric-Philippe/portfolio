@@ -1,8 +1,8 @@
 import os
 import json
 
-from parser.Converter import Converter
-from parser.Parser import Parser
+from Converter import Converter
+from Parser import Parser
 
 from Project import Project, project_fiels
 
