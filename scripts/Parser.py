@@ -8,7 +8,7 @@ class Parser:
     Give it a list of fields that the parser will remember and use
     Each fields can be different subfields [[Introduction, Presentation, Summary], [Techs, Technologies, Tools]]
     """
-    def __init__(self, fields, parseName = "None_Parser"):
+    def __init__(self, fields: list[list[str]], parseName: str = "None_Parser"):
         self.fields = fields
         if not self.checkInputFieldsValidity():
             raise Exception('Invalid fields given to the parser ' + parseName)
