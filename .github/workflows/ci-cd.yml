@@ -13,13 +13,13 @@ jobs:
           python-version: 3.9
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Run Python script to update projects.json
+      - name: Run Python script to update data.json
         run: python scripts/mdToJson.py
       - name: Upload the updated JSON file as an artifact
         uses: actions/upload-artifact@v3
         with:
           name: updated-json
-          path: ./projects.json
+          path: ./data.json
   # Build Job
   build:
     needs: update-json
