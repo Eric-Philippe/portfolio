@@ -9,6 +9,11 @@ All notable changes to this project will be documented in this file.
 - Major Refactoring of the Markdown Parser
 - - I wrote my own Markdown Parser, in order to avoid overcomplicated algorithms or limiting the possibilities of the Markdown syntax.
 
+- The Project Consult page is now here !
+
+- Minor updates on the Dev Portfolio Page
+- - Add a sub-header to the Dev Portfolio Page in order to reach the different sections more easily
+
 ### Minor updates
 
 - Light clean and refactor of some parts of the code
