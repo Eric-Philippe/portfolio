@@ -122,7 +122,7 @@ export default function DevConsult({
             <canvas
               id="canvas-bubble-consult"
               style={{
-                width: isSmallScreen ? "150%" : "100%",
+                width: isSmallScreen ? "100%" : "100%",
                 height: isSmallScreen ? "300px" : "850px",
                 opacity: 0,
               }}
