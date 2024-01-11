@@ -134,7 +134,7 @@ export default function SkillsSection() {
                 Soft Skills
               </h4>
               <div className="flex flex-wrap justify-center">
-                <div className="w-full md:w-1/2 lg:w-1/3 p-3">
+                <div className="w-full md:w-1/3 lg:w-1/4 p-3">
                   <div className="bg-white shadow-lg rounded-lg px-4 py-6">
                     <div>
                       <h3 className="text-2xl font-semibold text-gray-800">
@@ -163,13 +163,17 @@ export default function SkillsSection() {
                         Communication
                       </h3>
                       <p className="text-sm text-gray-500 mt-2">
-                        Esprit d'équipe, Leadership, Adaptabilité,
+                        Esprit d'équipe, Leadership
                       </p>
                       <AnimatedSeparator color1="#2cb4be" />
                       <p className="text-sm text-gray-500 mt-2">
                         Gestion du temps, Gestion du stress
                       </p>
-                      <AnimatedSeparator color1="#6aced9" />
+                      <AnimatedSeparator color1="#3ddae6" />
+                      <p className="text-sm text-gray-500 mt-2">
+                        Pédagogie, Écoute, Patience
+                      </p>
+                      <AnimatedSeparator color1="#42beff" />
                     </div>
                   </div>
                 </div>
@@ -183,6 +187,14 @@ export default function SkillsSection() {
                         Autonomie, Curiosité, Créativité, Persévérance,
                       </p>
                       <AnimatedSeparator color1="#b62486" />
+                      <p className="text-sm text-gray-500 mt-2">
+                        Capacité d'adaptation & d'apprentissage
+                      </p>
+                      <AnimatedSeparator color1="#e039a8" />
+                      <p className="text-sm text-gray-500 mt-2">
+                        Résolution de problème en autonomie
+                      </p>
+                      <AnimatedSeparator color1="#ff3686" />
                     </div>
                   </div>
                 </div>

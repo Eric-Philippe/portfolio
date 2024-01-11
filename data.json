@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "Portfolio",
-            "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at",
+            "shortDesc": "Portfolio web mettant en valeur mes projets et comp\u00e9tences en d\u00e9veloppement et photographie. D\u00e9couvrez mon parcours cr\u00e9atif.",
             "techs": [
                 "React",
                 "Vite",
@@ -19,7 +19,7 @@
         },
         {
             "title": "Glitch and Books",
-            "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at",
+            "shortDesc": "Gestionnaire biblioth\u00e9caire en ligne. Enregistrez, triez, et explorez vos livres avec des statistiques et bient\u00f4t des recommandations.",
             "techs": [
                 "React",
                 "Boostrap",
@@ -36,7 +36,7 @@
         },
         {
             "title": "Hillcrest",
-            "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at",
+            "shortDesc": "Site de promotion pour une association proposant des s\u00e9jours \u00e9ducatifs dans des pays anglophones pour les lyc\u00e9ens.",
             "techs": [
                 "HTML",
                 "CSS",
@@ -52,7 +52,7 @@
         },
         {
             "title": "Advent of Code",
-            "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at",
+            "shortDesc": "R\u00e9solution de probl\u00e8mes en programmation en d\u00e9cembre sur le mod\u00e8le d'un calendrier de l'avent. Chaque jour, un nouveau langage est utilis\u00e9 pour r\u00e9soudre un probl\u00e8me diff\u00e9rent.",
             "techs": [
                 "Java",
                 "Python",
@@ -69,7 +69,7 @@
         },
         {
             "title": "Music Manager",
-            "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at",
+            "shortDesc": "Projet scolaire de gestion d'une librairie musicale en ligne, vous permettant d'ajouter, modifier, supprimer et afficher des chansons facilement.",
             "techs": [
                 "Php",
                 "Symfony",
@@ -84,7 +84,7 @@
         },
         {
             "title": "School Projects",
-            "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at",
+            "shortDesc": "Collection de projets web et Math\u00e9matiques r\u00e9alis\u00e9s au cours de mes ann\u00e9es d'\u00e9tudes. Ces projets sont r\u00e9alis\u00e9s en groupe et sont donc le fruit d'un travail d'\u00e9quipe.",
             "techs": [
                 "React",
                 "Typescript",
@@ -98,7 +98,7 @@
         },
         {
             "title": "Kairos Reminder",
-            "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at",
+            "shortDesc": "Bot pour g\u00e9n\u00e9rer des rappels et suivre le temps pass\u00e9 sur des activit\u00e9s personnalis\u00e9es. Consultez les graphiques et Excel automatiquement g\u00e9n\u00e9r\u00e9s.",
             "techs": [
                 "React",
                 "Typescript",
@@ -115,7 +115,7 @@
         },
         {
             "title": "Cril Bot",
-            "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at",
+            "shortDesc": "Bot d\u00e9di\u00e9 au centre des langues de l'IUT de Rangueil. G\u00e8re et administre les activit\u00e9s en ligne de mani\u00e8re efficace sur Discord.",
             "techs": [
                 "React",
                 "Typescript",

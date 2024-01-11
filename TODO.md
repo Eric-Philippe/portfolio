@@ -1,36 +1,68 @@
-# Main components
+# Portfolio TODO - Eric PHILIPPE
 
-[x] - Head Site
-[x] - Projets Section
-[x] - Compétences Section
-[x] - A propos Section
-[x] - Section Contact
-[x] - Footer
-[ ] - Mentions Légales
-[ ] - Page pour un projet
-[x] - Page Photographie
-[x] - Modèle 3D Appareil Photo
-[x] - Setup Section
-[ ] - Ajouter l'ajout d'albums par les .md
-[ ] - Ajouter des albums (3 photos en aperçu un peu spread)
-[ ] - Page de consultation des photos
-[ ] - Dockerize the app
+## DevPortfolio
 
-# Tweaks
+### Ajouts majeurs
 
-[x] - Remplacer les icônes des catégories projets
-[x] - Intégrer lien git sur cartes projets
-[x] - Intégrer image aperçu
-[x] - Télécharger CV (Bandeau avec qualification)
-[x] - Fichier LICENSE
-[x] - Favicon
-[ ] - Tests
-[ ] - Trouver un truc discret à mettre en haut à gauche
-[x] - Nettoyer et commenter le code - Premier passage
-[ ] - Nettoyer code - second passage
-[ ] - README.md
-[ ] - Ajouter logiciel d'édition de photo
-[ ] - Se renseigner sur comment importer des photos de manière optimisée (const MyImageComponent = React.lazy(() => import('./MyImageComponent'));
-)
-[x] - Centraliser les pallettes de couleurs dans un fichier
-[x] - Recoder mon propre parser de MD
+- [x] Head
+- [x] Projets Section
+- [x] Compétences Section
+- [x] A propos Section (Pouvoir télécharger CV)
+- [x] Section Contact
+- [x] Footer
+- [x] Génération du contenu de la section projets à partir des .md
+- [x] Rédaction des projets (Short Description)
+- [ ] Parser spécifique pour le contenu long des projets
+- [ ] Consultation d'un projet **WIP**
+- [ ] Rédaction des projets (Long Description)
+
+### Tweaks
+
+- [x] Ajouter un SubHeader pour les sections
+
+---
+
+## PhotoPortfolio
+
+### Ajouts majeurs
+
+- [x] Head
+- [x] Setup Section
+- [x] 3D Model Section
+- [ ] Albums Preview Section
+- [ ] Albums Consultation
+- [ ] Génération du contenu de la section albums à partir des .md
+- [ ] Rédaction des albums
+- [ ] Footer
+
+### Tweaks
+
+- [ ] Ajouter les logiciels d'éditions utilisés dans les albums
+
+---
+
+## Commun
+
+### Ajouts majeurs
+
+- [x] Header
+- [x] Create Favicon
+- [x] Add a CI/CD pipeline to build the sections, and the website and publish it on github pages
+- [x] Recoder mon propre parser de MD en Python
+- [ ] Mentions Légales
+- [ ] Ajouter Unit Tests
+- [ ] Dockerize the app
+
+### Tweaks
+
+- [x] Centraliser les pallettes de couleurs dans un fichier
+- [x] Nettoyage du code : Premier passage
+- [ ] Trouver un truc discret à mettre en haut à gauche
+- [ ] Nettoyage du code : Deuxième passage
+
+---
+
+## Projet
+
+- [x] Fichiers Projets (Licence, Authors, CHANGELOG, TODO)
+- [ ] Readme

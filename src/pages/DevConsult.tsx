@@ -129,7 +129,6 @@ export default function DevConsult({
             ></canvas>
           </div>
         </div>
-        {/* {<!-- Canvas Bubbles -->} */}
 
         <div className="relative w-full overflow-hidden min-h-[90vh] flex justify-center pt-12 lg:py-24 px-8 lg:px-0 z-0">
           <button
@@ -220,7 +219,7 @@ export default function DevConsult({
                 <div className="w-full sm:w-1/3">
                   <div className="bg-gray-50 p-4 rounded-md border">
                     <span className="font-semibold uppercase tracking-widest text-sm text-center">
-                      Tech Stack
+                      Technologies
                     </span>
                     <dl className="divide-y divide-gray-200">
                       {project.techs.map((tech) => (
@@ -235,11 +234,9 @@ export default function DevConsult({
                 </div>
                 <div className="w-full sm:w-2/3 mt-4 sm:mt-0">
                   <div className="bg-white p-4 rounded-md border">
-                    {/** Title */}
                     <span className="font-semibold uppercase tracking-widest text-sm text-center">
                       GitHub
                     </span>
-                    {/** Owner Avatar Url banner */}
                     <div className="flex justify-center overflow-hidden">
                       <img
                         src={repoData?.owner.avatar_url}
@@ -268,7 +265,7 @@ export default function DevConsult({
                         className="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center"
                       >
                         <FaGithub className="mr-2" />
-                        View on GitHub
+                        Voir sur GitHub
                       </a>
                     </div>
                   </div>
