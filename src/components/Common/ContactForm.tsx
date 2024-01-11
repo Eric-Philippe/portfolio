@@ -84,7 +84,7 @@ export default function ContactForm() {
         <label
           htmlFor="name"
           className="absolute text-base font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#ccf0ff] via-[#ffd7ff] to-[#f1b3cf] top-0 left-0"
-          style={{ paddingLeft: "10px", zIndex: 50 }}
+          style={{ paddingLeft: "10px" }}
         >
           Nom
         </label>

@@ -49,7 +49,7 @@
 - [x] Create Favicon
 - [x] Add a CI/CD pipeline to build the sections, and the website and publish it on github pages
 - [x] Recoder mon propre parser de MD en Python
-- [ ] Mentions Légales
+- [x] Mentions Légales
 - [ ] Ajouter Unit Tests
 - [x] Dockerize the app
 
