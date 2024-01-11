@@ -1,6 +1,7 @@
 import { FaCamera, FaDesktop } from "react-icons/fa";
 
 import RouterProps from "../../models/Router";
+import mainLogo from "../../../res/icon.png";
 
 type HeaderProps = RouterProps & {
   firstColor: string;
@@ -17,12 +18,16 @@ export function Header({ setIsDev, firstColor, secondColor }: HeaderProps) {
         }}
       ></div>
 
-      <header className="p-4 header-content">
+      <header className="p-4 header-content -mt-3">
         <div className="flex items-center justify-between">
-          <a aria-label="Home" className="inline-block rounded-full" href="/">
-            Eric PHILIPPE
+          <a
+            aria-label="Home"
+            className="inline-block rounded-full z-50"
+            href="/"
+          >
+            <img src={mainLogo} alt="Logo" className="w-16 h-16" />
           </a>
-          <nav className="space-x-4 text-sm text-gray-800 flex">
+          <nav className="space-x-4 text-sm text-gray-800 flex -mt-6">
             <a
               className="hover:underline flex items-center space-x-1.5"
               onClick={() => setIsDev(true)}

@@ -37,7 +37,7 @@
 
 ### Tweaks
 
-- [ ] Ajouter les logiciels d'éditions utilisés dans les albums
+- [ ] Ajouter les logiciels d'éditions utilisés dans le setup
 
 ---
 
@@ -51,13 +51,13 @@
 - [x] Recoder mon propre parser de MD en Python
 - [ ] Mentions Légales
 - [ ] Ajouter Unit Tests
-- [ ] Dockerize the app
+- [x] Dockerize the app
 
 ### Tweaks
 
 - [x] Centraliser les pallettes de couleurs dans un fichier
 - [x] Nettoyage du code : Premier passage
-- [ ] Trouver un truc discret à mettre en haut à gauche
+- [x] Trouver un truc discret à mettre en haut à gauche
 - [ ] Nettoyage du code : Deuxième passage
 
 ---
