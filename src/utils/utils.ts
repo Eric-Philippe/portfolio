@@ -10,9 +10,11 @@ export const drawCircle = (
   circleRadius: number,
   circleX: number,
   circleY: number,
-  color: string
+  color: string,
+  canvasId: string,
+  lastColor = "white"
 ) => {
-  const canvas = document.querySelector("canvas");
+  const canvas = document.getElementById(canvasId) as HTMLCanvasElement;
   const ctx = canvas?.getContext("2d");
 
   if (ctx) {
@@ -28,7 +30,7 @@ export const drawCircle = (
     );
 
     const centerColor = color; // Couleur au centre du cercle
-    const outerColor = "white"; // Couleur à l'extérieur du cercle
+    const outerColor = lastColor; // Couleur à l'extérieur du cercle
 
     gradient.addColorStop(0, centerColor);
     gradient.addColorStop(1, outerColor);

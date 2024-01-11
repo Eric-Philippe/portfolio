@@ -103,7 +103,7 @@ export default function ProjectSection({ setFocus }: RouterFocusProps) {
                       .filter((project) =>
                         selectedCategory === "all"
                           ? true
-                          : project.tags === selectedCategory
+                          : project.tag === selectedCategory
                       )
                       .map((project, index) => (
                         <ProjectCard

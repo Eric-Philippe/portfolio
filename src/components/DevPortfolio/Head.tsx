@@ -15,9 +15,9 @@ import { DEV_COLOR_PALETTE as colors } from "../../assets/ColorPalette";
 
 export default function Head({ setIsDev }: RouterProps) {
   useEffect(() => {
-    drawCircle(400, 0, 0, colors.first);
-    drawCircle(200, 600, 0, colors.second);
-    drawCircle(400, 800, 0, colors.second);
+    drawCircle(400, 0, 0, colors.first, "canvas-bubble");
+    drawCircle(200, 600, 0, colors.second, "canvas-bubble");
+    drawCircle(400, 800, 0, colors.second, "canvas-bubble");
 
     const canvas = document.getElementById("canvas-bubble");
 
@@ -100,6 +100,53 @@ export default function Head({ setIsDev }: RouterProps) {
             Développeur FullStack de {getMyAge()} ans, passionné par le code et
             doté d'une solide expertise informatique.
           </div>
+        </div>
+      </div>
+      <div className="bg-white/90 backdrop-blur backdrop-filter sticky top-0 z-10 lg:py-6">
+        <div className="lg:hidden">
+          <select
+            className="w-full p-4 border-0 bg-transparent font-semibold"
+            onChange={(e) => {
+              const id = e.target.value;
+              const element = document.getElementById(id);
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            <option value="realisations">Réalisations</option>
+            <option value="competences">Mes compétences</option>
+            <option value="about">Parcours</option>
+            <option value="contact">Contact</option>
+          </select>
+        </div>
+        <div className="hidden lg:block container">
+          <nav className="flex items-center justify-between font-medium text-sm uppercase tracking-widest ml-32">
+            <a
+              className="inline-flex flex-1 justify-center transition-all text-gray-900 font-medium"
+              href="#realisations"
+            >
+              Réalisations
+            </a>
+            <a
+              className="inline-flex flex-1 justify-center transition-all text-gray-400 hover:text-gray-900"
+              href="#competences"
+            >
+              Mes compétences
+            </a>
+            <a
+              className="inline-flex flex-1 justify-center transition-all text-gray-400 hover:text-gray-900"
+              href="#about"
+            >
+              Parcours
+            </a>
+            <a
+              className="inline-flex flex-1 justify-center transition-all text-gray-400 hover:text-gray-900"
+              href="#contact"
+            >
+              Contact
+            </a>
+          </nav>
         </div>
       </div>
     </div>

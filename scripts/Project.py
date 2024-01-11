@@ -6,7 +6,7 @@ This file contains the Project class, which is used to store the data of a proje
 import re
 
 
-TAGS = ['FRONTEND', 'BACKEND', 'FULLSTACK']
+TAGS = ['FRONTEND', 'BACKEND', 'FULLSTACK', "BOT", "CHALLENGE"]
 
 """
 Title: str
@@ -75,6 +75,7 @@ class Project():
        
     
     def __setattr__(self, __name: str, __value: str) -> None:
+        if __value is None: return
         if __name == "title":
             self.__dict__["title"] = __value
         elif __name == "shortDesc":
@@ -82,13 +83,22 @@ class Project():
         elif __name == "techs":
             self.__dict__["techs"] = [tech.strip() for tech in self.extract_techs(__value)]
         elif __name == "gitLink":
-            self.__dict__["gitLink"] = __value
+            if re.match(r'(http|https)://(.*)', __value):
+                self.__dict__["gitLink"] = __value
+            else:
+                raise Exception("The git link " + __value + " is not a valid link")
         elif __name == "date":
             self.__dict__["date"] = __value
         elif __name == "tag":
-            self.__dict__["tag"] = __value
+            if __value.upper() in TAGS:
+                self.__dict__["tag"] = __value.upper()
+            else:
+                raise Exception("The tag " + __value + " does not exist")
         elif __name == "previewImg":
-            self.__dict__["previewImg"] = __value
+            if re.match(r'(http|https)://(.*)', __value):
+                self.__dict__["previewImg"] = __value
+            else:
+                raise Exception("The preview image " + __value + " is not a valid link")
         elif __name == "content":
             self.__dict__["content"] = __value
         else:

@@ -8,7 +8,8 @@
                 "Vite",
                 "TailwindCSS",
                 "TypeScript",
-                "CI/CD"
+                "CI/CD",
+                "Python"
             ],
             "gitLink": "https://github.com/Eric-Philippe/portfolio",
             "date": "Janvier 2024",
@@ -23,10 +24,12 @@
                 "React",
                 "Boostrap",
                 "PostgreSQL",
-                "TypeScript"
+                "TypeScript",
+                "Express",
+                "CI/CD"
             ],
             "gitLink": "https://github.com/Eric-Philippe/GlitchAndBooks",
-            "date": "Ocotbre 2023",
+            "date": "Octobre 2023",
             "tag": "FULLSTACK",
             "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/GlitchAndBooks/main/img/browse.png",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at"
@@ -37,7 +40,9 @@
             "techs": [
                 "HTML",
                 "CSS",
-                "JavaScript"
+                "JavaScript",
+                "emailjs",
+                "CI/CD"
             ],
             "gitLink": "https://github.com/Eric-Philippe/Hillcrest-Website",
             "date": "Septembre 2023",
@@ -53,7 +58,8 @@
                 "Python",
                 "Haskell",
                 "C++",
-                "Julia"
+                "Julia",
+                "Rust"
             ],
             "gitLink": "https://github.com/Eric-Philippe/Advent-Of-Code-2022",
             "date": "D\u00e9cembre 2022",
@@ -67,7 +73,8 @@
             "techs": [
                 "Php",
                 "Symfony",
-                "MySQL"
+                "MySQL",
+                "Bootstrap"
             ],
             "gitLink": "https://github.com/Eric-Philippe/Basic-Music-Manager-App",
             "date": "D\u00e9cembre 2023",

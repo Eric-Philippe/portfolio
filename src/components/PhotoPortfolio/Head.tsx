@@ -15,9 +15,9 @@ import { PHOTO_COLOR_PALETTE as colors } from "../../assets/ColorPalette";
 
 export default function Head({ setIsDev }: RouterProps) {
   useEffect(() => {
-    drawCircle(400, 0, 0, colors.first);
-    drawCircle(200, 600, 0, colors.second);
-    drawCircle(400, 800, 0, colors.second);
+    drawCircle(400, 0, 0, colors.first, "canvas-bubble");
+    drawCircle(200, 600, 0, colors.second, "canvas-bubble");
+    drawCircle(400, 800, 0, colors.second, "canvas-bubble");
 
     const canvas = document.getElementById("canvas-bubble");
 

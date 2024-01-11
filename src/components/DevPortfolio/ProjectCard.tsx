@@ -1,24 +1,14 @@
 import { useState } from "react";
-import { Tags } from "../../utils/Tags";
 import { FaPlus } from "react-icons/fa";
 import { RouterFocusProps } from "../../models/Router";
-
-interface ProjectProps {
-  title: string;
-  date: string;
-  tags: Tags;
-  techs: string[];
-  shortDesc: string;
-  github: string;
-  previewLink: string;
-}
+import { Project } from "../../utils/Projects";
 
 export default function ProjectCard({
   project,
   setFocus,
   index,
 }: {
-  project: ProjectProps;
+  project: Project;
   setFocus: RouterFocusProps["setFocus"];
   index: number;
 }) {
@@ -54,7 +44,7 @@ export default function ProjectCard({
             </button>
           </div>
           <img
-            src={project.previewLink}
+            src={project.previewImg}
             alt="Project preview"
             className={`absolute top-1 right-1 transition-all duration-500 ease-in-out transform origin-top-right ${
               isButtonHovered ? "opacity-100 scale-150" : "opacity-0 scale-100"
@@ -70,11 +60,11 @@ export default function ProjectCard({
             <div
               className="inline-block rounded-md px-3 py-2 uppercase tracking-widest text-xs font-semibold"
               style={{
-                background: project.tags.fadedColor,
-                color: project.tags.color,
+                background: project.tag.fadedColor,
+                color: project.tag.color,
               }}
             >
-              {project.tags.name}
+              {project.tag.name}
             </div>
           </div>
           <div className="flex flex-wrap mt-3">
@@ -95,7 +85,7 @@ export default function ProjectCard({
           >
             {project.shortDesc}
           </div>
-          <a href={project.github} className="absolute bottom-1 right-1">
+          <a href={project.gitLink} className="absolute bottom-1 right-1">
             <svg
               role="img"
               viewBox="0 0 24 24"
@@ -125,10 +115,10 @@ export default function ProjectCard({
                 x2="1"
                 y2="0"
               >
-                <stop offset="0" stopColor={project.tags.secColor}></stop>
+                <stop offset="0" stopColor={project.tag.secColor}></stop>
                 <stop
                   offset="1"
-                  stopColor={project.tags.secGradientColor}
+                  stopColor={project.tag.secGradientColor}
                 ></stop>
               </linearGradient>
             </defs>

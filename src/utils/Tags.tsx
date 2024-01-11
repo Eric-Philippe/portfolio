@@ -26,16 +26,16 @@ export const FULLSTACK: Tags = {
   name: "Fullstack",
   color: "rgb(51, 129, 245)",
   fadedColor: "rgba(51, 129, 245, 0.2)",
-  secColor: "#8D4DC7",
-  secGradientColor: "#01A2C2",
+  secColor: "#95d1f9",
+  secGradientColor: "#99e9c8",
 };
 
 export const FRONTEND: Tags = {
   name: "Frontend",
   color: "rgb(123, 81, 220)",
   fadedColor: "rgba(123, 81, 220, 0.2)",
-  secColor: "#7b51dc",
-  secGradientColor: "#b051dc",
+  secColor: "#3e62c0",
+  secGradientColor: "#9d78d2",
 };
 
 export const BACKEND: Tags = {
@@ -50,7 +50,7 @@ export const BOT: Tags = {
   name: "Bot",
   color: "rgb(245, 51, 245)",
   fadedColor: "rgba(245, 51, 245, 0.2)",
-  secColor: "#eefa07",
+  secColor: "#db6f02",
   secGradientColor: "#b507fa",
 };
 
@@ -75,7 +75,7 @@ export const getTagsFromString = (tags: string): Tags => {
       return FULLSTACK;
     case "FRONTEND":
       return FRONTEND;
-    case "backBACKENDend":
+    case "BACKENDend":
       return BACKEND;
     case "BOT":
       return BOT;

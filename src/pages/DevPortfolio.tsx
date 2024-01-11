@@ -9,6 +9,7 @@ import ContactSection from "../components/DevPortfolio/ContactSection";
 import RouterProps from "../models/Router";
 import { useState } from "react";
 import projects from "../utils/Projects";
+import DevConsult from "./DevConsult";
 
 export default function DevPortfolio({ setIsDev }: RouterProps) {
   const [focus, setFocus] = useState<number | null>(null);
@@ -24,5 +25,5 @@ export default function DevPortfolio({ setIsDev }: RouterProps) {
       </ParallaxProvider>
     );
 
-  return <>{projects[focus].title}</>;
+  return <DevConsult project={projects[focus]} setFocus={setFocus} />;
 }

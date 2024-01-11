@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-
 import { useInView } from "react-intersection-observer";
-import "../../App.css";
 import { FaCubes } from "react-icons/fa";
+
 import Footer from "../Common/Footer";
 import ContactForm from "../Common/ContactForm";
+
+import "../../App.css";
 
 export default function ContactSection() {
   const isSmallScreen = window.innerWidth < 1024;
@@ -21,6 +22,7 @@ export default function ContactSection() {
 
   return (
     <>
+      <h2 id="contact"></h2>
       <section
         ref={ref}
         className="flex flex-col md:flex-row items-center justify-center p-10"

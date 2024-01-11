@@ -12,21 +12,23 @@ const projectData: ProjectData[] = data.projects;
  * @classdesc This class represents a project
  * @param {ProjectData} data - The data of the project fetched from the JSON file
  */
-class Project {
+export class Project {
   /** The title of the project */
   public title: string = "";
   /** The short description of the project */
   public shortDesc: string = "";
   /** The tags of the project */
-  public tags: Tags = FULLSTACK;
+  public tag: Tags = FULLSTACK;
   /** The technologies used in the project */
   public techs: string[] = [];
   /** The date of the project */
   public date: string = "";
   /** The github link of the project */
-  public github: string = "";
+  public gitLink: string = "";
   /** The preview img link of the project */
-  public previewLink: string = "";
+  public previewImg: string = "";
+  /** The full content */
+  public content: string = "";
 
   /**
    * Build a new Project
@@ -35,11 +37,12 @@ class Project {
   constructor(data: ProjectData) {
     this.title = data.title;
     this.shortDesc = data.shortDesc;
-    this.tags = getTagsFromString(data.tag);
+    this.tag = getTagsFromString(data.tag);
     this.techs = data.techs;
     this.date = data.date;
-    this.github = data.gitLink;
-    this.previewLink = data.previewImg;
+    this.gitLink = data.gitLink;
+    this.previewImg = data.previewImg;
+    this.content = data.content;
   }
 }
 
