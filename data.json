@@ -1,7 +1,7 @@
 [
     {
         "tag": "FRONTEND",
-        "content": "<table><tbody><tr><td>Portfolio</td><td>aa</td></tr><tr><td>Portfolio</td><td>aa</td></tr></tbody></table><table><tbody></tbody></table>",
+        "content": "<h3>Présentation</h3><p>Portfolio web mettant en valeur mes projets et compétences en développement et photographie. Découvrez mon parcours créatif.</p><p>Salut</p>",
         "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/portfolio/main/res/image.png",
         "techs": [
             [
@@ -56,6 +56,32 @@
         "date": "Octobre 2023",
         "shortDesc": "Gestionnaire bibliothécaire en ligne. Enregistrez, triez, et explorez vos livres avec des statistiques et bientôt des recommandations.",
         "gitLink": "https://github.com/Eric-Philippe/GlitchAndBooks"
+    },
+    {
+        "tag": "TOOL",
+        "content": "<p>Trop trop cool</p>",
+        "previewImg": "https://cdn.discordapp.com/attachments/814908646138970122/1195849037128147074/image.png?ex=65b57c34&is=65a30734&hm=3b4186f5704f252cd4f7b6beca2601bec5280a4cbaa5248add8d486437c70e85&",
+        "techs": [
+            [
+                "Julia"
+            ],
+            [
+                "Markdown"
+            ],
+            [
+                "CI/CD"
+            ],
+            [
+                "Git"
+            ],
+            [
+                "Python"
+            ]
+        ],
+        "title": "Julia Markdown Joy",
+        "date": "Janvier 2024",
+        "shortDesc": "\"JuliaMarkdownJoy\" - Outil versatile en Julia pour analyser des fichiers Markdown en JSON, extraire des champs spécifiques, et convertir le tout en HTML",
+        "gitLink": "https://github.com/Eric-Philippe/JuliaMarkdownJoy/"
     },
     {
         "tag": "CHALLENGE",
@@ -220,43 +246,29 @@
         "gitLink": "https://github.com/Eric-Philippe/SAE-Manager---IUT-Blagnac/tree/main"
     },
     {
-        "tag": "FRONTEND",
-        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p>",
-        "previewImg": "NOT_FOUND",
-        "techs": [
-            [
-                "React"
-            ],
-            [
-                "Vite"
-            ],
-            [
-                "TailwindCSS"
-            ],
-            [
-                "TypeScript"
-            ],
-            [
-                "CI/CD"
-            ]
-        ],
-        "title": "NOT_FOUND",
-        "date": "Janvier 2024",
-        "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at",
-        "gitLink": "https://github.com/Eric-Philippe/portfolio"
-    },
-    {
-        "tag": "BACKEND",
-        "content": "<p>Voici tous les entêtes disponibles:</p><pre><code class=\"language-py\">    [\"Titre\", \"Title\"],\n    [\"Résumé\", \"Aperçu\", \"Intro\", \"Introduction\", \"Présentation\"],\n    [\"Technologies\", \"Technos\", \"Techs\", \"Tools\"],\n    [\"Lien GitHub\", \"Lien Git\", \"Lien vers Git\"],\n    [\"Date\", \"Création\", \"Créé\", \"Créé le\", \"Date de création\"],\n    [\"Tag\", \"Tags\"],\n    [\"Image\", \"Image de prévisualisation\", \"Image de preview\", \"Preview\", \"Preview image\"],\n    [\"Contenu\", \"Contenu du projet\", \"Description\", \"Description du projet\"]</code></pre><p>Le premier prendra la priorité sur les autres.</p><p>/!\\ Attention, la présence d'un séparateur de ligne, ou bien d'un autre titre avec un hashtag arrêtera la lecture de la section</p><p>Considérez donc si vous devez absolument mettre un titre, utilisez la syntaxe html.</p><p>Dans le but de garder les choses flexibles et simples aucune mise à jour ne sera faite pour changer cela.</p>",
-        "previewImg": "NOT_FOUND",
+        "tag": "TOOL",
+        "content": "<p>Trop trop cool</p>",
+        "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/Skyblog_Archiver/main/res/ex.png",
         "techs": [
             [
                 "Python"
+            ],
+            [
+                "HTML"
+            ],
+            [
+                "CSS"
+            ],
+            [
+                "Shell"
+            ],
+            [
+                "Batch"
             ]
         ],
-        "title": "NOT_FOUND",
-        "date": "Janvier 2024",
-        "shortDesc": "Ce fichier est un exemple de projet. Il est là pour vous aider à comprendre comment fonctionne la dynamique de ce portfolio pour générez les pages de vos projets.",
-        "gitLink": "https://github.com/Eric-Philippe/portfolio"
+        "title": "SkyBlog Archiver",
+        "date": "Juin 2023",
+        "shortDesc": "\"SkyBlog Archiver\" - Outil en Python pour archiver des blogs Skyrock avant leur disparition dans les limbes de l'Internet",
+        "gitLink": "https://github.com/Eric-Philippe/Skyblog_Archiver"
     }
 ]

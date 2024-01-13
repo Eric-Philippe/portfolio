@@ -4,6 +4,7 @@ import {
   FaLaptopCode,
   FaPuzzlePiece,
   FaRobot,
+  FaToolbox,
 } from "react-icons/fa";
 
 /**
@@ -54,6 +55,14 @@ export const BOT: Tags = {
   secGradientColor: "#b507fa",
 };
 
+export const TOOL: Tags = {
+  name: "Tool",
+  color: "rgb(145, 39, 7)",
+  fadedColor: "rgba(145, 39, 7, 0.2)",
+  secColor: "#b0c9f5",
+  secGradientColor: "#912707",
+};
+
 export const CHALLENGE: Tags = {
   name: "Challenge",
   color: "rgb(242, 81, 17)",
@@ -75,8 +84,10 @@ export const getTagsFromString = (tags: string): Tags => {
       return FULLSTACK;
     case "FRONTEND":
       return FRONTEND;
-    case "BACKENDend":
+    case "BACKEND":
       return BACKEND;
+    case "TOOL":
+      return TOOL;
     case "BOT":
       return BOT;
     case "CHALLENGE":
@@ -112,6 +123,14 @@ export const getIconFromTag = (tag: Tags): React.ReactNode => {
     case "Backend":
       return (
         <FaCode
+          style={{
+            marginRight: "0.5rem",
+          }}
+        />
+      );
+    case "Tool":
+      return (
+        <FaToolbox
           style={{
             marginRight: "0.5rem",
           }}
