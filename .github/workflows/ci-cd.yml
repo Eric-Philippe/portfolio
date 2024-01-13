@@ -15,9 +15,7 @@ jobs:
         run: |
           julia --project=JuliaMarkdownJoy -e '
           using Pkg
-          Pkg.GitTools.clone("https://github.com/Eric-Philippe/JuliaMarkdownJoy.git", "JuliaMarkdownJoy")'
-          Pkg.instantiate()'
-          cd JuliaMarkdownJoy
+          Pkg.add(url="https://github.com/Eric-Philippe/JuliaMarkdownJoy.git")
           Pkg.instantiate()'
       - name: "Go back to the root of the project"
         run: cd ..
