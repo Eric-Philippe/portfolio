@@ -105,8 +105,6 @@ export default function DevConsult({
     drawCircles();
   }, []);
 
-  console.log(project);
-
   return (
     <div className="relative">
       <div className="head-content">
@@ -138,7 +136,7 @@ export default function DevConsult({
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 352 512"
               height="1em"
               width="1em"
@@ -223,7 +221,10 @@ export default function DevConsult({
                     </span>
                     <dl className="divide-y divide-gray-200">
                       {project.techs.map((tech) => (
-                        <div className="py-4 grid gap-4 justify-items-center">
+                        <div
+                          className="py-4 grid gap-4 justify-items-center"
+                          key={tech}
+                        >
                           <dt className="text-sm font-medium text-gray-500 col-span-6 lg:col-span-6">
                             {tech}
                           </dt>
@@ -282,6 +283,10 @@ export default function DevConsult({
                 >
                   Contenu
                 </h1>
+                <div
+                  className="dev-container-project"
+                  dangerouslySetInnerHTML={{ __html: project.content }}
+                />{" "}
               </div>
             </div>
           </div>

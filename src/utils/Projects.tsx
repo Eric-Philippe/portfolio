@@ -4,7 +4,7 @@ import { FULLSTACK, Tags, getTagsFromString } from "./Tags";
 // @ts-ignore
 import data from "../../data.json";
 // @ts-ignore
-const projectData: ProjectData[] = data.projects;
+const projectData: ProjectData[] = data;
 
 /**
  * Project class
@@ -38,7 +38,7 @@ export class Project {
     this.title = data.title;
     this.shortDesc = data.shortDesc;
     this.tag = getTagsFromString(data.tag);
-    this.techs = data.techs;
+    this.techs = data.techs.flat();
     this.date = data.date;
     this.gitLink = data.gitLink;
     this.previewImg = data.previewImg;

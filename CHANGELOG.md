@@ -11,6 +11,8 @@ All notable changes to this project will be documented in this file.
 
 - The Project Consult page is now here !
 
+- New "Mentions Légales" Page
+
 - Minor updates on the Dev Portfolio Page
 - - Add a sub-header to the Dev Portfolio Page in order to reach the different sections more easily
 
@@ -33,6 +35,8 @@ All notable changes to this project will be documented in this file.
 ### Major additions
 
 - System to feed Markdown files to the Website, allowing to create new projects without touching the code
+
+- Add a CI/CD pipeline to build the sections, and the website and publish it on github pages
 
 - Complete the Dev Portfolio Page with the Skills section, About section and the Contact section
 

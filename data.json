@@ -1,133 +1,262 @@
-{
-    "projects": [
-        {
-            "title": "Portfolio",
-            "shortDesc": "Portfolio web mettant en valeur mes projets et comp\u00e9tences en d\u00e9veloppement et photographie. D\u00e9couvrez mon parcours cr\u00e9atif.",
-            "techs": [
-                "React",
-                "Vite",
-                "TailwindCSS",
-                "TypeScript",
-                "CI/CD",
+[
+    {
+        "tag": "FRONTEND",
+        "content": "<table><tbody><tr><td>Portfolio</td><td>aa</td></tr><tr><td>Portfolio</td><td>aa</td></tr></tbody></table><table><tbody></tbody></table>",
+        "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/portfolio/main/res/image.png",
+        "techs": [
+            [
+                "React"
+            ],
+            [
+                "Vite"
+            ],
+            [
+                "TailwindCSS"
+            ],
+            [
+                "TypeScript"
+            ],
+            [
+                "CI/CD"
+            ],
+            [
                 "Python"
+            ]
+        ],
+        "title": "Portfolio",
+        "date": "Janvier 2024",
+        "shortDesc": "Portfolio web mettant en valeur mes projets et compétences en développement et photographie. Découvrez mon parcours créatif.",
+        "gitLink": "https://github.com/Eric-Philippe/portfolio"
+    },
+    {
+        "tag": "FULLSTACK",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p>",
+        "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/GlitchAndBooks/main/img/browse.png",
+        "techs": [
+            [
+                "React"
             ],
-            "gitLink": "https://github.com/Eric-Philippe/portfolio",
-            "date": "Janvier 2024",
-            "tag": "FRONTEND",
-            "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/portfolio/main/res/image.png",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at"
-        },
-        {
-            "title": "Glitch and Books",
-            "shortDesc": "Gestionnaire biblioth\u00e9caire en ligne. Enregistrez, triez, et explorez vos livres avec des statistiques et bient\u00f4t des recommandations.",
-            "techs": [
-                "React",
-                "Boostrap",
-                "PostgreSQL",
-                "TypeScript",
-                "Express",
-                "CI/CD"
+            [
+                "Boostrap"
             ],
-            "gitLink": "https://github.com/Eric-Philippe/GlitchAndBooks",
-            "date": "Octobre 2023",
-            "tag": "FULLSTACK",
-            "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/GlitchAndBooks/main/img/browse.png",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at"
-        },
-        {
-            "title": "Hillcrest",
-            "shortDesc": "Site de promotion pour une association proposant des s\u00e9jours \u00e9ducatifs dans des pays anglophones pour les lyc\u00e9ens.",
-            "techs": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "emailjs",
-                "CI/CD"
-            ],
-            "gitLink": "https://github.com/Eric-Philippe/Hillcrest-Website",
-            "date": "Septembre 2023",
-            "tag": "FRONTEND",
-            "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/Hillcrest-Website/main/res/image.png",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at"
-        },
-        {
-            "title": "Advent of Code",
-            "shortDesc": "R\u00e9solution de probl\u00e8mes en programmation en d\u00e9cembre sur le mod\u00e8le d'un calendrier de l'avent. Chaque jour, un nouveau langage est utilis\u00e9 pour r\u00e9soudre un probl\u00e8me diff\u00e9rent.",
-            "techs": [
-                "Java",
-                "Python",
-                "Haskell",
-                "C++",
-                "Julia",
-                "Rust"
-            ],
-            "gitLink": "https://github.com/Eric-Philippe/Advent-Of-Code-2022",
-            "date": "D\u00e9cembre 2022",
-            "tag": "CHALLENGE",
-            "previewImg": "https://cdn.discordapp.com/attachments/814908646138970122/1193509441941798973/image.png?ex=65acf949&is=659a8449&hm=72640be9e6dc939c4748c71664b4bc34feb7da02102e8bf797e3050871b2092b&",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at"
-        },
-        {
-            "title": "Music Manager",
-            "shortDesc": "Projet scolaire de gestion d'une librairie musicale en ligne, vous permettant d'ajouter, modifier, supprimer et afficher des chansons facilement.",
-            "techs": [
-                "Php",
-                "Symfony",
-                "MySQL",
-                "Bootstrap"
-            ],
-            "gitLink": "https://github.com/Eric-Philippe/Basic-Music-Manager-App",
-            "date": "D\u00e9cembre 2023",
-            "tag": "FULLSTACK",
-            "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/Basic-Music-Manager-App/main/img/welcome.png",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at"
-        },
-        {
-            "title": "School Projects",
-            "shortDesc": "Collection de projets web et Math\u00e9matiques r\u00e9alis\u00e9s au cours de mes ann\u00e9es d'\u00e9tudes. Ces projets sont r\u00e9alis\u00e9s en groupe et sont donc le fruit d'un travail d'\u00e9quipe.",
-            "techs": [
-                "React",
-                "Typescript",
+            [
                 "PostgreSQL"
             ],
-            "gitLink": "https://github.com/Eric-Philippe/SAE-Manager---IUT-Blagnac/tree/main",
-            "date": "D\u00e9cembre 2023",
-            "tag": "FULLSTACK",
-            "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/SAE-Manager---IUT-Blagnac/main/documentation/res/img/login-page.png",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at"
-        },
-        {
-            "title": "Kairos Reminder",
-            "shortDesc": "Bot pour g\u00e9n\u00e9rer des rappels et suivre le temps pass\u00e9 sur des activit\u00e9s personnalis\u00e9es. Consultez les graphiques et Excel automatiquement g\u00e9n\u00e9r\u00e9s.",
-            "techs": [
-                "React",
-                "Typescript",
-                "PostgreSQL",
-                "Excel",
-                "CI/CD",
+            [
+                "TypeScript"
+            ],
+            [
+                "Express"
+            ],
+            [
+                "CI/CD"
+            ]
+        ],
+        "title": "Glitch and Books",
+        "date": "Octobre 2023",
+        "shortDesc": "Gestionnaire bibliothécaire en ligne. Enregistrez, triez, et explorez vos livres avec des statistiques et bientôt des recommandations.",
+        "gitLink": "https://github.com/Eric-Philippe/GlitchAndBooks"
+    },
+    {
+        "tag": "CHALLENGE",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p>",
+        "previewImg": "https://cdn.discordapp.com/attachments/814908646138970122/1193509441941798973/image.png?ex=65acf949&is=659a8449&hm=72640be9e6dc939c4748c71664b4bc34feb7da02102e8bf797e3050871b2092b&",
+        "techs": [
+            [
+                "Java"
+            ],
+            [
+                "Python"
+            ],
+            [
+                "Haskell"
+            ],
+            [
+                "C++"
+            ],
+            [
+                "Julia"
+            ],
+            [
+                "Rust"
+            ]
+        ],
+        "title": "Advent of Code",
+        "date": "Décembre 2022",
+        "shortDesc": "Résolution de problèmes en programmation en décembre sur le modèle d'un calendrier de l'avent. Chaque jour, un nouveau langage est utilisé pour résoudre un problème différent.",
+        "gitLink": "https://github.com/Eric-Philippe/Advent-Of-Code-2022"
+    },
+    {
+        "tag": "FULLSTACK",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p>",
+        "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/Basic-Music-Manager-App/main/img/welcome.png",
+        "techs": [
+            [
+                "Php"
+            ],
+            [
+                "Symfony"
+            ],
+            [
+                "MySQL"
+            ],
+            [
+                "Bootstrap"
+            ]
+        ],
+        "title": "Music Manager",
+        "date": "Décembre 2023",
+        "shortDesc": "Projet scolaire de gestion d'une librairie musicale en ligne, vous permettant d'ajouter, modifier, supprimer et afficher des chansons facilement.",
+        "gitLink": "https://github.com/Eric-Philippe/Basic-Music-Manager-App"
+    },
+    {
+        "tag": "FRONTEND",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p>",
+        "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/Hillcrest-Website/main/res/image.png",
+        "techs": [
+            [
+                "HTML"
+            ],
+            [
+                "CSS"
+            ],
+            [
+                "JavaScript"
+            ],
+            [
+                "emailjs"
+            ],
+            [
+                "CI/CD"
+            ]
+        ],
+        "title": "Hillcrest",
+        "date": "Septembre 2023",
+        "shortDesc": "Site de promotion pour une association proposant des séjours éducatifs dans des pays anglophones pour les lycéens.",
+        "gitLink": "https://github.com/Eric-Philippe/Hillcrest-Website"
+    },
+    {
+        "tag": "BOT",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p>",
+        "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/Kairos-Bot-Reminder/master/img/remindme.png",
+        "techs": [
+            [
+                "React"
+            ],
+            [
+                "Typescript"
+            ],
+            [
+                "PostgreSQL"
+            ],
+            [
+                "Excel"
+            ],
+            [
+                "CI/CD"
+            ],
+            [
                 "Chart.js"
+            ]
+        ],
+        "title": "Kairos Reminder",
+        "date": "Juillet 2023",
+        "shortDesc": "Bot pour générer des rappels et suivre le temps passé sur des activités personnalisées. Consultez les graphiques et Excel automatiquement générés.",
+        "gitLink": "https://github.com/Eric-Philippe/Kairos-Bot-Reminder"
+    },
+    {
+        "tag": "BOT",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p>",
+        "previewImg": "https://cdn.discordapp.com/attachments/814908646138970122/1193510420451950602/image.png?ex=65acfa32&is=659a8532&hm=b66c1f64507a5e5994fb2aadf4ab3967c4d7ddd46a5eeeac1de8b62d03e9931f&",
+        "techs": [
+            [
+                "React"
             ],
-            "gitLink": "https://github.com/Eric-Philippe/Kairos-Bot-Reminder",
-            "date": "Juillet 2023",
-            "tag": "BOT",
-            "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/Kairos-Bot-Reminder/master/img/remindme.png",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at"
-        },
-        {
-            "title": "Cril Bot",
-            "shortDesc": "Bot d\u00e9di\u00e9 au centre des langues de l'IUT de Rangueil. G\u00e8re et administre les activit\u00e9s en ligne de mani\u00e8re efficace sur Discord.",
-            "techs": [
-                "React",
-                "Typescript",
-                "PostgreSQL",
-                "CI/CD",
+            [
+                "Typescript"
+            ],
+            [
+                "PostgreSQL"
+            ],
+            [
+                "CI/CD"
+            ],
+            [
                 "GitBook"
+            ]
+        ],
+        "title": "Cril Bot",
+        "date": "Juillet 2023",
+        "shortDesc": "Bot dédié au centre des langues de l'IUT de Rangueil. Gère et administre les activités en ligne de manière efficace sur Discord.",
+        "gitLink": "https://github.com/Eric-Philippe/Cril-Bot-main"
+    },
+    {
+        "tag": "FULLSTACK",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p>",
+        "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/SAE-Manager---IUT-Blagnac/main/documentation/res/img/login-page.png",
+        "techs": [
+            [
+                "React"
             ],
-            "gitLink": "https://github.com/Eric-Philippe/Cril-Bot-main",
-            "date": "Juillet 2023",
-            "tag": "BOT",
-            "previewImg": "https://cdn.discordapp.com/attachments/814908646138970122/1193510420451950602/image.png?ex=65acfa32&is=659a8532&hm=b66c1f64507a5e5994fb2aadf4ab3967c4d7ddd46a5eeeac1de8b62d03e9931f&",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at"
-        }
-    ]
-}
+            [
+                "Typescript"
+            ],
+            [
+                "PostgreSQL"
+            ],
+            [
+                "Docker"
+            ],
+            [
+                "C#"
+            ],
+            [
+                "Gherkin"
+            ]
+        ],
+        "title": "School Projects",
+        "date": "Décembre 2023",
+        "shortDesc": "Collection de projets web et Mathématiques réalisés au cours de mes années d'études. Ces projets sont réalisés en groupe et sont donc le fruit d'un travail d'équipe.",
+        "gitLink": "https://github.com/Eric-Philippe/SAE-Manager---IUT-Blagnac/tree/main"
+    },
+    {
+        "tag": "FRONTEND",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at</p>",
+        "previewImg": "NOT_FOUND",
+        "techs": [
+            [
+                "React"
+            ],
+            [
+                "Vite"
+            ],
+            [
+                "TailwindCSS"
+            ],
+            [
+                "TypeScript"
+            ],
+            [
+                "CI/CD"
+            ]
+        ],
+        "title": "NOT_FOUND",
+        "date": "Janvier 2024",
+        "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi euismod, ultricies lorem eget, ultricies libero. Integer at",
+        "gitLink": "https://github.com/Eric-Philippe/portfolio"
+    },
+    {
+        "tag": "BACKEND",
+        "content": "<p>Voici tous les entêtes disponibles:</p><pre><code class=\"language-py\">    [\"Titre\", \"Title\"],\n    [\"Résumé\", \"Aperçu\", \"Intro\", \"Introduction\", \"Présentation\"],\n    [\"Technologies\", \"Technos\", \"Techs\", \"Tools\"],\n    [\"Lien GitHub\", \"Lien Git\", \"Lien vers Git\"],\n    [\"Date\", \"Création\", \"Créé\", \"Créé le\", \"Date de création\"],\n    [\"Tag\", \"Tags\"],\n    [\"Image\", \"Image de prévisualisation\", \"Image de preview\", \"Preview\", \"Preview image\"],\n    [\"Contenu\", \"Contenu du projet\", \"Description\", \"Description du projet\"]</code></pre><p>Le premier prendra la priorité sur les autres.</p><p>/!\\ Attention, la présence d'un séparateur de ligne, ou bien d'un autre titre avec un hashtag arrêtera la lecture de la section</p><p>Considérez donc si vous devez absolument mettre un titre, utilisez la syntaxe html.</p><p>Dans le but de garder les choses flexibles et simples aucune mise à jour ne sera faite pour changer cela.</p>",
+        "previewImg": "NOT_FOUND",
+        "techs": [
+            [
+                "Python"
+            ]
+        ],
+        "title": "NOT_FOUND",
+        "date": "Janvier 2024",
+        "shortDesc": "Ce fichier est un exemple de projet. Il est là pour vous aider à comprendre comment fonctionne la dynamique de ce portfolio pour générez les pages de vos projets.",
+        "gitLink": "https://github.com/Eric-Philippe/portfolio"
+    }
+]

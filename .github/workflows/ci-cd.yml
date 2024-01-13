@@ -1,24 +1,31 @@
 name: Deploy Portfolio to GitHub Pages
 on: push
 jobs:
-  # Update JSON Job
+  # Update JSON Job using Julia
   update-json:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/checkout@v3
+      - name: Install Julia
+        uses: julia-actions/setup-julia@latest
         with:
-          python-version: 3.9
-      - name: Run Python script to update data.json
-        run: python scripts/mdToJson.py
-      - name: Upload the updated JSON file as an artifact
+          version: 1.6
+      - name: Clone the MdToJson Julia Repo
+        run: git clone https://github.com/Eric-Philippe/JuliaMarkdownJoy.git
+      - name: Move to the JuliaMarkdownJoy directory
+        run: cd JuliaMarkdownJoy
+      - name: Install Julia Packages
+        run: julia --project=. -e 'using Pkg; Pkg.instantiate()'
+      - name: Go back to the root of the project
+        run: cd ..
+      - name: Run the Julia Script
+        run: julia JuliaMarkdownJoy/src/run.jl extract -i _projects/ -c _projects/config.json  -o data.json
+      - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v3
         with:
           name: updated-json
           path: ./data.json
-  # Build Job
   build:
     needs: update-json
     runs-on: ubuntu-latest
