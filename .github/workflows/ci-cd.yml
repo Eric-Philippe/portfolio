@@ -18,7 +18,7 @@ jobs:
           Pkg.add(url="https://github.com/Eric-Philippe/JuliaMarkdownJoy.git")
           Pkg.instantiate()'
       - name: ls
-        run: ls -l JuliaMarkdownJoy/src
+        run: ls -l JuliaMarkdownJoy
       - name: Run the Julia Script
         run: julia JuliaMarkdownJoy/src/run.jl extract -i _projects/ -c .projects/config.json  -o data.json
       - name: Upload artifact to enable deployment
