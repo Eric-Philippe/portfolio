@@ -15,14 +15,14 @@ jobs:
         with:
           repository: Eric-Philippe/JuliaMarkdownJoy
           path: JuliaMarkdownJoy
-      - name: Build JuliaMarkdownJoy
+      - name: Install Julia packages
         run: |
           julia --project=JuliaMarkdownJoy -e '
           using Pkg
           Pkg.add("ArgParse")
           Pkg.instantiate()'
       - name: Run the Julia Script
-        run: julia JuliaMarkdownJoy/src/run.jl extract -i _projects/ -c _projects/config.json  -o data.json
+        run: julia --project=JuliaMarkdownJoy JuliaMarkdownJoy/src/run.jl extract -i _projects/ -c _projects/config.json  -o data.json
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v3
         with:
