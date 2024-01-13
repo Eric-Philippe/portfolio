@@ -11,14 +11,17 @@ jobs:
         uses: julia-actions/setup-julia@latest
         with:
           version: 1.6
-      - name: Clone the MdToJson Julia Repo
-        run: git clone https://github.com/Eric-Philippe/JuliaMarkdownJoy.git
-      - name: Move to the JuliaMarkdownJoy directory
-        run: cd JuliaMarkdownJoy
-      - name: Install Julia Packages that are in the Project.toml file
-        run: julia --project=. -e 'using Pkg; Pkg.instantiate()'
+      - name: "Clone and build"
+        run: |
+          julia --project=. -e 'using Pkg;
+          Pkg.GitTools.clone("https://github.com/Eric-Philippe/JuliaMarkdownJoy.git", "JuliaMarkdownJoy")'
+          Pkg.instantiate()'
+          cd JuliaMarkdownJoy
+          Pkg.instantiate()'
+      - name: "Go back to the root of the project"
+        run: cd ..
       - name: Run the Julia Script
-        run: julia JuliaMarkdownJoy/src/run.jl extract -i ../_projects/ -c ../_projects/config.json  -o ../data.json
+        run: julia JuliaMarkdownJoy/src/run.jl extract -i ./_projects/ -c ./_projects/config.json  -o ./data.json
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v3
         with:
