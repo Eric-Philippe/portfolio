@@ -17,12 +17,12 @@ jobs:
           using Pkg
           Pkg.add(url="https://github.com/Eric-Philippe/JuliaMarkdownJoy.git")
           Pkg.instantiate()'
-      - name: "Go back to the root of the project"
-        run: cd ..
       - name: ls
         run: ls -l
+      - name: "Go back to the root of the project"
+        run: cd ..
       - name: Run the Julia Script
-        run: julia JuliaMarkdownJoy/src/run.jl extract -i ./_projects/ -c ./_projects/config.json  -o ./data.json
+        run: julia ./JuliaMarkdownJoy/src/run.jl extract -i ./_projects/ -c ./_projects/config.json  -o ./data.json
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v3
         with:
