@@ -37,7 +37,7 @@
                 "React"
             ],
             [
-                "Boostrap"
+                "Bootstrap"
             ],
             [
                 "PostgreSQL"
@@ -81,7 +81,7 @@
         "title": "Julia Markdown Joy",
         "date": "Janvier 2024",
         "shortDesc": "\"JuliaMarkdownJoy\" - Outil versatile en Julia pour analyser des fichiers Markdown en JSON, extraire des champs spécifiques, et convertir le tout en HTML",
-        "gitLink": "https://github.com/Eric-Philippe/JuliaMarkdownJoy/"
+        "gitLink": "https://github.com/Eric-Philippe/JuliaMarkdownJoy"
     },
     {
         "tag": "CHALLENGE",
@@ -118,7 +118,7 @@
         "previewImg": "https://raw.githubusercontent.com/Eric-Philippe/Basic-Music-Manager-App/main/img/welcome.png",
         "techs": [
             [
-                "Php"
+                "PHP"
             ],
             [
                 "Symfony"
@@ -170,7 +170,7 @@
                 "React"
             ],
             [
-                "Typescript"
+                "TypeScript"
             ],
             [
                 "PostgreSQL"
@@ -199,7 +199,7 @@
                 "React"
             ],
             [
-                "Typescript"
+                "TypeScript"
             ],
             [
                 "PostgreSQL"
@@ -225,7 +225,7 @@
                 "React"
             ],
             [
-                "Typescript"
+                "TypeScript"
             ],
             [
                 "PostgreSQL"

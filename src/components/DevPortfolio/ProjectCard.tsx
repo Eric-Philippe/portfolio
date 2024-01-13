@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import { RouterFocusProps } from "../../models/Router";
 import { Project } from "../../utils/Projects";
+import { getTechColor } from "../../utils/utils";
 
 export default function ProjectCard({
   project,
@@ -71,7 +72,11 @@ export default function ProjectCard({
             {project.techs.map((tech) => (
               <span
                 key={tech}
-                className="inline-block rounded-md px-2 py-1 mr-2 mb-3 bg-gray-300 text-gray-800 text-xs font-semibold"
+                className="inline-block rounded-md px-2 py-1 mr-2 mb-3 text-gray-800 bg-slate-50 text-xs font-semibold"
+                style={{
+                  borderColor: getTechColor(tech),
+                  borderWidth: "1px",
+                }}
               >
                 {tech}
               </span>

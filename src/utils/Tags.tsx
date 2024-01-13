@@ -71,7 +71,14 @@ export const CHALLENGE: Tags = {
   secGradientColor: "#63d498",
 };
 
-export const ALL_TAGS: Tags[] = [FULLSTACK, FRONTEND, BACKEND, BOT, CHALLENGE];
+export const ALL_TAGS: Tags[] = [
+  FULLSTACK,
+  FRONTEND,
+  BACKEND,
+  TOOL,
+  BOT,
+  CHALLENGE,
+];
 
 /**
  * @description - Gets the tags from a string

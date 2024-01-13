@@ -50,7 +50,7 @@ export default function SkillsSection() {
                       Backend
                     </h3>
                     <p className="text-sm text-gray-500 mt-2">
-                      JS, TS, Python (2.* & 3.*), Java (8.* & 11.*), C#, Cobol
+                      JS, TS, Python, Java, Kotlin, C#, Cobol, Ada, Julia
                     </p>
 
                     <AnimatedSeparator color1="#ffc9c9" />
