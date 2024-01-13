@@ -19,6 +19,7 @@ jobs:
         run: |
           julia --project=JuliaMarkdownJoy -e '
           using Pkg
+          Pkg.add("ArgParse")
           Pkg.instantiate()'
       - name: Run the Julia Script
         run: julia JuliaMarkdownJoy/src/run.jl extract -i _projects/ -c _projects/config.json  -o data.json
