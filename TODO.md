@@ -19,6 +19,7 @@
 ### Tweaks
 
 - [x] Ajouter un SubHeader pour les sections
+- [ ] Ajouter pseudo légères couleurs sur les techs quand reconnus (Julia rose, Python Bleu ...)
 
 ---
 
