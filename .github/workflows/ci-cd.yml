@@ -13,7 +13,7 @@ jobs:
           version: 1.6
       - name: "Clone and build"
         run: |
-          julia --project=. -e 'using Pkg;
+          using Pkg
           Pkg.GitTools.clone("https://github.com/Eric-Philippe/JuliaMarkdownJoy.git", "JuliaMarkdownJoy")'
           Pkg.instantiate()'
           cd JuliaMarkdownJoy
