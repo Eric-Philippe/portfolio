@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.5] -- Coming Soon
+
+### Major updates
+
+- All the texts for the dev projects are now written !
+- The Dev Portfolio Page is now complete !
+
+## [0.4.1] -- 2024-14-01
+
+### Major updates
+
+- AGAIN, new refactoring of the Markdown Parser
+- - I made a whole new repository for the Markdown Parser, in order to make it more modular and easier to use.
+- - It's written in Julia and the CI has been updated to work with it.
+
+### Minor updates
+
+- Add a Dockerfile to build the website in a container
+- The Techs tags are now colored with the color of the language
+
 ## [0.4] -- 2024-11-01
 
 ### Major updates

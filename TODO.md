@@ -12,14 +12,14 @@
 - [x] Footer
 - [x] Génération du contenu de la section projets à partir des .md
 - [x] Rédaction des projets (Short Description)
-- [ ] Parser spécifique pour le contenu long des projets
+- [x] Parser spécifique pour le contenu long des projets (New Repository done)
 - [ ] Consultation d'un projet **WIP**
 - [ ] Rédaction des projets (Long Description)
 
 ### Tweaks
 
 - [x] Ajouter un SubHeader pour les sections
-- [ ] Ajouter pseudo légères couleurs sur les techs quand reconnus (Julia rose, Python Bleu ...)
+- [x] Ajouter pseudo légères couleurs sur les techs quand reconnus (Julia rose, Python Bleu ...)
 
 ---
 
