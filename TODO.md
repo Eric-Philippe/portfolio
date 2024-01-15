@@ -13,8 +13,8 @@
 - [x] Génération du contenu de la section projets à partir des .md
 - [x] Rédaction des projets (Short Description)
 - [x] Parser spécifique pour le contenu long des projets (New Repository done)
-- [ ] Consultation d'un projet **WIP**
-- [ ] Rédaction des projets (Long Description)
+- [x] Consultation d'un projet
+- [x] Rédaction des projets (Long Description)
 
 ### Tweaks
 
