@@ -115,6 +115,14 @@ body {
   color: #3c3c3c;
 }
 
+.dev-container-project h5 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.8rem;
+  color: #3c3c3c;
+}
+
 .dev-container-project p {
   font-size: 1rem;
   color: #3c3c3c;
@@ -164,4 +172,59 @@ body {
   margin: 10px 0;
   margin-bottom: 20px;
   padding: 10px 20px;
+}
+
+@media (min-width: 768px) {
+  .dev-container-project img {
+    max-width: 65%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .dev-container-project table {
+    width: 30%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (max-width: 1080px) {
+  .dev-container-project img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .dev-container-project table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.dev-container-project th,
+.dev-container-project td {
+  padding: 12px 15px;
+}
+
+.dev-container-project th {
+  background-color: #009879;
+  color: white;
+  text-align: left;
+}
+
+.dev-container-project tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.dev-container-project tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.dev-container-project tr:last-of-type {
+  border-bottom: 2px solid rgb(99, 102, 241);
 }

@@ -91,6 +91,8 @@ const TECH_COLOR: { [key: string]: string } = {
   Shell: "#4eaa25",
   Batch: "#4eaa25",
   GitBook: "#4eaa25",
+  Crontab: "#8c8c8c",
+  PlantUML: "#7d4e1e",
 };
 
 export const getTechColor = (tech: string) => {

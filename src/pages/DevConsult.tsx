@@ -121,7 +121,7 @@ export default function DevConsult({
               id="canvas-bubble-consult"
               style={{
                 width: isSmallScreen ? "100%" : "100%",
-                height: isSmallScreen ? "300px" : "850px",
+                height: isSmallScreen ? "400px" : "850px",
                 opacity: 0,
               }}
             ></canvas>
@@ -284,7 +284,7 @@ export default function DevConsult({
 
               <div className="relative mb-16 max-w-4xl z-30">
                 <h1
-                  className={`z-10 lg:text-5xl text-5xl font-bold bg-clip-text relative -top-px text-left mb-16 text-gray-800 ${
+                  className={`z-10 lg:text-5xl text-5xl font-bold bg-clip-text relative -top-px text-left mb-8 text-gray-800 ${
                     project.title.length > 20 ? "text-4xl" : ""
                   }`}
                 >

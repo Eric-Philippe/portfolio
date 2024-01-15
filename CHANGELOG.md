@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.5] -- Coming Soon
+## [1.1] -- Coming Soon
+
+### Major updates
+
+- Still the PhotoPortfolio Page to complete
+
+## [1.0] -- 2024-15-01
 
 ### Major updates
 
@@ -21,6 +27,7 @@ All notable changes to this project will be documented in this file.
 
 - Add a Dockerfile to build the website in a container
 - The Techs tags are now colored with the color of the language
+- We have now a pointer cursor on hover on the projects
 
 ## [0.4] -- 2024-11-01
 

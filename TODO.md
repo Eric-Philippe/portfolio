@@ -21,6 +21,7 @@
 - [x] Ajouter un SubHeader pour les sections
 - [x] Ajouter pseudo légères couleurs sur les techs quand reconnus (Julia rose, Python Bleu ...)
 - [x] Fix les icones à l'angle des projets (GitHub, Preview) qui n'étaient pas responsive
+- [x] Add cursor pointer on hover on the projects
 
 ---
 
