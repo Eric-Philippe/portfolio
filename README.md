@@ -21,6 +21,9 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     - [PhotoPortfolio](#photoportfolio-📷)
   - [Updates](#updates)
   - [Technologies](#technologies-📡)
+  - [Continuous Integration](#continuous-integration)
+    - [GitHub Actions](#github-actions)
+    - [GitHub Pages](#github-pages)
   - [Getting Started](#getting-started)
     - [Node](#node-🟩)
       - [Prerequisites](#prerequisites)
@@ -111,6 +114,16 @@ Current version: `1.0.0`
 | `TypeScript`  | Language            | `5.2.2`   |
 | `Three.js`    | 3D Library          | `0.160.0` |
 | `Julia`       | Markdown Parser     | `1.10.0`  |
+
+## Continuous Integration
+
+### GitHub Actions
+
+I use GitHub Actions to build the website and publish it on GitHub Pages. The CI/CD pipeline is defined in the [`ci-cd.yml`](./.github/workflows/ci-cd.yml) file.
+
+### GitHub Pages
+
+The website is hosted on GitHub Pages. The configuration is defined in the [`vite.config.ts`](./vite.config.ts) file.
 
 ## Getting Started
 
