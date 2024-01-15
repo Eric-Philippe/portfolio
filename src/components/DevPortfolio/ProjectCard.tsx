@@ -22,7 +22,7 @@ export default function ProjectCard({
       style={{ opacity: 1, transform: "none" }}
     >
       <div
-        className="group relative focus:outline-none block border border-black py-4 lg:py-10 px-6 lg:px-14 bg-white overflow-hidden transform transition hover:scale-[1.01] h-full will-change-transform rounded-3xl"
+        className="group relative focus:outline-none block border border-black py-4 lg:py-10 px-6 lg:px-14 bg-white overflow-hidden transform transition hover:scale-[1.01] h-full will-change-transform rounded-3xl cursor-pointer"
         onClick={() => {
           setFocus(index);
         }}
