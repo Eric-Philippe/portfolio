@@ -54,6 +54,7 @@
 - [x] Recoder mon propre parser de MD en Python
 - [x] Mentions Légales
 - [ ] Ajouter Unit Tests
+- [ ] Tester s'il n'y a aucun dead link dans les markdowns
 - [x] Dockerize the app
 
 ### Tweaks
