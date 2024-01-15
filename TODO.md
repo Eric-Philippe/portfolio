@@ -68,4 +68,4 @@
 ## Projet
 
 - [x] Fichiers Projets (Licence, Authors, CHANGELOG, TODO)
-- [ ] Readme
+- [x] Readme

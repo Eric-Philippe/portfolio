@@ -11,6 +11,8 @@ border-radius: 10px;
 box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 " />
 
+<a href="https://actions-badge.atrox.dev/Eric-Philippe/portfolio/goto?ref=main"><img alt="Build Status" src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FEric-Philippe%2Fportfolio%2Fbadge%3Fref%3Dmain&style=popout-square" /></a>
+
 ## Table of Contents
 
 - [Eric Philippe - Photo/DevPortfolio](#eric-philippe---photodevportfolio)
