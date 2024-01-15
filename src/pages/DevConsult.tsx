@@ -4,7 +4,7 @@ import axios from "axios";
 import { RouterFocusProps } from "../models/Router";
 import { drawCircle } from "../utils/utils";
 import { Project } from "../utils/Projects";
-import { FaGithub } from "react-icons/fa";
+import { FaArrowLeft, FaGithub } from "react-icons/fa";
 import AnimatedSeparator from "../components/Animations/AnimatedSeparator";
 
 interface RepoData {
@@ -128,7 +128,11 @@ export default function DevConsult({
           </div>
         </div>
 
-        <div className="relative w-full overflow-hidden min-h-[90vh] flex justify-center pt-12 lg:py-24 px-8 lg:px-0 z-0">
+        <div
+          className="relative w-full overflow-hidden min-h-[90vh] flex justify-center pt-12 lg:py-24 px-8 lg:px-0 z-0 sm:w-screen sm:overflow-auto"
+          style={{ maxWidth: "100vw" }}
+        >
+          {" "}
           <button
             className="fixed top-10 right-10 z-50 w-12 h-12 bg-black rounded-full text-white flex items-center justify-center text-xl focus:outline-none focus:ring focus:ring-gray-400"
             onClick={() => setFocus(null)}
@@ -145,7 +149,11 @@ export default function DevConsult({
               <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
             </svg>
           </button>
-          <div className="relative mb-16 max-w-4xl z-30 mt-11">
+          <div
+            className="relative mb-16 max-w-4xl z-30 mt-11"
+            style={isSmallScreen ? { maxWidth: "80vw" } : {}}
+          >
+            {" "}
             <h1
               className={`z-10 lg:text-8xl text-6xl font-bold bg-clip-text relative -top-px text-left mb-16 text-gray-800 ${
                 project.title.length > 20 ? "text-4xl" : ""
@@ -157,7 +165,6 @@ export default function DevConsult({
             >
               {project.title}
             </h1>
-
             <div className="text-center">
               <div className="flex justify-center mb-14">
                 <figure>
@@ -287,6 +294,20 @@ export default function DevConsult({
                   className="dev-container-project"
                   dangerouslySetInnerHTML={{ __html: project.content }}
                 />{" "}
+              </div>
+
+              <div>
+                <button
+                  style={{ display: "inline-flex" }}
+                  className="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium items-center"
+                  onClick={() => {
+                    setFocus(null);
+                    window.scrollTo(0, 400);
+                  }}
+                >
+                  <FaArrowLeft className="mr-2" />
+                  Go back
+                </button>
               </div>
             </div>
           </div>

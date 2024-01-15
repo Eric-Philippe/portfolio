@@ -27,7 +27,7 @@ export default function ProjectCard({
           setFocus(index);
         }}
       >
-        <div className="relative max-w-screen-sm mr-4 lg:mr-8 w-full z-10">
+        <div className="relative mr-4 lg:mr-8 w-full z-10">
           <h3 className="font-[900] tracking-tight text-3xl">
             {project.title.length > 10 && window.innerWidth < 1024 ? (
               <span className="text-2xl">{project.title}</span>
@@ -40,7 +40,7 @@ export default function ProjectCard({
             onMouseEnter={() => setIsButtonHovered(true)}
             onMouseLeave={() => setIsButtonHovered(false)}
           >
-            <button className="absolute top-[-50px] right-[-20px] px-3 py-1 rounded-md text-sm font-semibold transition-all duration-300 ease-in-out hover:bg-gh-marketingLight hover:text-gh-marketingDark">
+            <button className="absolute z-40 top-[-30px] lg:-right-3 -right-1 px-3 py-1 rounded-md text-sm font-semibold transition-all duration-300 ease-in-out hover:bg-gh-marketingLight hover:text-gh-marketingDark">
               <FaPlus />
             </button>
           </div>
@@ -54,6 +54,7 @@ export default function ProjectCard({
               maxWidth: "67%",
               objectFit: "cover",
               borderRadius: "10px",
+              zIndex: isButtonHovered ? 50 : -1,
             }}
           />
           <div className="text-gh-textLight mt-3">{project.date}</div>
@@ -83,20 +84,22 @@ export default function ProjectCard({
             ))}
           </div>
           <div
-            className="font-light mt-5 pb-5 text-lg"
+            className="font-light mt-5 pb-5 text-lg mb-8"
             style={{
               fontSize: "1.25rem",
             }}
           >
             {project.shortDesc}
           </div>
-          <a href={project.gitLink} className="absolute bottom-1 right-1">
+          <a
+            href={project.gitLink}
+            className="absolute -bottom-6 xl:-bottom-8 right-4 lg:-right-1 sm:right-2"
+          >
             <svg
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
-              style={{ marginBottom: "-5", marginRight: "-0.5em" }}
             >
               <title>GitHub icon</title>
               <path
