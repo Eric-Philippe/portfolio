@@ -33,7 +33,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: updated-json
-          path: ./projects.json ./albums.json
+          path: ./projects.json
+          path: ./albums.json
   build:
     needs: update-json
     runs-on: ubuntu-latest
