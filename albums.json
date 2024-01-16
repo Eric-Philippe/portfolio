@@ -1,32 +1,38 @@
 [
     {
-        "previewImgTwo": "https://live.staticflickr.com/65535/53465345737_d97e83e06f_o.png",
-        "previewImgThree": "https://live.staticflickr.com/65535/53466252736_939c6df14c_o.png",
         "content": "<p>Hi !</p>",
         "camera": "Canon EOS 800D",
         "previewImgOne": "https://live.staticflickr.com/65535/53465282817_5185289c8d_o.png",
         "lenses": [
             [
                 "Canon EF-S 18-55mm f/4-5.6 IS STM"
+            ],
+            [
+                "Canon EF-S 10-18mm f/4.5-5.6 IS STM"
             ]
         ],
         "title": "Bordeaux December Lights",
-        "date": "Décembre 2023",
-        "shortDesc": "Week-end photo à Bordeaux, principalement de nuit."
+        "phone": "Galaxy ZFold4",
+        "shortTitle": "Bordeaux",
+        "shortDesc": "Week-end photo à Bordeaux, principalement de nuit.",
+        "date": "Décembre 2023"
     },
     {
-        "previewImgTwo": "https://live.staticflickr.com/65535/53465282817_5185289c8d_o.png",
-        "previewImgThree": "https://live.staticflickr.com/65535/53466252736_939c6df14c_o.png",
         "content": "<p>Hi !</p><img src=\"https://live.staticflickr.com/65535/53466252736_939c6df14c_o.png\" alt=\"Image quatrième\">",
         "camera": "Canon EOS 800D",
         "previewImgOne": "https://live.staticflickr.com/65535/53465345737_d97e83e06f_o.png",
         "lenses": [
             [
                 "Canon EF-S 18-55mm f/4-5.6 IS STM"
+            ],
+            [
+                "Canon EF-S 10-18mm f/4.5-5.6 IS STM"
             ]
         ],
         "title": "Bordeaux December Lights",
-        "date": "Décembre 2022",
-        "shortDesc": "Week-end photo à Bordeaux, principalement de nuit."
+        "phone": "NOT_FOUND",
+        "shortTitle": "Bordeaux",
+        "shortDesc": "Week-end photo à Bordeaux, principalement de nuit.",
+        "date": "Décembre 2022"
     }
 ]

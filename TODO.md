@@ -33,9 +33,9 @@
 - [x] Setup Section
 - [x] 3D Model Section
 - [x] Software Section
-- [ ] Albums Preview Section
-- [ ] Albums Consultation
+- [x] Albums Preview Section
 - [x] Génération du contenu de la section albums à partir des .md
+- [ ] Albums Consultation
 - [ ] Rédaction des albums
 - [x] Footer
 

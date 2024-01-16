@@ -7,6 +7,8 @@ import RouterProps from "../models/Router";
 import AlbumsSection from "../components/PhotoPortfolio/AlbumsSection";
 import { useState } from "react";
 import SoftwareSection from "../components/PhotoPortfolio/SoftwareSection";
+import PhotoConsult from "./PhotoConsult";
+import albums from "../utils/Albums";
 
 export default function PhotoPortfolio({ setIsDev }: RouterProps) {
   const [focus, setFocus] = useState<number | null>(null);
@@ -52,5 +54,5 @@ export default function PhotoPortfolio({ setIsDev }: RouterProps) {
       </>
     );
 
-  return <h1>Consult Albums</h1>;
+  return <PhotoConsult album={albums[focus]} setFocus={setFocus} />;
 }

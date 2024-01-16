@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - The two portfolios are now completly independant, using lazy loading to load the right portfolio
 - Added in consequence a `Tetris Loading` animation to the website
 - Added a Software Page to the PhotoPortfolio
+- Added a Albums Section to the PhotoPortfolio
 
 ### Minor updates
 
