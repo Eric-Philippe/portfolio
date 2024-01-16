@@ -7,6 +7,9 @@ All notable changes to this project will be documented in this file.
 ### Major updates
 
 - The CI now includes a test to check if there is no dead link in the markdown files
+- The two portfolios are now completly independant, using lazy loading to load the right portfolio
+- Added in consequence a `Tetris Loading` animation to the website
+- Added a Software Page to the PhotoPortfolio
 
 ### Minor updates
 
@@ -58,8 +61,8 @@ All notable changes to this project will be documented in this file.
 ### Major updates
 
 - This portfolio will be simultaneously a Dev Portfolio and a Photography Portfolio
-
 - Add a Photography Page with a SUPER FANCY 3D CAMERA MODEL and a full Setup Section
+- Add a Setup Section to the PhotoPortfolio
 
 ## [0.2] -- 2024-08-01
 

@@ -27,11 +27,11 @@ export default function AlbumsSection({ setFocus }: RouterFocusProps) {
           <div className=" py-12 relative z-0 bg-gh-marketingDark">
             <div className="grid grid-cols-12">
               <div className="col-span-12">
-                <div className="flex flex-col mx-20 mb-10">
+                <div className="px-4 sm:px-6 lg:px-8 py-8">
                   <div className="relative">
                     <h2
                       className="text-5xl font-extrabold text-white mb-8 z-10 relative"
-                      id="realisations"
+                      id="albums"
                     >
                       Mes Albums
                     </h2>
@@ -48,7 +48,7 @@ export default function AlbumsSection({ setFocus }: RouterFocusProps) {
                     </button>
 
                     <div
-                      className={`flex flex-wrap transition-all duration-1000 transform origin-left ${
+                      className={`flex ml-4 flex-wrap transition-all duration-1000 transform origin-left ${
                         visibleYears ? "scale-x-100" : "scale-x-0"
                       }`}
                     >

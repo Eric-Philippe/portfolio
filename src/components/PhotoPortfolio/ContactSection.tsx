@@ -34,7 +34,7 @@ export default function ContactSection() {
         >
           <div className="w-full flex flex-col items-start">
             <a
-              href="#realisations"
+              href="#setup"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
@@ -47,7 +47,7 @@ export default function ContactSection() {
                 }}
               >
                 <div className="flex items-center space-x-3">
-                  <div>MON MATÉRIEL</div>
+                  <div>MATÉRIEL</div>
                   <FaCubes
                     size={50}
                     className="transition-colors duration-200"
@@ -58,7 +58,7 @@ export default function ContactSection() {
                 </div>
               </h1>
             </a>
-            <a href="#competences">
+            <a href="#logiciels">
               <h1
                 className={`${
                   isSmallScreen ? "text-3xl" : "text-5xl"
@@ -67,10 +67,10 @@ export default function ContactSection() {
                   fontFamily: "Sohne,sans-serif",
                 }}
               >
-                MES ALBUMS
+                LOGICIELS
               </h1>
             </a>
-            <a href="#about">
+            <a href="#albums">
               <h1
                 className={`${
                   isSmallScreen ? "text-3xl" : "text-5xl"
@@ -79,7 +79,7 @@ export default function ContactSection() {
                   fontFamily: "Sohne,sans-serif",
                 }}
               >
-                CONTACT
+                MES ALBUMS
               </h1>
             </a>
           </div>

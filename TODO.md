@@ -32,6 +32,7 @@
 - [x] Head
 - [x] Setup Section
 - [x] 3D Model Section
+- [x] Software Section
 - [ ] Albums Preview Section
 - [ ] Albums Consultation
 - [x] Génération du contenu de la section albums à partir des .md
@@ -39,8 +40,6 @@
 - [x] Footer
 
 ### Tweaks
-
-- [ ] Ajouter les logiciels d'éditions utilisés dans le setup
 
 ---
 

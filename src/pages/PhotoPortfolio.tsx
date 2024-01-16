@@ -6,6 +6,7 @@ import ContactSection from "../components/PhotoPortfolio/ContactSection";
 import RouterProps from "../models/Router";
 import AlbumsSection from "../components/PhotoPortfolio/AlbumsSection";
 import { useState } from "react";
+import SoftwareSection from "../components/PhotoPortfolio/SoftwareSection";
 
 export default function PhotoPortfolio({ setIsDev }: RouterProps) {
   const [focus, setFocus] = useState<number | null>(null);
@@ -28,6 +29,7 @@ export default function PhotoPortfolio({ setIsDev }: RouterProps) {
           >
             <div style={{ overflowY: "hidden" }}>
               <SetupSection />
+              <SoftwareSection />
             </div>
             <div>
               <Canon800d_Canvas />
@@ -42,6 +44,7 @@ export default function PhotoPortfolio({ setIsDev }: RouterProps) {
             />
 
             <SetupSection />
+            <SoftwareSection />
           </>
         )}
         <AlbumsSection setFocus={setFocus} />

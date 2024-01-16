@@ -3,7 +3,7 @@ import AnimatedSeparator from "../Animations/AnimatedSeparator";
 export default function SetupSection() {
   return (
     <>
-      <section className="scroll-mt-8 lg:scroll-mt-0 mb-5">
+      <section className="scroll-mt-8 lg:scroll-mt-0 lg:mb-5">
         <div className="px-0 lg:px-4 overflow-hidden">
           <div className="lg:rounded-2xl py-12 lg:py-24 relative z-0 bg-gh-marketingDark">
             <div className="project-container">
@@ -12,7 +12,7 @@ export default function SetupSection() {
                   <div className="relative">
                     <h2
                       className="text-5xl font-extrabold text-white mb-8 z-10 relative"
-                      id="realisations"
+                      id="setup"
                     >
                       Mon matériel
                     </h2>
