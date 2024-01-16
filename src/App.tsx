@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { Suspense, useState, lazy } from "react";
 
-import DevPortfolio from "./pages/DevPortfolio";
-import PhotoPortfolio from "./pages/PhotoPortfolio";
+// import DevPortfolio from "./pages/DevPortfolio";
+// import PhotoPortfolio from "./pages/PhotoPortfolio";
 
 // Different way to import pages, using React.lazy, better for performance, but removes the ability to use the ParallaxProvider
-// const DevPortfolio = lazy(() => import("./pages/DevPortfolio"));
-// const PhotoPortfolio = lazy(() => import("./pages/PhotoPortfolio"));
+const DevPortfolio = lazy(() => import("./pages/DevPortfolio"));
+const PhotoPortfolio = lazy(() => import("./pages/PhotoPortfolio"));
 
 import "./App.css";
+import TetrisLoader from "./components/Loading/Loading";
 
 /**
  * @description - Gets the last opened page from local storage
@@ -36,9 +37,13 @@ export default function App() {
     localStorage.setItem("lastOpenedPage", JSON.stringify(bool));
   };
 
-  return isDev ? (
-    <DevPortfolio setIsDev={togglePage} />
-  ) : (
-    <PhotoPortfolio setIsDev={togglePage} />
+  return (
+    <Suspense fallback={<TetrisLoader />}>
+      {isDev ? (
+        <DevPortfolio setIsDev={togglePage} />
+      ) : (
+        <PhotoPortfolio setIsDev={togglePage} />
+      )}
+    </Suspense>
   );
 }

@@ -42,6 +42,8 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 
 I wanted to put all my **creative** work in one place, and also make the process to **keep it up to date easier**. I also wanted to focus for once only and fully on the `Front-End` part of the website.
 
+I also tried as my best to make the website fast and light, so that it can be accessible to everyone, keeping every files under 1MB.
+
 ### Markdown Parser 📄
 
 The more I progressed in the development of this website, the more I realized that I needed a way to write my content in a more flexible way than HTML. This means that when I'm ready, I can concentrate on writing the content without having to worry about the layout.
