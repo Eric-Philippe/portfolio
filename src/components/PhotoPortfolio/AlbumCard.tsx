@@ -50,7 +50,7 @@ export default function AlbumCard({
             fontFamily: "Expose, Arial, sans-serif",
             letterSpacing: "0.1em",
             fontWeight: 400,
-            fontSize: isSmallScreen ? "1.20rem" : "1.50rem",
+            fontSize: isSmallScreen ? "1.02rem" : "1.50rem",
           }}
         >
           {album.title}
@@ -58,11 +58,13 @@ export default function AlbumCard({
 
         <motion.div
           ref={ref}
-          className="absolute top-0 right-8 p-4 text-white text-base font-bold flex items-center"
+          className="absolute p-4 text-white text-base font-bold flex items-center"
           style={{
             fontFamily: "Expose, Arial, sans-serif",
             letterSpacing: "0.1em",
             fontWeight: 400,
+            right: isSmallScreen ? "0.8rem" : "2rem",
+            top: 1,
           }}
           initial={{ scale: 0 }}
           animate={{ rotate: inView ? 360 : 0, scale: inView ? 1 : 0 }}
