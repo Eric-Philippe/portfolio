@@ -45,6 +45,7 @@ export default function PhotoPortfolio({ setIsDev }: RouterProps) {
           </>
         )}
         <AlbumsSection setFocus={setFocus} />
+        <ContactSection />
       </>
     );
 
