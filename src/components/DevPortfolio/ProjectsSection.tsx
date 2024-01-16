@@ -26,14 +26,6 @@ export default function ProjectSection({ setFocus }: RouterFocusProps) {
       <section className="scroll-mt-8 lg:scroll-mt-0 mb-5">
         <div className="px-0 lg:px-4 overflow-hidden">
           <div className="lg:rounded-2xl py-12 lg:py-24 relative z-0 bg-gh-marketingDark">
-            <div className="absolute inset-0 h-full w-full hidden lg:block pointer-events-none z-[-1] ">
-              <div className="container h-full">
-                <div className="grid grid-cols-12 h-full overflow-hidden">
-                  <div className="col-span-1 relative"></div>
-                </div>
-              </div>
-            </div>
-
             <div className="project-container">
               <div className="grid grid-cols-12">
                 <div className="col-span-12 lg:col-span-10 lg:col-start-2 mb-8">

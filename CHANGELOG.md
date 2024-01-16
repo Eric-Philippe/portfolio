@@ -6,7 +6,11 @@ All notable changes to this project will be documented in this file.
 
 ### Major updates
 
-- Still the PhotoPortfolio Page to complete
+- The CI now includes a test to check if there is no dead link in the markdown files
+
+### Minor updates
+
+- The DevPortfolio saw a small refactor of the quick access select on phone
 
 ## [1.0] -- 2024-15-01
 

@@ -34,9 +34,9 @@
 - [x] 3D Model Section
 - [ ] Albums Preview Section
 - [ ] Albums Consultation
-- [ ] Génération du contenu de la section albums à partir des .md
+- [x] Génération du contenu de la section albums à partir des .md
 - [ ] Rédaction des albums
-- [ ] Footer
+- [x] Footer
 
 ### Tweaks
 
@@ -54,7 +54,7 @@
 - [x] Recoder mon propre parser de MD en Python
 - [x] Mentions Légales
 - [ ] Ajouter Unit Tests
-- [ ] Tester s'il n'y a aucun dead link dans les markdowns
+- [x] Tester s'il n'y a aucun dead link dans les markdowns
 - [x] Dockerize the app
 
 ### Tweaks

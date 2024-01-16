@@ -7,7 +7,7 @@ export default function Canon800d_Canvas() {
   const BASE = 240;
   const FIRST_STEP = 400;
   const ROTATION_STOP = 1000;
-  const SECOND_STEP = 700;
+  const SECOND_STEP = 750;
   const ROTATION_SPEED = 0.006;
   const isSmallScreen = window.innerWidth < 1020;
   const FOV = isSmallScreen ? 20 : 10;

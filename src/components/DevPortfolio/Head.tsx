@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 /** @Components */
 import { Header } from "../Common/Header";
@@ -12,8 +12,21 @@ import RouterProps from "../../models/Router";
 
 /** @Assets */
 import { DEV_COLOR_PALETTE as colors } from "../../assets/ColorPalette";
+import "./Head.css";
+import { Variants, motion } from "framer-motion";
+
+const itemVariants: Variants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 300, damping: 24 },
+  },
+  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
+};
 
 export default function Head({ setIsDev }: RouterProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     drawCircle(400, 0, 0, colors.first, "canvas-bubble");
     drawCircle(200, 600, 0, colors.second, "canvas-bubble");
@@ -104,21 +117,107 @@ export default function Head({ setIsDev }: RouterProps) {
       </div>
       <div className="bg-white/90 backdrop-blur backdrop-filter sticky top-0 z-10 lg:py-6">
         <div className="lg:hidden">
-          <select
-            className="w-full p-4 border-0 bg-transparent font-semibold"
-            onChange={(e) => {
-              const id = e.target.value;
-              const element = document.getElementById(id);
-              if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
+          <motion.nav
+            initial={false}
+            animate={isOpen ? "open" : "closed"}
+            className="menu"
           >
-            <option value="realisations">Réalisations</option>
-            <option value="competences">Mes compétences</option>
-            <option value="about">Parcours</option>
-            <option value="contact">Contact</option>
-          </select>
+            <motion.button
+              whileTap={{ scale: 0.97 }}
+              onClick={() => setIsOpen(!isOpen)}
+              className="menu-button"
+            >
+              Réalisations
+              <motion.div
+                variants={{
+                  open: { rotate: 180 },
+                  closed: { rotate: 0 },
+                }}
+                transition={{ duration: 0.2 }}
+                style={{ originY: 0.55 }}
+              >
+                <svg width="15" height="15" viewBox="0 0 20 20">
+                  <path d="M0 7 L 20 7 L 10 16" />
+                </svg>
+              </motion.div>
+            </motion.button>
+            <motion.ul
+              className="p-4 font-semibold"
+              variants={{
+                open: {
+                  clipPath: "inset(0% 0% 0% 0% round 10px)",
+                  transition: {
+                    type: "spring",
+                    bounce: 0,
+                    duration: 0.7,
+                    delayChildren: 0.3,
+                    staggerChildren: 0.05,
+                  },
+                  display: "block",
+                },
+                closed: {
+                  clipPath: "inset(10% 50% 90% 50% round 10px)",
+                  transition: {
+                    type: "spring",
+                    bounce: 0,
+                    duration: 0.3,
+                  },
+                  display: "none",
+                },
+              }}
+              style={{
+                position: "absolute",
+                zIndex: 1,
+                pointerEvents: isOpen ? "auto" : "none",
+                width: "95%",
+              }}
+            >
+              <motion.li
+                variants={itemVariants}
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  document
+                    .getElementById("realisations")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Réalisations
+              </motion.li>
+              <motion.li
+                variants={itemVariants}
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  document
+                    .getElementById("competences")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Mes compétences
+              </motion.li>
+              <motion.li
+                variants={itemVariants}
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  document
+                    .getElementById("about")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Parcours
+              </motion.li>
+              <motion.li
+                variants={itemVariants}
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Contact
+              </motion.li>
+            </motion.ul>
+          </motion.nav>
         </div>
         <div className="hidden lg:block container">
           <nav className="flex items-center justify-between font-medium text-sm uppercase tracking-widest ml-32">

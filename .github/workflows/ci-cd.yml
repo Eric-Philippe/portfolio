@@ -21,15 +21,19 @@ jobs:
           using Pkg
           Pkg.add("ArgParse")
           Pkg.instantiate()'
-      - name: Check that the markdown links are not dead
+      - name: Check that the projects markdown links are not dead
         run: julia --project=JuliaMarkdownJoy JuliaMarkdownJoy/src/run.jl test-dead-links -i _projects/
-      - name: Run the Julia Script
-        run: julia --project=JuliaMarkdownJoy JuliaMarkdownJoy/src/run.jl extract -i _projects/ -c _projects/config.json  -o data.json
+      - name: Check that the albums markdown links are not dead
+        run: julia --project=JuliaMarkdownJoy JuliaMarkdownJoy/src/run.jl test-dead-links -i _albums/
+      - name: Extract the projects information
+        run: julia --project=JuliaMarkdownJoy JuliaMarkdownJoy/src/run.jl extract -i _projects/ -c _projects/config.json  -o projects.json
+      - name: Extract the albums information
+        run: julia --project=JuliaMarkdownJoy JuliaMarkdownJoy/src/run.jl extract -i _albums/ -c _albums/config.json  -o albums.json
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v3
         with:
           name: updated-json
-          path: ./data.json
+          path: ./projects.json ./albums.json
   build:
     needs: update-json
     runs-on: ubuntu-latest

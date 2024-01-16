@@ -1,0 +1,56 @@
+{
+  "fields": [
+    {
+      "find_property_": "title",
+      "after_a_": "title",
+      "named_": ["Title", "Titre"]
+    },
+    {
+      "find_property_": "shortDesc",
+      "after_a_": "title",
+      "named_": ["Introduction", "Présentation"]
+    },
+    {
+      "find_property_": "camera",
+      "after_a_": "title",
+      "named_": ["Appareil", "Appareil photo"]
+    },
+    {
+      "find_property_": "lenses",
+      "after_a_": "title",
+      "named_": [
+        "Objectif",
+        "Objectif photo",
+        "Objectifs utilisés",
+        "Objectif utilisé"
+      ],
+      "format": "array"
+    },
+    {
+      "find_property_": "date",
+      "after_a_": "title",
+      "named_": ["Date", "Photographié en", "Fait le", "Date de création"]
+    },
+    {
+      "find_property_": "previewImgOne",
+      "after_a_": "image",
+      "named_": ["Image 1", "Image principale"]
+    },
+    {
+      "find_property_": "previewImgTwo",
+      "after_a_": "image",
+      "named_": ["Image 2", "Image secondaire"]
+    },
+    {
+      "find_property_": "previewImgThree",
+      "after_a_": "image",
+      "named_": ["Image 3", "Image troisième"]
+    },
+    {
+      "find_property_": "content",
+      "after_a_": "title",
+      "named_": ["Contenu", "Description"],
+      "take_everything_after_": true
+    }
+  ]
+}

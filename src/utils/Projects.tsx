@@ -2,7 +2,7 @@ import ProjectData from "../models/ProjectData";
 import { FULLSTACK, Tags, getTagsFromString } from "./Tags";
 
 // @ts-ignore
-import data from "../../data.json";
+import data from "../../projects.json";
 // @ts-ignore
 const projectData: ProjectData[] = data;
 
