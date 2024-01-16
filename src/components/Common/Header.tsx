@@ -23,7 +23,7 @@ export function Header({ setIsDev, firstColor, secondColor }: HeaderProps) {
           <a
             aria-label="Home"
             className="inline-block rounded-full z-50"
-            href="/"
+            href="/portfolio/"
           >
             <img src={mainLogo} alt="Logo" className="w-16 h-16" />
           </a>

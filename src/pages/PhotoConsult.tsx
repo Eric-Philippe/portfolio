@@ -263,9 +263,9 @@ export default function PhotoConsult({
                 transition={{ type: "spring", stiffness: 500 }}
               >
                 {album.getLensesNames().map((_, i) => (
-                  <div className="flex flex-col items-center ml-10" key={i}>
+                  <div className="flex flex-col items-center ml-3" key={i}>
                     <div className="lens flex flex-col items-center">
-                      <div className="w-24 h-24 border-2 border-black rounded-full flex items-center justify-center p-2">
+                      <div className="w-24 h-22 border-2 border-black rounded-full flex items-center justify-center p-2">
                         <img
                           src="lens.png"
                           alt="camera"
