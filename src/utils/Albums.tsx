@@ -18,8 +18,6 @@ export class Album {
   public title: string = "";
   /** The short title of the album */
   public shortTitle: string = "";
-  /** The short description of the album */
-  public shortDesc: string = "";
   /** The date of the album */
   public date: string = "";
   /** The camera used for the album */
@@ -36,7 +34,6 @@ export class Album {
   constructor(data: AlbumData) {
     this.title = data.title;
     this.shortTitle = data.shortTitle;
-    this.shortDesc = data.shortDesc;
     this.date = data.date;
     this.camera = data.camera;
     this._phone = data.phone;

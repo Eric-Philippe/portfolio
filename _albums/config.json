@@ -11,11 +11,6 @@
       "named_": ["Short title", "Titre court"]
     },
     {
-      "find_property_": "shortDesc",
-      "after_a_": "title",
-      "named_": ["Introduction", "Présentation"]
-    },
-    {
       "find_property_": "camera",
       "after_a_": "title",
       "named_": ["Appareil", "Appareil photo"]

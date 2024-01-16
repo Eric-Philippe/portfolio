@@ -112,9 +112,23 @@ body {
   text-align: left;
 }
 
+.photo-container-album {
+  text-align: left;
+}
+
 .dev-container-project h3 {
   font-weight: 700;
   font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  padding: 0 6%;
+  margin-top: 0.8rem;
+  color: #3c3c3c;
+}
+
+.photo-container-album h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0 6%;
   margin-bottom: 0.2rem;
   margin-top: 0.8rem;
   color: #3c3c3c;
@@ -140,6 +154,15 @@ body {
   font-size: 1rem;
   color: #3c3c3c;
   margin-bottom: 0.5rem;
+}
+
+.photo-container-album p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: #3c3c3c;
+  margin-bottom: 1rem;
+  padding: 0 6%;
 }
 
 .dev-container-project a {
@@ -217,6 +240,15 @@ body {
     font-size: 0.9em;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   }
+}
+
+.photo-container-album img {
+  width: 100vw; /* Full width of the viewport */
+  height: 450px;
+  object-fit: cover; /* Crop the image to fill the container while maintaining its aspect ratio */
+  object-position: center; /* Center the image within the container */
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .dev-container-project th,
