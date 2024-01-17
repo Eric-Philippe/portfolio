@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file.
 ### Minor updates
 
 - The DevPortfolio saw a small refactor of the quick access select on phone
+- The Head Component saw a small refactor to make the page switch more comprehensible
 - The top left logo was redirecting to the wrong URL : Fixed
 
 ## [1.0] -- 2024-15-01

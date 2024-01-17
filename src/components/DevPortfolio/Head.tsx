@@ -24,7 +24,7 @@ const itemVariants: Variants = {
   closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 };
 
-export default function Head({ setIsDev }: RouterProps) {
+export default function Head({ setIsDev, isDev }: RouterProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -66,6 +66,7 @@ export default function Head({ setIsDev }: RouterProps) {
         </div>
         <Header
           setIsDev={setIsDev}
+          isDev={isDev}
           firstColor={colors.first}
           secondColor={colors.second}
         />

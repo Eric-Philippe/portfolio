@@ -13,7 +13,7 @@ import RouterProps from "../../models/Router";
 /** @Assets */
 import { PHOTO_COLOR_PALETTE as colors } from "../../assets/ColorPalette";
 
-export default function Head({ setIsDev }: RouterProps) {
+export default function Head({ setIsDev, isDev }: RouterProps) {
   useEffect(() => {
     drawCircle(400, 0, 0, colors.first, "canvas-bubble");
     drawCircle(200, 600, 0, colors.second, "canvas-bubble");
@@ -53,6 +53,7 @@ export default function Head({ setIsDev }: RouterProps) {
         </div>
         <Header
           setIsDev={setIsDev}
+          isDev={isDev}
           firstColor={colors.second}
           secondColor={colors.first}
         />

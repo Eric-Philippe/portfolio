@@ -40,9 +40,9 @@ export default function App() {
   return (
     <Suspense fallback={<TetrisLoader />}>
       {isDev ? (
-        <DevPortfolio setIsDev={togglePage} />
+        <DevPortfolio setIsDev={togglePage} isDev={isDev} />
       ) : (
-        <PhotoPortfolio setIsDev={togglePage} />
+        <PhotoPortfolio setIsDev={togglePage} isDev={isDev} />
       )}
     </Suspense>
   );

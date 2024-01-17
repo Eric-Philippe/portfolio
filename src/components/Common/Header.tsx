@@ -4,11 +4,18 @@ import RouterProps from "../../models/Router";
 import mainLogo from "../../../res/icon.png";
 
 type HeaderProps = RouterProps & {
+  setIsDev: (isDev: boolean) => void;
+  isDev: boolean | undefined;
   firstColor: string;
   secondColor: string;
 };
 
-export function Header({ setIsDev, firstColor, secondColor }: HeaderProps) {
+export function Header({
+  setIsDev,
+  isDev,
+  firstColor,
+  secondColor,
+}: HeaderProps) {
   return (
     <>
       <div
@@ -29,26 +36,54 @@ export function Header({ setIsDev, firstColor, secondColor }: HeaderProps) {
           </a>
           <nav className="space-x-4 text-sm text-gray-800 flex -mt-6">
             <a
-              className="hover:underline flex items-center space-x-1.5"
+              className={`hover:underline flex items-center space-x-1.5 ${
+                isDev ? "text-dev-gradient glow" : ""
+              }`}
               onClick={() => setIsDev(true)}
               style={{
                 zIndex: 10,
                 cursor: "pointer",
+                border: "1px solid",
+                borderColor: isDev ? firstColor : "",
+                borderRadius: "0.5rem",
+                padding: "0.25rem 0.5rem",
               }}
             >
-              <FaDesktop className="mt-0.5 w-4" />
-              <span>Informatique</span>
+              <FaDesktop
+                className={`mt-0.5 w-4 ${
+                  isDev ? "text-gradient" : "head-icon"
+                }`}
+                style={{
+                  color: isDev ? firstColor : "",
+                }}
+              />
+              <span className={`${isDev ? "" : "hidden"}  md:inline`}>
+                Informatique
+              </span>
             </a>
             <a
-              className="hover:underline flex items-center space-x-1.5"
+              className={`hover:underline flex items-center space-x-1.5 ${
+                !isDev ? "text-photo-gradient" : "head-icon"
+              }`}
               onClick={() => setIsDev(false)}
               style={{
                 zIndex: 10,
                 cursor: "pointer",
+                border: "1px solid",
+                borderColor: isDev ? "" : firstColor,
+                borderRadius: "0.5rem",
+                padding: "0.25rem 0.5rem",
               }}
             >
-              <FaCamera className="mt-0.5 w-4" />
-              <span>Photographie</span>
+              <FaCamera
+                className={`mt-0.5 w-4`}
+                style={{
+                  color: isDev ? "" : secondColor,
+                }}
+              />{" "}
+              <span className={`${isDev ? "hidden" : ""}  md:inline`}>
+                Photographie
+              </span>
             </a>
           </nav>
         </div>

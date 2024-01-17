@@ -11,13 +11,13 @@ import { useState } from "react";
 import projects from "../utils/Projects";
 import DevConsult from "./DevConsult";
 
-export default function DevPortfolio({ setIsDev }: RouterProps) {
+export default function DevPortfolio({ setIsDev, isDev }: RouterProps) {
   const [focus, setFocus] = useState<number | null>(null);
 
   if (focus === null)
     return (
       <ParallaxProvider>
-        <Head setIsDev={setIsDev} />
+        <Head setIsDev={setIsDev} isDev={isDev} />
         <ProjectSection setFocus={setFocus} />
         <SkillsSection />
         <AboutSection />

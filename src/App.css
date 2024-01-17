@@ -282,3 +282,37 @@ body {
   height: 100%;
   background: rgba(255, 255, 255, 0.3);
 }
+
+.text-photo-gradient {
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-dev-gradient {
+  background: linear-gradient(to right, #9968ee 0%, #ea6e78 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .head-icon {
+    animation: float 3s ease infinite;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  25%,
+  75% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}

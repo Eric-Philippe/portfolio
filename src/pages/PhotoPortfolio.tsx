@@ -10,7 +10,7 @@ import SoftwareSection from "../components/PhotoPortfolio/SoftwareSection";
 import PhotoConsult from "./PhotoConsult";
 import albums from "../utils/Albums";
 
-export default function PhotoPortfolio({ setIsDev }: RouterProps) {
+export default function PhotoPortfolio({ setIsDev, isDev }: RouterProps) {
   const [focus, setFocus] = useState<number | null>(null);
 
   const isSmallScreen = window.innerWidth < 1024;
@@ -18,7 +18,7 @@ export default function PhotoPortfolio({ setIsDev }: RouterProps) {
   if (focus === null)
     return (
       <>
-        <Head setIsDev={setIsDev} />
+        <Head setIsDev={setIsDev} isDev={isDev} />
         {/** For the photo portfolio there are two different layouts */}
         {(!isSmallScreen && (
           <div
