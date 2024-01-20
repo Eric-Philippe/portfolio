@@ -14,9 +14,11 @@ const handleHover = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
 export default function PhotoConsult({
   album,
   setFocus,
+  focus,
 }: {
   album: Album;
   setFocus: RouterFocusProps["setFocus"];
+  focus: number;
 }) {
   const calculatedWidth = (window.innerWidth / 1920) * 1600;
   const isSmallScreen = window.innerWidth < 1024;
@@ -43,26 +45,40 @@ export default function PhotoConsult({
       }, Math.floor(Math.random() * 800) + 500);
       return () => clearInterval(interval);
     }
-  }, [isSmallScreen]);
+  }, []);
 
   useEffect(() => {
-    const images = document.querySelectorAll(".album-content img");
+    setTimeout(() => {
+      const images = document.querySelectorAll(".album-content img");
+      console.log(images);
 
-    // @ts-ignore
-    images.forEach((img: HTMLImageElement) => {
-      img.addEventListener("click", () => {
-        setIsFullScreen(true);
-        setFullScreenImage(img.src);
-      });
-      img.style.cursor = "pointer";
-    });
+      // @ts-ignore
+      images.forEach((img: HTMLImageElement) => {
+        img.addEventListener("click", () => {
+          setIsFullScreen(true);
+          setFullScreenImage(img.src);
+        });
+        img.style.cursor = "pointer";
 
-    return () => {
-      images.forEach((img) => {
-        img.removeEventListener("click", () => setIsFullScreen(true));
+        img.style.height =
+          img.naturalHeight > img.naturalWidth ? "500px" : "500px";
+
+        console.log(img.naturalHeight, img.naturalWidth);
+
+        // If the image is portrait and the screen is not small
+        if (img.naturalHeight > img.naturalWidth && !isSmallScreen) {
+          img.style.width = "30%";
+          // If the image is landscape, if the screen is small
+        } else img.style.width = "100%";
       });
-    };
-  }, [album]);
+
+      return () => {
+        images.forEach((img) => {
+          img.removeEventListener("click", () => setIsFullScreen(true));
+        });
+      };
+    }, 200);
+  }, [focus]);
 
   return (
     <>

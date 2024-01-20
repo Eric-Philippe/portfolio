@@ -54,5 +54,7 @@ export default function PhotoPortfolio({ setIsDev, isDev }: RouterProps) {
       </>
     );
 
-  return <PhotoConsult album={albums[focus]} setFocus={setFocus} />;
+  return (
+    <PhotoConsult album={albums[focus]} setFocus={setFocus} focus={focus} />
+  );
 }

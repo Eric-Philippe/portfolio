@@ -43,7 +43,7 @@ export class Album {
   }
 
   public getPhotoCount(): number {
-    return (this.content.match(/<img/g) || []).length + 3;
+    return (this.content.match(/<img/g) || []).length + 1;
   }
 
   public getCameraImg(): string {
@@ -55,9 +55,12 @@ export class Album {
   }
 
   public getPhoneName() {
-    const regex = /Z\s*Fold\s*4/;
-    const phone = this.phone?.match(regex);
-    return phone ? "Galaxy ZFold4." : "";
+    // const regex = /Z\s*Fold\s*4/;
+    // const phone = this.phone?.match(regex);
+    // return phone ? "Galaxy ZFold4." : "";
+    if (!this.phone) return "";
+    if (this.phone.includes("Fold")) return "Galaxy ZFold4.";
+    if (this.phone.includes("Huawei")) return "Huawei Mate 20.";
   }
 
   public getCameraName(): string {
@@ -78,6 +81,7 @@ export class Album {
         if (mm === "18mm") {
           return "10-18mm f/4.5-5.6";
         } else if (mm === "55mm") {
+          if (this.camera.includes("800")) return "18-55mm f/4.5-5.6";
           return "18-55mm f/3.5-5.6";
         } else if (mm === "300mm") {
           return "70-300mm f/4-5.6";
@@ -90,7 +94,10 @@ export class Album {
   }
 
   public getPhoneImg() {
-    return this.phone ? "fold4.png" : "";
+    //return this.phone ? "fold4.png" : "";
+    if (!this.phone) return "";
+    if (this.phone.includes("Fold")) return "fold4.png";
+    if (this.phone.includes("Huawei")) return "mate_20.png";
   }
 
   public getYear(): string {

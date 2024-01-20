@@ -6,7 +6,9 @@ import { FaCalendar } from "react-icons/fa";
 import AlbumCard from "./AlbumCard";
 
 export default function AlbumsSection({ setFocus }: RouterFocusProps) {
-  const years = albums.map((album) => album.getYear());
+  const _years = albums.map((album) => album.getYear());
+  // Remove duplicates
+  const years = [...new Set(_years)];
 
   const [visibleYears, setVisibleYears] = useState(false);
   const [selectedYear, setSelectedYear] = useState<string>("all");
