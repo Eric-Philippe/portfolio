@@ -1,7 +1,8 @@
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import LINKS from "../../utils/Links";
 import { useState } from "react";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 import MentionLegales from "./MentionLegales";
+import LINKS from "../../utils/Links";
 
 export default function Footer() {
   const [mentionLegalOpen, setMentionLegalOpen] = useState(false);

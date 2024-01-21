@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.1] -- Coming Soon
+## [1.*] -- ???
+
+**LATER** I'd like to make the website in English and French, but with the way I write the markdown files, it's not possible. I'll have to find a way to make it work.
+
+## [1.1] -- 2024-21-01
+
+The Portfolio is now completed !!
 
 ### Major updates
 
@@ -11,6 +17,9 @@ All notable changes to this project will be documented in this file.
 - Added in consequence a `Tetris Loading` animation to the website
 - Added a Software Page to the PhotoPortfolio
 - Added a Albums Section to the PhotoPortfolio
+- Added the Album Consultation Page
+- Added the Albums to the CI/CD pipeline
+- Wrote the Albums
 
 ### Minor updates
 

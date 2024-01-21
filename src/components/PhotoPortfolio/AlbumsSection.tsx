@@ -7,7 +7,6 @@ import AlbumCard from "./AlbumCard";
 
 export default function AlbumsSection({ setFocus }: RouterFocusProps) {
   const _years = albums.map((album) => album.getYear());
-  // Remove duplicates
   const years = [...new Set(_years)];
 
   const [visibleYears, setVisibleYears] = useState(false);

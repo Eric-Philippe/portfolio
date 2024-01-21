@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
-import { RouterFocusProps } from "../../models/Router";
 import { Project } from "../../utils/Projects";
 import { getTechColor } from "../../utils/utils";
+import { RouterFocusProps } from "../../models/Router";
 
 export default function ProjectCard({
   project,

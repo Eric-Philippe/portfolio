@@ -31,7 +31,7 @@ export const FULLSTACK: Tags = {
   secGradientColor: "#99e9c8",
 };
 
-export const FRONTEND: Tags = {
+const FRONTEND: Tags = {
   name: "Frontend",
   color: "rgb(123, 81, 220)",
   fadedColor: "rgba(123, 81, 220, 0.2)",
@@ -39,7 +39,7 @@ export const FRONTEND: Tags = {
   secGradientColor: "#9d78d2",
 };
 
-export const BACKEND: Tags = {
+const BACKEND: Tags = {
   name: "Backend",
   color: "rgb(51, 245, 51)",
   fadedColor: "rgba(51, 245, 51, 0.2)",
@@ -47,7 +47,7 @@ export const BACKEND: Tags = {
   secGradientColor: "#01A2C2",
 };
 
-export const BOT: Tags = {
+const BOT: Tags = {
   name: "Bot",
   color: "rgb(245, 51, 245)",
   fadedColor: "rgba(245, 51, 245, 0.2)",
@@ -55,7 +55,7 @@ export const BOT: Tags = {
   secGradientColor: "#b507fa",
 };
 
-export const TOOL: Tags = {
+const TOOL: Tags = {
   name: "Tool",
   color: "rgb(145, 39, 7)",
   fadedColor: "rgba(145, 39, 7, 0.2)",
@@ -63,7 +63,7 @@ export const TOOL: Tags = {
   secGradientColor: "#912707",
 };
 
-export const CHALLENGE: Tags = {
+const CHALLENGE: Tags = {
   name: "Challenge",
   color: "rgb(242, 81, 17)",
   fadedColor: "rgba(242, 81, 17, 0.2)",

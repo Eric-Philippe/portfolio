@@ -1,6 +1,7 @@
 import { useState } from "react";
-import AnimatedProgressBar from "../Animations/AnimatedProgressBar";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+
+import AnimatedProgressBar from "../Animations/AnimatedProgressBar";
 import LINKS from "../../utils/Links";
 
 export default function AboutSection() {

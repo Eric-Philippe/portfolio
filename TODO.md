@@ -35,8 +35,8 @@
 - [x] Software Section
 - [x] Albums Preview Section
 - [x] Génération du contenu de la section albums à partir des .md
-- [ ] Albums Consultation
-- [ ] Rédaction des albums
+- [x] Albums Consultation
+- [x] Rédaction des albums
 - [x] Footer
 
 ### Tweaks
@@ -61,7 +61,7 @@
 - [x] Centraliser les pallettes de couleurs dans un fichier
 - [x] Nettoyage du code : Premier passage
 - [x] Trouver un truc discret à mettre en haut à gauche
-- [ ] Nettoyage du code : Deuxième passage
+- [x] Nettoyage du code : Deuxième passage
 
 ---
 

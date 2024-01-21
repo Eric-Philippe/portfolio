@@ -55,9 +55,6 @@ export class Album {
   }
 
   public getPhoneName() {
-    // const regex = /Z\s*Fold\s*4/;
-    // const phone = this.phone?.match(regex);
-    // return phone ? "Galaxy ZFold4." : "";
     if (!this.phone) return "";
     if (this.phone.includes("Fold")) return "Galaxy ZFold4.";
     if (this.phone.includes("Huawei")) return "Huawei Mate 20.";
@@ -71,9 +68,6 @@ export class Album {
 
   public getLensesNames(): string[] {
     const regex = /\d{2,3}mm/;
-    // If the match is 18mm we return "18-55mm f/3.5-5.6"
-    // If the match is 55mm we return "18-55mm  f/4.5-5.6"
-    // If the match is 300mm we return "70-300mm f/4-5.6"
     const lenses = this.lenses.map((lens) => {
       const match = lens.match(regex);
       if (match) {
@@ -94,7 +88,6 @@ export class Album {
   }
 
   public getPhoneImg() {
-    //return this.phone ? "fold4.png" : "";
     if (!this.phone) return "";
     if (this.phone.includes("Fold")) return "fold4.png";
     if (this.phone.includes("Huawei")) return "mate_20.png";
@@ -107,9 +100,6 @@ export class Album {
   }
 }
 
-/**
- * The list of albums fetched from the JSON file, generated from the .md files
- */
 const albums: Album[] = albumData.map((album: AlbumData) => {
   return new Album(album);
 });

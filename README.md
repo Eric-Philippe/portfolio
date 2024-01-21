@@ -22,6 +22,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     - [DevPortfolio](#devportfolio-💻)
     - [PhotoPortfolio](#photoportfolio-📷)
   - [Updates](#updates)
+  - [What's Next](#whats-next)
   - [Technologies](#technologies-📡)
   - [Continuous Integration](#continuous-integration)
     - [GitHub Actions](#github-actions)
@@ -43,6 +44,8 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 I wanted to put all my **creative** work in one place, and also make the process to **keep it up to date easier**. I also wanted to focus for once only and fully on the `Front-End` part of the website.
 
 I also tried as my best to make the website fast and light, so that it can be accessible to everyone, keeping every files under 1MB.
+
+I used [knip](https://github.com/webpro/knip) to remove unused files and node modules from the production build.
 
 ### Markdown Parser 📄
 
@@ -85,7 +88,7 @@ The contact section is a simple form that allows you to send me a message.
 <img src="./res/contact.png"
 style="border-radius: 10px;">
 
-### PhotoPortfolio
+### PhotoPortfolio 📷
 
 <img src="./res/photo_portfolio.png">
 
@@ -95,17 +98,32 @@ This portfolio is a showcase of my work as a photographer. It includes my setup,
 
 The setup section is a list of the equipment I use to take my photos. I used Three.js to render the 3D model of my camera. (Fancy, right ? :D)
 
+You have also under it, a list of all the software I use to edit my photos.
+
 <img src="./res/setup.gif">
 
 #### Albums 📸
 
-## W.I.P
+The Album section is a list of all my albums I'm proud of. You can filter the albums per year, and then consult them by clicking on them
+
+<img src="./res/album.png">
 
 ## Updates
 
 Every time I update the website, I keep up to date the [`CHANGELOG.md`](./CHANGELOG.md) file. You can check it out to see the latest updates.
 
-Current version: `1.0.0`
+Current version: `1.1.0`
+
+## What's Next
+
+The website is now completed ! I've added everything I wanted to add.
+There are a few things I'd like to do in the future, but it's out of the scope of this project.
+
+- I'd like to make the website in English and French, but with the way I write the markdown files, it's not possible. I'll have to find a way to make it work.
+
+- Redo the style of the Album Consultation Page. I'm not fully satisfied whith the way the Portrait photos are displayed.
+
+... And that's it ! I'm pretty happy with the result, and I'm glad I've done it.
 
 ## Technologies 📡
 
