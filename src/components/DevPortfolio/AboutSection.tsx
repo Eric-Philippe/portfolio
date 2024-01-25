@@ -143,37 +143,41 @@ export default function AboutSection() {
                       <p className="text-white text-xl mb-2 font-light">
                         Curriculum Vitae
                       </p>
-                      <img
-                        src="CV.png"
-                        className="transition-filter duration-500 ease-in-out"
-                        style={{
-                          borderRadius: "9px",
-                          width: "25em",
-                          opacity: isHovered ? 0.8 : 1,
-                          filter: isHovered ? "blur(5px)" : "blur(1px)",
-                        }}
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
-                      />
-                      <button
-                        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 py-2 rounded bg-black bg-opacity-50 hover:bg-opacity-70 transition-colors duration-200 text-white"
-                        onClick={() => {
-                          var lienTelechargement = document.createElement("a");
+                      <div className="relative" style={{ width: "25em" }}>
+                        <img
+                          src="CV.png"
+                          className="transition-filter duration-500 ease-in-out"
+                          style={{
+                            borderRadius: "9px",
+                            width: "100%",
+                            opacity: isHovered ? 0.8 : 1,
+                            filter: isHovered ? "blur(5px)" : "blur(1px)",
+                          }}
+                          onMouseEnter={() => setIsHovered(true)}
+                          onMouseLeave={() => setIsHovered(false)}
+                        />
+                        <button
+                          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 py-2 rounded bg-black bg-opacity-50 hover:bg-opacity-70 transition-colors duration-200 text-white"
+                          onClick={() => {
+                            const lienTelechargement =
+                              document.createElement("a");
 
-                          lienTelechargement.href = LINKS.DL_CV;
+                            lienTelechargement.href = LINKS.DL_CV;
 
-                          lienTelechargement.download = "Eric_Philippe_CV.pdf";
+                            lienTelechargement.download =
+                              "Eric_Philippe_CV.pdf";
 
-                          document.body.appendChild(lienTelechargement);
+                            document.body.appendChild(lienTelechargement);
 
-                          lienTelechargement.click();
+                            lienTelechargement.click();
 
-                          document.body.removeChild(lienTelechargement);
-                        }}
-                        onMouseEnter={() => setIsHovered(true)}
-                      >
-                        Consulter CV
-                      </button>
+                            document.body.removeChild(lienTelechargement);
+                          }}
+                          onMouseEnter={() => setIsHovered(true)}
+                        >
+                          Consulter CV
+                        </button>
+                      </div>
                     </div>
                   </div>
 

@@ -175,6 +175,9 @@ export default function Head({ setIsDev, isDev }: RouterProps) {
             >
               <motion.li
                 variants={itemVariants}
+                style={{
+                  cursor: "pointer",
+                }}
                 onClick={() => {
                   setIsOpen(!isOpen);
                   document
@@ -186,6 +189,9 @@ export default function Head({ setIsDev, isDev }: RouterProps) {
               </motion.li>
               <motion.li
                 variants={itemVariants}
+                style={{
+                  cursor: "pointer",
+                }}
                 onClick={() => {
                   setIsOpen(!isOpen);
                   document
@@ -208,6 +214,9 @@ export default function Head({ setIsDev, isDev }: RouterProps) {
               </motion.li>
               <motion.li
                 variants={itemVariants}
+                style={{
+                  cursor: "pointer",
+                }}
                 onClick={() => {
                   setIsOpen(!isOpen);
                   document
