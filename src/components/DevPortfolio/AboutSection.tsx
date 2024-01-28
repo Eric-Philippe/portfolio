@@ -77,7 +77,10 @@ export default function AboutSection() {
                     {/** @PARCOURS */}
                     <div
                       className="relative"
-                      style={{ marginLeft: "2em", marginRight: "2em" }}
+                      style={{
+                        marginLeft: "2em",
+                        marginRight: "2em",
+                      }}
                     >
                       <p className="text-white text-xl mb-2 font-light">
                         Étudiant en informatique
@@ -143,7 +146,7 @@ export default function AboutSection() {
                       <p className="text-white text-xl mb-2 font-light">
                         Curriculum Vitae
                       </p>
-                      <div className="relative" style={{ width: "25em" }}>
+                      <div className="relative">
                         <img
                           src="CV.png"
                           className="transition-filter duration-500 ease-in-out"
