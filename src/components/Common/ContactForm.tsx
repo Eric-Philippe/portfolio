@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
 const SERVICE_ID = "service_hgawynv";
-const TEMPLATE_ID = "template_clt36qe";
+const TEMPLATE_ID = "template_557kmya";
 const PUBLIC_KEY = "eoPJ5KwYUNr5YwcQL";
 
 const SENTENCES = [
