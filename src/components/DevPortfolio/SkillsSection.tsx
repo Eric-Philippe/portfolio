@@ -145,7 +145,7 @@ export default function SkillsSection() {
                       </p>
                       <AnimatedSeparator color1="#ca3325" />
                       <p className="text-sm text-gray-500 mt-2">
-                        Anglais <i>(courant)</i>
+                        Anglais <i>(courant - TOEIC : C1)</i>
                       </p>
                       <AnimatedSeparator color1="#1515ff" />
                       <p className="text-sm text-gray-500 mt-2">
