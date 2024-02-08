@@ -15,6 +15,10 @@ export default function ProjectCard({
 }) {
   const [isButtonHovered, setIsButtonHovered] = useState(false);
 
+  console.log(project.title);
+
+  console.log(project.tag);
+
   return (
     <div
       className="rounded-3xl overflow-hidden col-span-full lg:col-span-1"
@@ -117,7 +121,13 @@ export default function ProjectCard({
           >
             <defs>
               <linearGradient
-                id={"pj-" + project.title.split(" ").join("-")}
+                id={
+                  "pj-" +
+                  project.title
+                    .replace(/[^a-zA-Z0-9]/g, "")
+                    .split(" ")
+                    .join("")
+                }
                 x1="0"
                 y1="1"
                 x2="1"
@@ -132,7 +142,10 @@ export default function ProjectCard({
             </defs>
             <path
               d="M0 1 Q 0.8 0.8 1 0 L 1 1 Z"
-              fill={`url(#pj-${project.title.split(" ").join("-")})`}
+              fill={`url(#pj-${project.title
+                .replace(/[^a-zA-Z0-9]/g, "")
+                .split(" ")
+                .join("")})`}
             ></path>
           </svg>
           <div className="absolute inset-0 bg-white transition duration-300 group-hover:translate-x-[120%] will-change-transform"></div>
