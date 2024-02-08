@@ -93,6 +93,9 @@ const TECH_COLOR: { [key: string]: string } = {
   GitBook: "#4eaa25",
   Crontab: "#8c8c8c",
   PlantUML: "#7d4e1e",
+  Angular: "#dd0031",
+  MariaDb: "#003545",
+  "API-REST": "#f7e02a",
 };
 
 export const getTechColor = (tech: string) => {

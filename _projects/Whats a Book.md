@@ -1,0 +1,56 @@
+# What's a Book ?
+
+## Titre
+
+What's a Book ?
+
+![Image de preview](https://raw.githubusercontent.com/Eric-Philippe/Sae-WhatsABook/master/img/f-welcome.png)
+
+## Introduction
+
+Ce projet est une application web complète de gestion d'une librairie, comprennant la partie utilisateur, adhérent et administrateur.
+
+##### Date de création
+
+Février 2024
+
+### Tags
+
+FULLSTACK
+
+## Technologies
+
+| Nom         |
+| ----------- |
+| PHP         |
+| Symfony     |
+| MariaDb     |
+| TailwindCSS |
+| Angular     |
+| API-REST    |
+
+[Lien vers Git](https://github.com/Eric-Philippe/Sae-WhatsABook)
+
+## Contenu
+
+### Contexte
+
+Ce projet a été réalisé dans le cadre d'un projet scolaire, à la base en groupe, faite finalement seul.
+
+### Objectifs
+
+![Schéma de l'application](https://raw.githubusercontent.com/Eric-Philippe/Sae-WhatsABook/master/documentation/UserCase.jpeg)
+
+### Fonctionnalités
+
+L'application consiste d'abord à une interface utilisateur permettant de consulter les livres disponibles, de les rechercher et de les trier. Une fois connecté en tant qu'adhérent, l'utilisateur peut réserver des livres et consulter son historique d'emprunts. L'interface utilisateur permet également de présenter la librairie fictive dans son emplacement, ses horaires d'ouverture / fermerture, finalement tout ce que l'on pourrait attendre d'une librairie.
+
+L'interface administrateur permet de gérer l'entièreté de la bibliothèque à savoir l'inventaire des livres, auteurs, catégories ... Et également une gestion précise des emprunts et réservations (annulation, retard, prolongation ...)
+
+![BackOffice](https://raw.githubusercontent.com/Eric-Philippe/Sae-WhatsABook/master/img/b-loans.png)
+
+### Évolution des compétences
+
+Ce projet scolaire a été une opportunité d'affirmer mes compétences en `PHP` et d'explorer le framework Symfony plus en profondeur, élargissant ainsi mes horizons au-delà du développement en JavaScript/TypeScript.
+
+Ce projet a été l'occasion de pouvoir faire un site web de manière FullStack, en passant par le front (Angular), l'API-REST (Php Symfony), le Back office (Php Symfony), la base de données (MariaDB)
