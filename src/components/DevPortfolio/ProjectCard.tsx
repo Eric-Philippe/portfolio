@@ -15,10 +15,6 @@ export default function ProjectCard({
 }) {
   const [isButtonHovered, setIsButtonHovered] = useState(false);
 
-  console.log(project.title);
-
-  console.log(project.tag);
-
   return (
     <div
       className="rounded-3xl overflow-hidden col-span-full lg:col-span-1"
