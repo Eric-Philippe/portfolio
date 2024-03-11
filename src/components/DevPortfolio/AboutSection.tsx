@@ -38,7 +38,7 @@ export default function AboutSection() {
                     <div className="relative mb-8 md:mb-0 group">
                       <div className="relative">
                         <img
-                          src="https://media.discordapp.net/attachments/947414087401369610/948969142260744212/1646322201523.jpg?ex=65a94762&is=6596d262&hm=9ba70c272208a66bbf7093069d80e30ea610c37bf8a91a2c48ee1f057f9c73a8&=&format=webp&width=495&height=495"
+                          src="https://avatars.githubusercontent.com/u/66321178?v=4"
                           alt="Profile"
                           className="rounded-full object-cover w-24 h-24 mx-auto"
                         />
