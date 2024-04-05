@@ -119,7 +119,7 @@ export default function AboutSection() {
                       <AnimatedProgressBar
                         color1="#9867f0"
                         color2="#ed4e50"
-                        percentage={85}
+                        percentage={95}
                       />
 
                       <p className="text-gray-500">
@@ -137,7 +137,7 @@ export default function AboutSection() {
                       <AnimatedProgressBar
                         color1="#ffac1d"
                         color2="#ed4e50"
-                        percentage={75}
+                        percentage={85}
                       />
                     </div>
 
