@@ -105,25 +105,7 @@ export default function AboutSection() {
                       />
 
                       <p className="text-gray-500">
-                        2021 - 2024 : Bachelor Universitaire de Technologie
-                        Informatique
-                      </p>
-
-                      <p
-                        className="text-gray-500 mt-1"
-                        style={{ fontSize: "0.8rem" }}
-                      >
-                        IUT de Blagnac - Université Toulouse II Jean Jaurès
-                      </p>
-
-                      <AnimatedProgressBar
-                        color1="#9867f0"
-                        color2="#ed4e50"
-                        percentage={95}
-                      />
-
-                      <p className="text-gray-500">
-                        2021 - 2024 : Alternance - ADP GSI - Développeur Java
+                        2021 - 2026 : Alternance - ADP GSI - Développeur Java
                         Informatique
                       </p>
                       <p
@@ -137,7 +119,49 @@ export default function AboutSection() {
                       <AnimatedProgressBar
                         color1="#ffac1d"
                         color2="#ed4e50"
-                        percentage={85}
+                        percentage={50}
+                      />
+
+                      <p className="text-gray-500">
+                        2021 - 2024 : BUT Informatique -{" "}
+                        <b>Major de promotion</b>
+                      </p>
+
+                      <p
+                        className="text-gray-500 mt-1"
+                        style={{ fontSize: "0.8rem" }}
+                      >
+                        IUT de Blagnac - Université Toulouse II Jean Jaurès
+                      </p>
+
+                      <AnimatedProgressBar
+                        color1="#9867f0"
+                        color2="#ed4e50"
+                        percentage={100}
+                      />
+
+                      <p className="text-gray-500">
+                        2020 - 2021 : BAC - Mention Bien
+                      </p>
+                      <p
+                        className="text-gray-500 mt-1"
+                        style={{ fontSize: "0.8rem" }}
+                      >
+                        Spécialité Mathématiques, Physique-Chimie, Sciences de
+                        l'Ingénieur
+                      </p>
+                      <p
+                        className="text-gray-500 mt-1"
+                        style={{ fontSize: "0.8rem" }}
+                      >
+                        Option Mathématiques Expertes, Section Européenne
+                        Anglais
+                      </p>
+
+                      <AnimatedProgressBar
+                        color1="#ffac1d"
+                        color2="#ed4e50"
+                        percentage={50}
                       />
                     </div>
 
