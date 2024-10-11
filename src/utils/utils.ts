@@ -96,6 +96,14 @@ const TECH_COLOR: { [key: string]: string } = {
   Angular: "#dd0031",
   MariaDb: "#003545",
   "API-REST": "#f7e02a",
+  PrimeNg: "#42a5f5",
+  "IBM-MQ": "#7d4e1e",
+  nginx: "#009639",
+  Proxmox: "#e57000",
+  TrueNas: "#002d72",
+  Grafana: "#f46800",
+  Prometheus: "#e6522c",
+  HomeAssistant: "#41bdf5",
 };
 
 export const getTechColor = (tech: string) => {

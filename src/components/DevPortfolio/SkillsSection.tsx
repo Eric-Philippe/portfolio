@@ -97,7 +97,7 @@ export default function SkillsSection() {
                     </p>
                     <AnimatedSeparator color1="#5e62d5" />
                     <p className="text-sm text-gray-500 mt-2">
-                      Docker, Kubernetes, Terraform, Grafana
+                      Docker, Kubernetes, Terraform, Grafana, Proxmox
                     </p>
 
                     <AnimatedSeparator color1="#3439de" />
