@@ -29,7 +29,7 @@ FULLSTACK
 | API-REST   |
 | Docker     |
 
-[Lien vers Git](https://github.com/Eric-Philippe/PlanASlot/tree/main)
+[Lien vers Git](https://github.com/Eric-Philippe/PlanASlot)
 
 ## Contenu
 

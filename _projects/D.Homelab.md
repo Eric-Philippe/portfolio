@@ -8,7 +8,7 @@ Homelab
 
 Serveur personnel, ce projet est un ensemble de services et d'applications qui me permettent de m'auto-héberger et de tester des technologies.
 
-[Lien Github](https://github.com/Eric-Philippe/HomeServerConfig)
+[Lien vers Git](https://github.com/Eric-Philippe/HomeServerConfig)
 
 ### Technologies
 
@@ -30,7 +30,7 @@ Août 2024
 
 FULLSTACK
 
-![Image de preview](https://raw.githubusercontent.com/Eric-Philippe/HomeServerConfig/refs/heads/main/res/homelab.jpg)
+![Image de preview](https://raw.githubusercontent.com/Eric-Philippe/HomeServerConfig/refs/heads/main/res/HomeLab.drawio.png)
 
 ## Contenu
 
@@ -51,3 +51,5 @@ Le serveur est également utilisé pour tester des technologies et des applicati
 ### Documentation
 
 Le projet GitHub répertorie la majeure partie de la configuration de mon serveur, afin de pouvoir la reproduire facilement. Également il me documenter ma bibliographie et mes sources pour la configuration de mon serveur.
+
+![Server](https://raw.githubusercontent.com/Eric-Philippe/HomeServerConfig/refs/heads/main/res/homelab.jpg)
