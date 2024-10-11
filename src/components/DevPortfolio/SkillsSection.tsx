@@ -34,11 +34,11 @@ export default function SkillsSection() {
 
                     <AnimatedSeparator color1="#a472e5" />
                     <p className="text-sm text-gray-500 mt-2">
-                      Symfony, React, Angular, Vite
+                      Symfony, React, Angular, Vite, NextJS
                     </p>
                     <AnimatedSeparator color1="#ddc4fe" />
                     <p className="text-sm text-gray-500 mt-2">
-                      TailwindCSS, Bootstrap, MaterialUI
+                      TailwindCSS, Bootstrap, MaterialUI, PrimeNg
                     </p>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export default function SkillsSection() {
 
                     <AnimatedSeparator color1="#3439de" />
                     <p className="text-sm text-gray-500 mt-2">
-                      Linux, Windows, MacOS
+                      Linux, Windows, MacOS, Debian, Ubuntu, Arch
                     </p>
                   </div>
                 </div>
